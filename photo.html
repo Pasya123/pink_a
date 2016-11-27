@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк Фото</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="nojs">
+  <header class="page-header">
+    <div class="page-container">
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <a href="index.html"><img src="img/logo.svg" alt="PINK"></a>
+        </div>
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+        <div class="main-nav__control">
+          <button class="main-nav__btn  main-nav__btn--open">Открыть меню</button>
+          <button class="main-nav__btn  main-nav__btn--close">Закрыть меню</button>
+        </div>
+      </nav>
+      <section class="page-header__intro">
+        <h2 class="page-header__intro-header">Фотографии пользователей</h2>
+      </section>
+    </div>
+  </header>
+  <main class="page-content">
+    <section class="photo-gallery">
+      <div class="page-container">
+        <h2 class="photo-gallery__header">Фотографии пользователей</h2>
+        <div class="photo-gallery__content">
+          <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <div class="photo-gallery__items">
+          <figure class="photo-gallery__item photo-gallery__item--landscape">
+            <picture>
+              <img src="img/photo-1.jpg" alt="Фото прислал/прислала Анна">
+            </picture>
+            <figcaption class="photo-gallery__item-caption">
+              <div class="photo-gallery__item-id">
+                <span class="photo-gallery__item-name">Анна</span>
+                <span class="photo-gallery__item-date">(5 минут назад)</span>
+              </div>
+              <div class="photo-gallery__item-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
+              <div class="photo-gallery__item-likes">
+                <span class="photo-gallery__likes">Нравиться: 215</span>
+                <button class="photo-gallery__like-btn">Лайк!</button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="photo-gallery__item">
+            <picture>
+              <img src="img/photo-2.jpg" alt="Фото прислал/прислала Левон">
+            </picture>
+            <figcaption class="photo-gallery__item-caption">
+              <div class="photo-gallery__item-id">
+                <span class="photo-gallery__item-name">Левон</span>
+                <span class="photo-gallery__item-date">(5 часов назад)</span>
+              </div>
+              <div class="photo-gallery__item-comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+              <div class="photo-gallery__item-likes">
+                <span class="photo-gallery__likes">Нравиться: 356</span>
+                <button class="photo-gallery__like-btn">Лайк!</button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="photo-gallery__item">
+            <picture>
+              <img src="img/photo-3.jpg" alt="Фото прислал/прислала Антон">
+            </picture>
+            <figcaption class="photo-gallery__item-caption">
+              <div class="photo-gallery__item-id">
+                <span class="photo-gallery__item-name">Антон</span>
+                <span class="photo-gallery__item-date">(12 часов назад)</span>
+              </div>
+              <div class="photo-gallery__item-comment">Соседи будут рады!</div>
+              <div class="photo-gallery__item-likes">
+                <span class="photo-gallery__likes">Нравиться: 666</span>
+                <button class="photo-gallery__like-btn">Лайк!</button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="photo-gallery__item">
+            <picture>
+              <img src="img/photo-4.jpg" alt="Фото прислал/прислала Борис">
+            </picture>
+            <figcaption class="photo-gallery__item-caption">
+              <div class="photo-gallery__item-id">
+                <span class="photo-gallery__item-name">Борис</span>
+                <span class="photo-gallery__item-date">(20 часов назад)</span>
+              </div>
+              <div class="photo-gallery__item-comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
+              <div class="photo-gallery__item-likes">
+                <span class="photo-gallery__likes">Нравиться: 215</span>
+                <button class="photo-gallery__like-btn">Лайк!</button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="photo-gallery__item">
+            <picture>
+              <img src="img/photo-5.jpg" alt="Фото прислал/прислала Сергей">
+            </picture>
+            <figcaption class="photo-gallery__item-caption">
+              <div class="photo-gallery__item-id">
+                <span class="photo-gallery__item-name">Сергей</span>
+                <span class="photo-gallery__item-date">(25 часов назад)</span>
+              </div>
+              <div class="photo-gallery__item-comment">Самая кубанская в мире!</div>
+              <div class="photo-gallery__item-likes">
+                <span class="photo-gallery__likes">Нравиться: 4</span>
+                <button class="photo-gallery__like-btn">Лайк!</button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="photo-gallery__item">
+            <picture>
+              <img src="img/photo-6.jpg" alt="Фото прислал/прислала Максим">
+            </picture>
+            <figcaption class="photo-gallery__item-caption">
+              <div class="photo-gallery__item-id">
+                <span class="photo-gallery__item-name">Максим</span>
+                <span class="photo-gallery__item-date">(40 часов назад)</span>
+              </div>
+              <div class="photo-gallery__item-comment">Где снег-то?</div>
+              <div class="photo-gallery__item-likes">
+                <span class="photo-gallery__likes">Нравиться: 150</span>
+                <button class="photo-gallery__like-btn">Лайк!</button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="photo-gallery__item">
+            <picture>
+              <img src="img/photo-7.jpg" alt="Фото прислал/прислала Надежда">
+            </picture>
+            <figcaption class="photo-gallery__item-caption">
+              <div class="photo-gallery__item-id">
+                <span class="photo-gallery__item-name">Надежда</span>
+                <span class="photo-gallery__item-date">(45 часов назад)</span>
+              </div>
+              <div class="photo-gallery__item-comment">Всем GM и взаимные лайки!</div>
+              <div class="photo-gallery__item-likes">
+                <span class="photo-gallery__likes">Нравиться: 2560</span>
+                <button class="photo-gallery__like-btn">Лайк!</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="upload-photo">
+      <div class="page-container">
+        <h2 class="upload-photo__header">Вкладывайте свои фото!</h2>
+        <div class="upload-photo__content">
+          <p>Затмите их всех!</p>
+          <p>Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <div class="upload-photo__app">
+          <div class="upload-photo__preview-img">
+            <img class="upload-photo__img" src="/" alt="Ваше фото">
+          </div>
+          <form class="upload-photo__form" action="/" method="post">
+            <input name="file-name" type="file">
+            <div class="upload-photo__controls">
+              <div class="upload-photo__control">
+                <button class="upload-photo__control-btn  upload-photo__control-btn--cut">Обрезать</button>
+                <input name="cut" type="range" min="0" max="100" step="1" value="20">
+              </div>
+              <div class="upload-photo__control">
+                <button class="upload-photo__control-btn  upload-photo__control-btn--fill">Заливка</button>
+                <input name="fill" type="range" min="0" max="100" step="1" value="90">
+              </div>
+              <div class="upload-photo__control">
+                <button class="upload-photo__control-btn  upload-photo__control-btn--contrast">Контраст</button>
+                <input name="contrast" type="range" min="0" max="100" step="1" value="60">
+              </div>
+            </div>
+            <button class="btn" type="submit">Запостить</button>
+            <button class="btn" type="reset">Отмена</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-container">
+      <div class="page-footer__logo">
+        <img src="img/logo.svg" alt="PINK">
+      </div>
+      <section class="social-links">
+        <h2 class="visually-hidden">Мы в социальных сетях:</h2>
+        <div class="social-links__items">
+          <a class="social-links__item  social-links__item--tw" target="blank" href="http://twitter.com">Твиттер</a>
+          <a class="social-links__item  social-links__item--fb" target="blank" href="http://facebook.com">Фейсбук</a>
+          <a class="social-links__item  social-links__item--yb" target="blank" href="http://youtube.com">Ютуб</a>
+        </div>
+      </section>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-label">Разработано</span>
+        <img class="page-footer__copyright-logo" src="img/htmacademy-logo.svg" width="108" height="38" alt="HTML Academy">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -4,7 +4,15 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x"
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "test": "editorconfig-cli"
