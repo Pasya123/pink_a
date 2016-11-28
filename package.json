@@ -5,17 +5,17 @@
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "6.5.3",
-    "grunt": "1.0.1",
-    "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-watch": "1.0.0",
-    "grunt-postcss": "0.8.0",
-    "grunt-sass": "1.2.1",
+    "browser-sync": "2.18.2",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "gulp-sass": "2.3.2",
     "@htmlacademy/editorconfig-cli": "0.1.x"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "grunt sass && grunt postcss",
-    "start": "npm run build && grunt serve"
+    "build": "gulp style",
+    "start": "gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
