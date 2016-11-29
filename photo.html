@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк Фото</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -42,7 +42,7 @@
   <main class="page-content">
     <section class="photo-gallery">
       <div class="page-container">
-        <h2 class="photo-gallery__header">Фотографии пользователей</h2>
+        <h2 class="photo-gallery__header  visually-hidden">Фотографии пользователей</h2>
         <div class="photo-gallery__content">
           <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
@@ -164,7 +164,7 @@
     </section>
     <section class="upload-photo">
       <div class="page-container">
-        <h2 class="upload-photo__header">Вкладывайте свои фото!</h2>
+        <h2 class="upload-photo__header  visually-hidden">Вкладывайте свои фото!</h2>
         <div class="upload-photo__content">
           <p>Затмите их всех!</p>
           <p>Выкладывайте все, что накопилось в телефоне!</p>
@@ -189,8 +189,8 @@
                 <input name="contrast" type="range" min="0" max="100" step="1" value="60">
               </div>
             </div>
-            <button class="btn" type="submit">Запостить</button>
-            <button class="btn" type="reset">Отмена</button>
+            <button class="btn btn--pink" type="submit">Запостить</button>
+            <button class="btn btn--grey" type="reset" disabled>Отмена</button>
           </form>
         </div>
       </div>
