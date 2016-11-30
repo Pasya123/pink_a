@@ -106,42 +106,67 @@
     <div class="page-container">
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <svg class="main-nav__mobile-logo" width="74.426px" height="22.859px">
+          <svg class="main-nav__mobile-logo" width="74" height="24">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
           </svg>
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
+            <a class="main-nav__a">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html" class="main-nav__link">Фотографии</a>
+            <a class="main-nav__a" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Конкурс</a>
+            <a class="main-nav__a" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">HTML Academy</a>
+            <a class="main-nav__a" href="#">HTML Academy</a>
           </li>
         </ul>
-        <div class="main-nav__control">
-          <button class="main-nav__btn  main-nav__btn--open">Открыть меню</button>
-          <button class="main-nav__btn  main-nav__btn--close">Закрыть меню</button>
+        <div class="main-nav__btns">
+          <button class="main-nav__btn  main-nav__btn--open">
+            Открыть меню
+            <svg class="main-nav__btn-ico" width="49.945" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use>
+            </svg>
+          </button>
+          <button class="main-nav__btn  main-nav__btn--close">
+            Закрыть меню
+            <svg class="main-nav__btn-ico" width="23.867" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-cross"></use>
+            </svg>
+          </button>
         </div>
       </nav>
       <section class="page-header__intro">
-        <div class="page-header__intro-col">
+        <div class="page-header__intro-img">
           <img src="img/iphone-hand-mobile@1x.png" alt="PINK & iPhone">
         </div>
-        <div class="page-header__intro-col">
+        <div class="page-header__intro-info">
           <h2 class="page-header__intro-header">Взгляните на жизнь иначе!</h2>
           <div class="page-header__intro-content">
-            <a class="btn btn--inverse" href="#">Скачать приложение</a>
+            <a class="btn  btn--inverse  btn--adptive" href="#">Скачать приложение</a>
           </div>
           <div class="page-header__app-items">
-            <a class="page-header__app-item  page-header__app-item--apple" target="blank" href="https://itunes.apple.com">iTunes</a>
-            <a class="page-header__app-item  page-header__app-item--adroid" target="blank" href="https://play.google.com">GooglePlay</a>
-            <a class="page-header__app-item  page-header__app-item--ms" target="blank" href="https://www.microsoft.com">MicrosoftStore</a>
+            <a class="page-header__app-item  page-header__app-item--apple" target="blank" href="https://itunes.apple.com">
+              <svg class="page-header__app-logo" width="46.21px" height="56.753px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-apple"></use>
+              </svg>
+              iTunes
+            </a>
+            <a class="page-header__app-item  page-header__app-item--adroid" target="blank" href="https://play.google.com">
+              <svg class="page-header__app-logo" width="42.084px" height="47.041px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-android"></use>
+              </svg>
+              GooglePlay
+            </a>
+            <a class="page-header__app-item  page-header__app-item--ms" target="blank" href="https://www.microsoft.com">
+              <svg class="page-header__app-logo" width="43.922px" height="41.992px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-microsoft"></use>
+              </svg>
+              MicrosoftStore
+            </a>
           </div>
           <div class="page-header__intro-content">
             <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -153,45 +178,46 @@
   <main class="page-content">
     <section class="promo">
       <div class="page-container">
-        <h2 class="promo__header">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <h2 class="promo__header">Устали от серости мегаполиса?</h2>
+        <h2 class="promo__header">Нам есть, что вам предложить!</h2>
         <div class="promo__items">
           <div class="promo__item">
-            <div class="promo__item-img-wrap">
-              <img class="promo__item-img" src="img/promo-img-1.jpg" alt="Поднимает настроение">
-            </div>
             <div class="promo__item-content">
               <h3>Поднимает настроение</h3>
               <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
+            <div class="promo__item-img-wrap">
+              <img src="img/promo-img-1.jpg" alt="Поднимает настроение">
+            </div>
           </div>
           <div class="promo__item">
-            <div class="promo__item-img-wrap">
-              <img class="promo__item-img" src="img/promo-img-2.jpg" alt="Меняет мир вокруг">
-            </div>
             <div class="promo__item-content">
               <h3>Меняет мир вокруг</h3>
               <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
+            <div class="promo__item-img-wrap">
+              <img src="img/promo-img-2.jpg" alt="Меняет мир вокруг">
+            </div>
           </div>
           <div class="promo__item">
-            <div class="promo__item-img-wrap">
-              <img class="promo__item-img" src="img/iphone-screen-mobile@1x.png" alt="Заводит новых друзей">
-            </div>
             <div class="promo__item-content">
               <h3>Заводит новых друзей</h3>
               <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+            <div class="promo__item-img-wrap">
+              <img src="img/iphone-screen-mobile@1x.png" alt="Заводит новых друзей">
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="promo-research">
+    <section class="promo-effect">
       <div class="page-container">
-        <h2 class="promo-research__header visually-hidden">Эффект от использования приложения длится 24 часа!</h2>
-        <div class="promo-research__img-wrap">
-          <img class="promo-research__img" src="img/promo-research.jpg" alt="Эффект на 24 часа!">
+        <h2 class="promo-effect__header visually-hidden">Эффект от использования приложения длится 24 часа!</h2>
+        <div class="promo-effect__img-wrap">
+          <img class="promo-effect__img" src="img/promo-effect.jpg" alt="Эффект на 24 часа!">
         </div>
-        <div class="promo-research__content">
+        <div class="promo-effect__content">
           <h3>Эффект на 24 часа!</h3>
           <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <p>
@@ -208,21 +234,27 @@
             <div class="reviews__author">
               <div class="reviews__author-name">Николай Петров</div>
               <div class="reviews__author-id">25 лет, водитель трамвая</div>
-              <div class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+            </div>
+            <div class="reviews__comment">
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
             </div>
           </div>
           <div class="reviews__item">
             <div class="reviews__author">
               <div class="reviews__author-name">Николай Петров</div>
               <div class="reviews__author-id">25 лет, водитель трамвая</div>
-              <div class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+            </div>
+            <div class="reviews__comment">
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
             </div>
           </div>
           <div class="reviews__item">
             <div class="reviews__author">
               <div class="reviews__author-name">Николай Петров</div>
               <div class="reviews__author-id">25 лет, водитель трамвая</div>
-              <div class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+            </div>
+            <div class="reviews__comment">
+              <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
             </div>
           </div>
         </div>
@@ -279,19 +311,23 @@
     </section>
     <section class="contacts">
       <div class="page-container">
-        <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
-        <div class="contacts__items">
-          <div class="contacts__item">
-            <h5>Звоните:</h5>
-            <p><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-          </div>
-          <div class="contacts__item">
-            <h5>Приезжайте в гости:</h5>
-            <p>ул. Большая Конюшенная, 19/8</p>
-          </div>
-          <div class="contacts__item">
-            <h5>Пишите:</h5>
-            <p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <div class="contacts__wrap">
+          <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
+          <div class="contacts__items">
+            <div class="contacts__item">
+              <h5>Звоните:</h5>
+              <p><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+            </div>
+            <div class="contacts__item">
+              <h5>Пишите:</h5>
+              <p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            </div>
+            <div class="contacts__item">
+              <h5>Приезжайте в гости:</h5>
+              <p>
+                <em>ул. Большая Конюшенная, 19/8</em>
+              </p>
+            </div>
           </div>
         </div>
         <div class="contacts__map-wrap">

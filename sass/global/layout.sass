@@ -11,6 +11,9 @@ body
   line-height: $line-height-base
   color: $text-color
   background-color: $body-bg-color
+  margin: 0px
+  padding: 0px
+  min-width: $page-max-width
 
 
 input,
@@ -97,7 +100,9 @@ legend
   text-transform: uppercase
   text-align: center
 
+
 a
+  font-size: 24px
   color: #d22856
   text-decoration: underline
 
@@ -106,16 +111,35 @@ figure
   margin: 0
 
 
+p
+  font-size: 14px
+  line-height: 24px
+
+
+em
+  font-size: 24px
+  font-weight: $font-w-light
+  font-style: normal
+  color: #d22856
+
+
 h2
-  font-size: 50px
+  font-size: 24px
   font-weight: $font-w-light
   line-height: 1.2
 
+  @media (min-width: $tablet-max-width)
+    font-size: 50px
+
 
 h3
-  font-size: 30px
+  font-size: 18px
   font-weight: $font-w-bold
-  line-height: 30px
+  line-height: 24px
+
+  @media (min-width: $tablet-max-width)
+    font-size: 30px
+    line-height: 30px
 
 
 h4
@@ -125,22 +149,19 @@ h4
 
 
 h5
+  margin-top: 20px
+  margin-bottom: 10px
   font-size: 18px
   font-weight: $font-w-bold
   line-height: 1.2
 
+.page-content
+  width: 100vw
 
-.visually-hidden
-  position: absolute
+.page-container
+  margin-left: auto
+  margin-right: auto
 
-  padding: 0
-  margin: -1px
-
-  width: 1px
-  height: 1px
-
-  border: 0
-
-  clip: rect(0 0 0 0)
-  overflow: hidden
+  max-width: $page-max-width
+  min-width: $page-min-width
 
