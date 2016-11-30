@@ -104,31 +104,43 @@
     <div class="page-container">
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <svg class="main-nav__mobile-logo" width="74.426px" height="22.859px">
+          <svg class="main-nav__mobile-logo" width="74" height="24">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
           </svg>
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">Главная</a>
+            <a class="main-nav__a" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html" class="main-nav__link">Фотографии</a>
+            <a class="main-nav__a" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Конкурс</a>
+            <a class="main-nav__a">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">HTML Academy</a>
+            <a class="main-nav__a" href="#">HTML Academy</a>
           </li>
         </ul>
-        <div class="main-nav__control">
-          <button class="main-nav__btn  main-nav__btn--open">Открыть меню</button>
-          <button class="main-nav__btn  main-nav__btn--close">Закрыть меню</button>
+        <div class="main-nav__btns">
+          <button class="main-nav__btn  main-nav__btn--open">
+            Открыть меню
+            <svg class="photo-gallery__btn-ico" width="49.945" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use>
+            </svg>
+          </button>
+          <button class="main-nav__btn  main-nav__btn--close">
+            Закрыть меню
+            <svg class="photo-gallery__btn-ico" width="23.867" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-cross"></use>
+            </svg>
+          </button>
         </div>
       </nav>
       <section class="page-header__intro">
-        <h2 class="page-header__intro-header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <div class="page-header__intro-header">
+          <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
       </section>
     </div>
   </header>
@@ -302,21 +314,36 @@
   <footer class="page-footer">
     <div class="page-container">
       <div class="page-footer__logo">
-        <svg width="146.3px" height="40.375px">
+        <svg width="146.3" height="40.375">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
       </div>
       <section class="social-links">
         <h2 class="visually-hidden">Мы в социальных сетях:</h2>
         <div class="social-links__items">
-          <a class="social-links__item  social-links__item--tw" target="blank" href="http://twitter.com">Твиттер</a>
-          <a class="social-links__item  social-links__item--fb" target="blank" href="http://facebook.com">Фейсбук</a>
-          <a class="social-links__item  social-links__item--yb" target="blank" href="http://youtube.com">Ютуб</a>
+          <a class="social-links__item" target="blank" href="http://twitter.com">
+            Твиттер
+            <svg class="social-links__item-ico" width="17.5" height="14.663">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="social-links__item" target="blank" href="http://facebook.com">
+            Фейсбук
+            <svg class="social-links__item-ico" width="8.673" height="18.944">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="social-links__item" target="blank" href="http://youtube.com">
+            Ютуб
+            <svg class="social-links__item-ico" width="14.64" height="13.96">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
         </div>
       </section>
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-label">Разработано</span>
-        <svg class="page-footer__copyright-logo" width="26.943px" height="34.09px">
+        <svg class="page-footer__copyright-logo" width="30" height="35">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
         </svg>
       </div>

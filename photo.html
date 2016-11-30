@@ -104,31 +104,43 @@
     <div class="page-container">
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <svg class="main-nav__mobile-logo" width="74.426px" height="22.859px">
+          <svg class="main-nav__mobile-logo" width="74" height="24">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
           </svg>
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">Главная</a>
+            <a class="main-nav__a" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
+            <a class="main-nav__a">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Конкурс</a>
+            <a class="main-nav__a" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">HTML Academy</a>
+            <a class="main-nav__a" href="#">HTML Academy</a>
           </li>
         </ul>
-        <div class="main-nav__control">
-          <button class="main-nav__btn  main-nav__btn--open">Открыть меню</button>
-          <button class="main-nav__btn  main-nav__btn--close">Закрыть меню</button>
+        <div class="main-nav__btns">
+          <button class="main-nav__btn  main-nav__btn--open">
+            Открыть меню
+            <svg class="photo-gallery__btn-ico" width="49.945" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use>
+            </svg>
+          </button>
+          <button class="main-nav__btn  main-nav__btn--close">
+            Закрыть меню
+            <svg class="photo-gallery__btn-ico" width="23.867" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-cross"></use>
+            </svg>
+          </button>
         </div>
       </nav>
       <section class="page-header__intro">
-        <h2 class="page-header__intro-header">Фотографии пользователей</h2>
+        <div class="page-header__intro-header">
+          <h2>Фотографии пользователей</h2>
+        </div>
       </section>
     </div>
   </header>
@@ -140,19 +152,28 @@
           <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
         <div class="photo-gallery__items">
-          <figure class="photo-gallery__item photo-gallery__item--panorama">
+          <figure class="photo-gallery__item  photo-gallery__item--panorama">
             <picture>
               <img src="img/panorama-mobile@1x.jpg" alt="Фото прислал/прислала Анна">
             </picture>
-            <figcaption class="photo-gallery__item-caption">
-              <div class="photo-gallery__item-id">
-                <span class="photo-gallery__item-name">Анна</span>
-                <span class="photo-gallery__item-date">(5 минут назад)</span>
+            <figcaption class="photo-gallery__caption">
+              <div class="photo-gallery__id">
+                <span class="photo-gallery__name">Анна</span>
+                <span class="photo-gallery__date">(5 минут назад)</span>
               </div>
-              <div class="photo-gallery__item-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
-              <div class="photo-gallery__item-likes">
-                <span class="photo-gallery__likes">Нравиться: 215</span>
-                <button class="photo-gallery__like-btn">Лайк!</button>
+              <div class="photo-gallery__comment">
+                <p>
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+              </div>
+              <div class="photo-gallery__likes">
+                <button class="photo-gallery__like-btn">
+                  Лайк!
+                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="photo-gallery__likes-count">Нравиться: 215</span>
               </div>
             </figcaption>
           </figure>
@@ -160,15 +181,22 @@
             <picture>
               <img src="img/photo-1-mobile@1x.jpg" alt="Фото прислал/прислала Левон">
             </picture>
-            <figcaption class="photo-gallery__item-caption">
-              <div class="photo-gallery__item-id">
-                <span class="photo-gallery__item-name">Левон</span>
-                <span class="photo-gallery__item-date">(5 часов назад)</span>
+            <figcaption class="photo-gallery__caption">
+              <div class="photo-gallery__id">
+                <span class="photo-gallery__name">Левон</span>
+                <span class="photo-gallery__date">(5 часов назад)</span>
               </div>
-              <div class="photo-gallery__item-comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
-              <div class="photo-gallery__item-likes">
-                <span class="photo-gallery__likes">Нравиться: 356</span>
-                <button class="photo-gallery__like-btn">Лайк!</button>
+              <div class="photo-gallery__comment">
+                <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              </div>
+              <div class="photo-gallery__likes">
+                <button class="photo-gallery__like-btn">
+                  Лайк!
+                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="photo-gallery__likes-count">Нравиться: 356</span>
               </div>
             </figcaption>
           </figure>
@@ -176,15 +204,22 @@
             <picture>
               <img src="img/photo-2-mobile@1x.jpg" alt="Фото прислал/прислала Антон">
             </picture>
-            <figcaption class="photo-gallery__item-caption">
-              <div class="photo-gallery__item-id">
-                <span class="photo-gallery__item-name">Антон</span>
-                <span class="photo-gallery__item-date">(12 часов назад)</span>
+            <figcaption class="photo-gallery__caption">
+              <div class="photo-gallery__id">
+                <span class="photo-gallery__name">Антон</span>
+                <span class="photo-gallery__date">(12 часов назад)</span>
               </div>
-              <div class="photo-gallery__item-comment">Соседи будут рады!</div>
-              <div class="photo-gallery__item-likes">
-                <span class="photo-gallery__likes">Нравиться: 666</span>
-                <button class="photo-gallery__like-btn">Лайк!</button>
+              <div class="photo-gallery__comment">
+                <p>Соседи будут рады!</p>
+              </div>
+              <div class="photo-gallery__likes">
+                <button class="photo-gallery__like-btn">
+                  Лайк!
+                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="photo-gallery__likes-count">Нравиться: 666</span>
               </div>
             </figcaption>
           </figure>
@@ -192,15 +227,22 @@
             <picture>
               <img src="img/photo-3-mobile@1x.jpg" alt="Фото прислал/прислала Борис">
             </picture>
-            <figcaption class="photo-gallery__item-caption">
-              <div class="photo-gallery__item-id">
-                <span class="photo-gallery__item-name">Борис</span>
-                <span class="photo-gallery__item-date">(20 часов назад)</span>
+            <figcaption class="photo-gallery__caption">
+              <div class="photo-gallery__id">
+                <span class="photo-gallery__name">Борис</span>
+                <span class="photo-gallery__date">(20 часов назад)</span>
               </div>
-              <div class="photo-gallery__item-comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
-              <div class="photo-gallery__item-likes">
-                <span class="photo-gallery__likes">Нравиться: 215</span>
-                <button class="photo-gallery__like-btn">Лайк!</button>
+              <div class="photo-gallery__comment">
+                <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              </div>
+              <div class="photo-gallery__likes">
+                <button class="photo-gallery__like-btn">
+                  Лайк!
+                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="photo-gallery__likes-count">Нравиться: 215</span>
               </div>
             </figcaption>
           </figure>
@@ -208,15 +250,22 @@
             <picture>
               <img src="img/photo-4-mobile@1x.jpg" alt="Фото прислал/прислала Сергей">
             </picture>
-            <figcaption class="photo-gallery__item-caption">
-              <div class="photo-gallery__item-id">
-                <span class="photo-gallery__item-name">Сергей</span>
-                <span class="photo-gallery__item-date">(25 часов назад)</span>
+            <figcaption class="photo-gallery__caption">
+              <div class="photo-gallery__id">
+                <span class="photo-gallery__name">Сергей</span>
+                <span class="photo-gallery__date">(25 часов назад)</span>
               </div>
-              <div class="photo-gallery__item-comment">Самая кубанская в мире!</div>
-              <div class="photo-gallery__item-likes">
-                <span class="photo-gallery__likes">Нравиться: 4</span>
-                <button class="photo-gallery__like-btn">Лайк!</button>
+              <div class="photo-gallery__comment">
+                <p>Самая кубанская в мире!</p>
+              </div>
+              <div class="photo-gallery__likes">
+                <button class="photo-gallery__like-btn">
+                  Лайк!
+                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="photo-gallery__likes-count">Нравиться: 4</span>
               </div>
             </figcaption>
           </figure>
@@ -224,15 +273,22 @@
             <picture>
               <img src="img/photo-5-mobile@1x.jpg" alt="Фото прислал/прислала Максим">
             </picture>
-            <figcaption class="photo-gallery__item-caption">
-              <div class="photo-gallery__item-id">
-                <span class="photo-gallery__item-name">Максим</span>
-                <span class="photo-gallery__item-date">(40 часов назад)</span>
+            <figcaption class="photo-gallery__caption">
+              <div class="photo-gallery__id">
+                <span class="photo-gallery__name">Максим</span>
+                <span class="photo-gallery__date">(40 часов назад)</span>
               </div>
-              <div class="photo-gallery__item-comment">Где снег-то?</div>
-              <div class="photo-gallery__item-likes">
-                <span class="photo-gallery__likes">Нравиться: 150</span>
-                <button class="photo-gallery__like-btn">Лайк!</button>
+              <div class="photo-gallery__comment">
+                <p>Где снег-то?</p>
+              </div>
+              <div class="photo-gallery__likes">
+                <button class="photo-gallery__like-btn">
+                  Лайк!
+                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="photo-gallery__likes-count">Нравиться: 150</span>
               </div>
             </figcaption>
           </figure>
@@ -240,15 +296,22 @@
             <picture>
               <img src="img/photo-6-mobile@1x.jpg" alt="Фото прислал/прислала Надежда">
             </picture>
-            <figcaption class="photo-gallery__item-caption">
-              <div class="photo-gallery__item-id">
-                <span class="photo-gallery__item-name">Надежда</span>
-                <span class="photo-gallery__item-date">(45 часов назад)</span>
+            <figcaption class="photo-gallery__caption">
+              <div class="photo-gallery__id">
+                <span class="photo-gallery__name">Надежда</span>
+                <span class="photo-gallery__date">(45 часов назад)</span>
               </div>
-              <div class="photo-gallery__item-comment">Всем GM и взаимные лайки!</div>
-              <div class="photo-gallery__item-likes">
-                <span class="photo-gallery__likes">Нравиться: 2560</span>
-                <button class="photo-gallery__like-btn">Лайк!</button>
+              <div class="photo-gallery__comment">
+                <p>Всем GM и взаимные лайки!</p>
+              </div>
+              <div class="photo-gallery__likes">
+                <button class="photo-gallery__like-btn">
+                  Лайк!
+                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="photo-gallery__likes-count">Нравиться: 2560</span>
               </div>
             </figcaption>
           </figure>
@@ -257,10 +320,9 @@
     </section>
     <section class="upload-photo">
       <div class="page-container">
-        <h2 class="upload-photo__header  visually-hidden">Вкладывайте свои фото!</h2>
+        <h2 class="upload-photo__header  visually-hidden">Выкладывайте свои фото!</h2>
         <div class="upload-photo__content">
-          <p>Затмите их всех!</p>
-          <p>Выкладывайте все, что накопилось в телефоне!</p>
+          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="upload-photo__app">
           <div class="upload-photo__preview-img">
@@ -270,20 +332,38 @@
             <input name="file-name" type="file">
             <div class="upload-photo__controls">
               <div class="upload-photo__control">
-                <button class="upload-photo__control-btn  upload-photo__control-btn--cut">Обрезать</button>
+                <button class="upload-photo__btn">
+                  Обрезать
+                  <svg class="upload-photo__btn-ico" width="48" height="48">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </button>
                 <input name="cut" type="range" min="0" max="100" step="1" value="20">
               </div>
               <div class="upload-photo__control">
-                <button class="upload-photo__control-btn  upload-photo__control-btn--fill">Заливка</button>
+                <button class="upload-photo__btn">
+                  Заливка
+                  <svg class="upload-photo__btn-ico" width="48" height="48">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </button>
                 <input name="fill" type="range" min="0" max="100" step="1" value="90">
               </div>
               <div class="upload-photo__control">
-                <button class="upload-photo__control-btn  upload-photo__control-btn--contrast">Контраст</button>
+                <button class="upload-photo__btn">
+                  Контраст
+                  <svg class="upload-photo__btn-ico" width="31.92" height="31.92">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </button>
                 <input name="contrast" type="range" min="0" max="100" step="1" value="60">
               </div>
+              <div class="upload-photo__control">
+                <input name="common" type="range" min="0" max="100" step="1" value="60">
+              </div>
             </div>
-            <button class="btn btn--pink" type="submit">Запостить</button>
-            <button class="btn btn--grey" type="reset">Отмена</button>
+            <button class="btn btn--adptive btn--pink" type="submit">Запостить</button>
+            <button class="btn btn--adptive btn--grey" type="reset">Отмена</button>
           </form>
         </div>
       </div>
@@ -292,21 +372,36 @@
   <footer class="page-footer">
     <div class="page-container">
       <div class="page-footer__logo">
-        <svg width="146.3px" height="40.375px">
+        <svg width="146.3" height="40.375">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
       </div>
       <section class="social-links">
         <h2 class="visually-hidden">Мы в социальных сетях:</h2>
         <div class="social-links__items">
-          <a class="social-links__item  social-links__item--tw" target="blank" href="http://twitter.com">Твиттер</a>
-          <a class="social-links__item  social-links__item--fb" target="blank" href="http://facebook.com">Фейсбук</a>
-          <a class="social-links__item  social-links__item--yb" target="blank" href="http://youtube.com">Ютуб</a>
+          <a class="social-links__item" target="blank" href="http://twitter.com">
+            Твиттер
+            <svg class="social-links__item-ico" width="17.5" height="14.663">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="social-links__item" target="blank" href="http://facebook.com">
+            Фейсбук
+            <svg class="social-links__item-ico" width="8.673" height="18.944">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="social-links__item" target="blank" href="http://youtube.com">
+            Ютуб
+            <svg class="social-links__item-ico" width="14.64" height="13.96">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
         </div>
       </section>
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-label">Разработано</span>
-        <svg class="page-footer__copyright-logo" width="26.943px" height="34.09px">
+        <svg class="page-footer__copyright-logo" width="30" height="35">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
         </svg>
       </div>
