@@ -3,6 +3,7 @@ html
   font-size: 10px
   -webkit-tap-highlight-color: rgba(0,0,0,0)
 
+
 body
   font-family: $font-family-base
   font-size: $font-size-base
@@ -10,6 +11,7 @@ body
   line-height: $line-height-base
   color: $text-color
   background-color: $body-bg-color
+
 
 input,
 button,
@@ -19,6 +21,7 @@ textarea
   font-size: inherit
   line-height: inherit
 
+
 input,
 textarea
   &::placeholder
@@ -27,40 +30,104 @@ textarea
     line-height: $line-height-base
     color: $text-color
 
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password]
+  display: inline-block
+  vertical-align: top
+  box-sizing: border-box
+  padding: 14.5px 20px
+  margin: 0px
+
+  min-width: 300px
+  height: 63px
+
+  border: 2px solid #e5e5e5;
+  border-radius: 3px
+  background-color: #ffffff
+
+  outline: none
+
+  &:hover
+    border-color: #283645
+
+  &:focus
+    border-color: #d22856
+
+
+textarea
+  box-sizing: border-box
+  padding: 14.5px 20px
+  margin: 0px
+
+  min-width: 280px
+  min-height: 201px
+
+  resize: none
+
+  border: 2px solid #e5e5e5;
+  border-radius: 3px
+  background-color: #ffffff
+
+  outline: none
+
+  &:hover
+    border-color: #283645
+
+  &:focus
+    border-color: #d22856
+
+
+fieldset
+  border: 2px solid #e6e6e6
+
+  & > ul
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none
+
+
 legend
   font-size: 14px
   font-weight: $font-w-regular
   line-height: 30px
   color: #d22856
   text-transform: uppercase
+  text-align: center
 
 a
   color: #d22856
   text-decoration: underline
 
+
 figure
   margin: 0
+
 
 h2
   font-size: 50px
   font-weight: $font-w-light
   line-height: 1.2
 
+
 h3
   font-size: 30px
   font-weight: $font-w-bold
   line-height: 30px
+
 
 h4
   font-size: 24px
   font-weight: $font-w-bold
   line-height: 1.2
 
+
 h5
   font-size: 18px
   font-weight: $font-w-bold
   line-height: 1.2
-
 
 
 .visually-hidden

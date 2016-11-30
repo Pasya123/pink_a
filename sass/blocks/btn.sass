@@ -7,7 +7,7 @@
   min-width: 174px
 
   font-family: $font-family-base
-  font-size: 18px
+  font-size: 21px
   font-weight: $font-w-bold
   line-height: 18px
   color: $text-color
@@ -28,11 +28,29 @@
   cursor: pointer
   outline: none
 
+  &:hover
+    background-color: #283645
+    color: #fff
+
+  &:active
+    background-color: #283645
+    color: rgba(#fff, 0.3)
+
 .btn--inverse
   color: #ffffff
   border-color: #ffffff
 
+  &:hover
+    background-color: #fff
+    color: #d22856
+
+  &:active
+    background-color: #fff
+    color: rgba(#d22856, 0.3)
+
+
 .btn--pink
+  font-size: 18px
   color: #d22856
   border-color: #d22856
 
@@ -44,11 +62,13 @@
     color: rgba(255, 255, 255, 0.3)
     background-color: #d22856
 
+
 .btn--grey
   color: rgba(#283645, 0.1)
   border-color: rgba(#283645, 0.1)
 
   &:hover
+    background-color: transparent
     color: rgba(#283645, 0.3)
     border-color: #b5b9be
 
@@ -56,6 +76,7 @@
     color: rgba(#ffffff, 0.3)
     border-color: #b5b9be
     background-color: #b5b9be
+
 
 .btn--flat
   padding: 16.5px 30px
@@ -71,4 +92,14 @@
   border: none
 
   text-transform: uppercase
+
+  &:hover
+    background-color: #1c9b5e
+
+  &:active
+    background-color: #1c9b5e
+    color: rgba(#ffffff, 0.3)
+
+  &:disabled
+    background-color: #e5e5e5
 
