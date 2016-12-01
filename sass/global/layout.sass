@@ -13,7 +13,7 @@ body
   background-color: $body-bg-color
   margin: 0px
   padding: 0px
-  min-width: $page-max-width
+  max-width: $page-max-width
 
 
 input,
@@ -44,7 +44,8 @@ input[type=password]
   padding: 14.5px 20px
   margin: 0px
 
-  min-width: 300px
+  min-width: 280px
+  width: 100%
   height: 63px
 
   border: 2px solid #e5e5e5;
@@ -59,6 +60,8 @@ input[type=password]
   &:focus
     border-color: #d22856
 
+label
+  cursor: pointer
 
 textarea
   box-sizing: border-box
@@ -67,6 +70,7 @@ textarea
 
   min-width: 280px
   min-height: 201px
+  width: 100%
 
   resize: none
 
@@ -84,6 +88,8 @@ textarea
 
 
 fieldset
+  margin: 0px
+  padding: 10px
   border: 2px solid #e6e6e6
 
 fieldset > ul
@@ -95,7 +101,7 @@ fieldset > ul
 legend
   font-size: 14px
   font-weight: $font-w-regular
-  line-height: 30px
+  line-height: 18px
   color: #d22856
   text-transform: uppercase
   text-align: center
@@ -122,8 +128,6 @@ p
 
 
 em
-  font-size: 24px
-  font-weight: $font-w-light
   font-style: normal
   color: #d22856
 
@@ -161,12 +165,19 @@ h5
   line-height: 1.2
 
 .page-content
-  width: 100vw
+
 
 .page-container
+  width: 320px
+
   margin-left: auto
   margin-right: auto
 
   max-width: $page-max-width
   min-width: $page-min-width
 
+  @media (min-width: $tablet-max-width)
+    width: $tablet-max-width
+
+  @media (min-width: $desktop-max-width)
+    width: $desktop-max-width

@@ -1,0 +1,206 @@
+
+.contest-form
+
+.contest-form__contacts-input
+  position: relative
+
+.contest-form__input-btn
+  display: none
+  position: absolute
+
+  top: 0px
+  right: 0px
+
+  width: 63px
+  height: 63px
+
+  font-size: 0px
+
+
+.contest-form & input[type="checkbox"],
+.contest-form & input[type="radio"]
+  display: none
+
+.contest-form__checkbox-icon-tick,
+.contest-form__radio-icon-tick
+  display: none
+
+
+.contest-form input[type="checkbox"]
+  &:checked + .contest-form__checkbox-icon .contest-form__checkbox-icon-tick
+    display: inline-block
+
+
+.contest-form__checkbox-control
+  display: block
+  position: relative
+  padding: 5px
+  padding-left: 65px
+
+
+.contest-form__checkbox-icon
+  position: absolute
+  box-sizing: border-box
+
+  top: 0
+  left: 0
+
+  width: 39px
+  height: 39px
+
+  background-color: #FFF
+  border: 2px solid #e5e5e5
+  border-radius: 3px
+
+
+.contest-form__checkbox-icon-tick
+  position: absolute
+
+  top: 50%
+  left: 50%
+
+  transform: translate(-50%, -50%)
+
+
+.contest-form__checkbox-label
+  display: inline-block
+  vertical-align: top
+
+
+.contest-form__radio-icon
+  position: relative
+
+
+.contest-form input[type="radio"]
+  &:checked + .contest-form__radio-icon::before
+    content: ""
+    display: block
+    position: absolute
+
+    top: 50%
+    left: 50%
+
+    width: 16px
+    height: 16px
+
+    background-color: #d22856
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+
+
+.contest-form__radio-control
+  display: block
+  position: relative
+  padding: 5px
+  padding-left: 65px
+
+
+.contest-form__radio-icon
+  position: absolute
+  box-sizing: border-box
+
+  top: 0
+  left: 0
+
+  width: 38px
+  height: 38px
+
+  background-color: #FFF
+  border: 2px solid #e5e5e5
+  border-radius: 50%
+
+
+.contest-form__section
+  margin: 0px
+  padding: 20px
+  border: none
+
+  &--id
+    background-color: #ffffff
+
+  &--efforts .contest-form__title
+    padding: 40px 20px
+    padding-bottom: 20px
+
+  &--contacts
+    background-color: #ffffff
+
+  &--app .contest-form__title
+    padding: 40px 20px
+    padding-bottom: 20px
+
+  &--message
+    position: relative
+    padding:  90px 20px
+    padding-bottom: 40px
+    background-color: #ffffff
+
+  &--message .contest-form__title
+    position: absolute
+    display: block
+
+    top: 0px
+    left: 50%
+
+    width: 100%
+
+    padding: 0px
+    padding-top: 50px
+    transform: translateX(-50%)
+
+
+.contest-form__id-item
+  padding-bottom: 20px
+
+
+.contest-form__id-label
+  display: block
+
+  padding-left: 20px
+  padding-right: 10px
+
+  font-size: 14px
+  line-height: 30px
+  color: #d22856
+
+  text-transform: uppercase
+
+
+.contest-form__efforts-item
+  padding-bottom: 43px
+
+
+.contest-form__contacts-item
+  padding-bottom: 20px
+
+
+.contest-form__contacts-label
+  display: block
+
+  padding-left: 20px
+  padding-right: 10px
+
+  font-size: 14px
+  line-height: 30px
+  color: #d22856
+
+  text-transform: uppercase
+
+
+.contest-form__app-item
+  padding-bottom: 35px
+
+
+.contest-form__bottom-wrap
+  background-color: #FFF
+
+  text-align: center
+
+
+.contest-form__wran-message
+  margin-top: 40px
+
+  font-size: 14px
+  line-height: 30px
+
+  text-transform: uppercase
