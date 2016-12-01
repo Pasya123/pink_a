@@ -1,0 +1,27 @@
+
+.promo__header
+  text-align: center
+
+
+.promo__item
+  &:not(:last-child) .promo__item-img-wrap
+    display: none
+
+
+.promo__item-content
+  text-align: center
+
+
+.promo__item-img-wrap
+  position: relative
+  height: 300px
+
+  overflow: hidden
+
+  & img
+    display: block
+    position: absolute
+    bottom: -50px
+    left: 50%
+
+    transform: translateX(-50%)
