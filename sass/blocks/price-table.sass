@@ -1,0 +1,67 @@
+
+.price-table
+  display: inline-table
+  border-collapse: collapse
+
+
+.price-table__head-cell
+  font-weight: $font-w-bold
+  color: #ffffff
+  background-color: #283645
+  text-transform: uppercase
+
+
+.price-table__head-cell,
+.price-table__cell
+  box-sizing: border-box
+  height: 63px
+  width: 25%
+
+
+  font-size: 0px
+  text-align: center
+  vertical-align: middle
+  border: 2px solid #e5e5e5
+  background-color: #ffffff
+
+
+.price-table__head-cell
+  padding: 5px 20px
+  font-size: 18px
+  line-height: 30px
+  font-weight: $font-w-regular
+  color: #283645
+  text-transform: none
+
+  &--inverse
+    color: #ffffff
+    background-color: #283645
+
+
+.price-table__title
+  font-weight: $font-w-bold
+  text-transform: uppercase
+
+
+.price-table__cost
+  font-size: 24px
+  font-weight: $font-w-light
+  text-transform: uppercase
+
+
+.price-table__mark
+  display: inline-block
+  position: relative
+
+  width: 50px
+  height: 50px
+
+
+.price-table__mark-icon
+  display: block;
+  position: absolute
+
+  top: 50%
+  left: 50%
+
+  transform: translate(-50%, -50%)

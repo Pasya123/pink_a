@@ -271,40 +271,96 @@
     <section class="price">
       <div class="page-container">
         <h2 class="price__header  visually-hidden">Прейскурант</h2>
-        <table class="price__table">
+        <table class="price-table">
+          <thread>
+            <tr>
+              <th></th>
+              <th class="price-table__head-cell  price-table__head-cell--inverse">
+                <div class="price-table__title">База</div>
+                <div class="price-table__cost">1,99 USD</div>
+              </th>
+              <th class="price-table__head-cell  price-table__head-cell--inverse  price-table__head-cell--hit">
+                <div class="price-table__title">Стандарт</div>
+                <div class="price-table__cost">3,99 USD</div>
+              </th>
+              <th class="price-table__head-cell  price-table__head-cell--inverse">
+                <div class="price-table__title">Анлим</div>
+                <div class="price-table__cost">9,99 USD</div>
+              </th>
+            </tr>
+          </thread>
           <tbody>
-            <tr class="price__table-header">
-              <th class="price__table-header-col"></th>
-              <th class="price__table-header-col">
-                <div class="price__title">База</div>
-                <div class="price__cost">1,99 USD</div>
-              </th>
-              <th class="price__table-header-col  price__table-header-col--hit">
-                <div class="price__title">Стандарт</div>
-                <div class="price__cost">3,99 USD</div>
-              </th>
-              <th class="price__table-header-col">
-                <div class="price__title">Анлим</div>
-                <div class="price__cost">9,99 USD</div>
-              </th>
+            <tr class="price-table__row">
+              <th class="price-table__head-cell">Розовый фильтр</th>
+              <td class="price-table__cell">
+                <span class="price-table__mark">+
+                  <svg class="price-table__mark-icon" width="31" height="21">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                  </svg>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__mark">+
+                  <svg class="price-table__mark-icon" width="31" height="21">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                  </svg>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__mark">+
+                  <svg class="price-table__mark-icon" width="31" height="21">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                  </svg>
+                </span>
+              </td>
             </tr>
-            <tr class="price__table-row">
-              <th class="price__table-col">Розовый фильтр</th>
-              <td class="price__table-col"><span class="price__mark  price__mark--yes">+</span></td>
-              <td class="price__table-col"><span class="price__mark  price__mark--yes">+</span></td>
-              <td class="price__table-col"><span class="price__mark  price__mark--yes">+</span></td>
+            <tr class="price-table__row">
+              <th class="price-table__head-cell">Смайлики</th>
+              <td class="price-table__cell">
+                <span class="price-table__mark">-
+                  <svg class="price-table__mark-icon" width="27" height="27">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                  </svg>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__mark">+
+                  <svg class="price-table__mark-icon" width="31" height="21">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                  </svg>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__mark">+
+                  <svg class="price-table__mark-icon" width="31" height="21">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                  </svg>
+                </span>
+              </td>
             </tr>
-            <tr class="price__table-row">
-              <th class="price__table-col">Смайлики</th>
-              <td class="price__table-col"><span class="price__mark  price__mark--no">-</span></td>
-              <td class="price__table-col"><span class="price__mark  price__mark--yes">+</span></td>
-              <td class="price__table-col"><span class="price__mark  price__mark--yes">+</span></td>
-            </tr>
-            <tr class="price__table-row">
-              <th class="price__table-col">Комментарии</th>
-              <td class="price__table-col"><span class="price__mark  price__mark--no">-</span></td>
-              <td class="price__table-col"><span class="price__mark  price__mark--no">-</span></td>
-              <td class="price__table-col"><span class="price__mark  price__mark--yes">+</span></td>
+            <tr class="price-table__row">
+              <th class="price-table__head-cell">Комментарии</th>
+              <td class="price-table__cell">
+                <span class="price-table__mark">-
+                  <svg class="price-table__mark-icon" width="27" height="27">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                  </svg>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__mark">-
+                  <svg class="price-table__mark-icon" width="27" height="27">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                  </svg>
+                </span>
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__mark">+
+                  <svg class="price-table__mark-icon" width="31" height="21">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                  </svg>
+                </span>
+              </td>
             </tr>
           </tbody>
         </table>
