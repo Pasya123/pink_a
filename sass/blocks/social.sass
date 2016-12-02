@@ -1,18 +1,17 @@
 
 
-.social-links
+.social
   margin: 20px auto
   width: 177px
 
 
-.social-links__items
+.social__links
   display: flex
   justify-content: space-between
   align-items: center
-  font-size: 0px
 
 
-.social-links__item
+.social__link
   position: relative
   display: inline-block
 
@@ -27,13 +26,23 @@
 
   font-size: 0
 
-  background-color: transparent
-  border: 3px solid #e9ebec
+  background-color: rgba(#fefefe, 0.1)
+  border: 3px solid rgba(#283645, 0.1)
   border-radius: 50%
   cursor: pointer
 
+  &:hover
+    background-color: #fefefe
+    border-color: #283645
 
-.social-links__item-ico
+  &:active
+    background-color: rgba(#fefefe, 0.1)
+    border-color: rgba(#283645, 0.1)
+
+  &:active .social__icon
+    opacity: 0.3
+
+.social__icon
   position: absolute
 
   top: 50%

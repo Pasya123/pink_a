@@ -13,19 +13,38 @@
   padding: 35px 20px
   padding-bottom: 0px
 
+  &:hover svg path
+    fill: #d22856
 
-.page-footer__copyright
+  &:active
+    opacity: 0.3
+
+  &:active svg g:first-child path
+    fill: #283645
+
+
+.page-footer__copy
   height: 35px
   line-height: 35px
   text-align: center
 
+  &:hover .page-footer__copy-logo path
+    fill: #283645
 
-.page-footer__copyright-label
+  &:active .page-footer__copy-logo path
+    fill: #bec2c7
+
+
+.page-footer__copy-label
   vertical-align: middle
   font-size: 14px
   line-height: 18px
+  color: #283645
+  text-decoration: none
 
 
-.page-footer__copyright-logo
+.page-footer__copy-logo
   display: inline-block
   vertical-align: middle
+
+
