@@ -103,16 +103,20 @@
   </div>
   <!-- SVG symbols END -->
   <header class="page-header">
-    <div class="page-container">
-      <nav class="main-nav">
+    <nav class="main-nav">
+      <div class="page-container">
         <div class="main-nav__logo">
           <svg class="main-nav__mobile-logo" width="74" height="24">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
           </svg>
+          <svg class="main-nav__tablet-logo" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
+          </svg>
+          <img class="main-nav__desktop-logo" src="img/logotype-white-desktop.png" width="147" height="40" alt="PINK">
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__a">Главная</a>
+            <a class="main-nav__a  main-nav__a--active">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__a" href="photo.html">Фотографии</a>
@@ -138,8 +142,10 @@
             </svg>
           </button>
         </div>
-      </nav>
-      <section class="page-header__intro">
+      </div>
+    </nav>
+    <section class="page-header__intro">
+      <div class="page-container">
         <div class="page-header__intro-img">
           <img src="img/iphone-hand-mobile@1x.png" alt="PINK & iPhone">
         </div>
@@ -174,8 +180,8 @@
             <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </header>
   <main class="page-content">
     <section class="promo">
@@ -431,6 +437,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
