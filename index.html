@@ -104,7 +104,7 @@
   <!-- SVG symbols END -->
   <header class="page-header">
     <nav class="main-nav">
-      <div class="page-container">
+      <div class="main-nav__wrap">
         <div class="main-nav__logo">
           <svg class="main-nav__mobile-logo" width="74" height="24">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
@@ -144,42 +144,38 @@
         </div>
       </div>
     </nav>
-    <section class="page-header__intro">
-      <div class="page-container">
-        <div class="page-header__intro-img">
+    <section class="page-header__content">
+      <div class="page-header__content-wrap">
+        <div class="page-header__img-wrap">
           <img src="img/iphone-hand-mobile@1x.png" alt="PINK & iPhone">
         </div>
-        <div class="page-header__intro-info">
-          <div class="page-header__intro-header page-header__intro-header--hide">
-            <h2>Взгляните на жизнь иначе!</h2>
-          </div>
-          <div class="page-header__intro-content">
+        <section class="page-header__intro">
+          <h2>Взгляните на жизнь иначе!</h2>
+          <div class="upload-app">
             <a class="btn  btn--inverse  btn--adptive" href="#">Скачать приложение</a>
+            <div class="upload-app__links">
+              <a class="upload-app__link  upload-app__link--apple" target="blank" href="https://itunes.apple.com">
+                iTunes
+                <svg class="upload-app__icon" width="46.21" height="56.753">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-apple"></use>
+                </svg>
+              </a>
+              <a class="upload-app__link  upload-app__link--android" target="blank" href="https://play.google.com">
+                GooglePlay
+                <svg class="upload-app__icon" width="42.084" height="47.041">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-android"></use>
+                </svg>
+              </a>
+              <a class="upload-app__link  upload-app__link--microsoft" target="blank" href="https://www.microsoft.com">
+                MicrosoftStore
+                <svg class="upload-app__icon" width="44" height="42">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-microsoft"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="upload-app__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <div class="page-header__app-items">
-            <a class="page-header__app-item  page-header__app-item--apple" target="blank" href="https://itunes.apple.com">
-              <svg class="page-header__app-logo" width="46.21px" height="56.753px">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-apple"></use>
-              </svg>
-              iTunes
-            </a>
-            <a class="page-header__app-item  page-header__app-item--adroid" target="blank" href="https://play.google.com">
-              <svg class="page-header__app-logo" width="42.084px" height="47.041px">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-android"></use>
-              </svg>
-              GooglePlay
-            </a>
-            <a class="page-header__app-item  page-header__app-item--ms" target="blank" href="https://www.microsoft.com">
-              <svg class="page-header__app-logo" width="43.922px" height="41.992px">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-microsoft"></use>
-              </svg>
-              MicrosoftStore
-            </a>
-          </div>
-          <div class="page-header__intro-content">
-            <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-        </div>
+        </section>
       </div>
     </section>
   </header>

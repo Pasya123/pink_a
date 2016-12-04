@@ -1,16 +1,11 @@
 
 .main-nav
-  position: relative
-
+  margin-bottom: -66px
   min-height: 65px
 
-  z-index: 100
+  z-index: 150
 
-  &--closed
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
+  &--closed .main-nav__btns
     background-color: rgba(#000000, 0.3)
 
   &--closed .main-nav__items
@@ -33,6 +28,13 @@
 
   &--closed .main-nav__btn--open
     display: inline-block
+
+
+.main-nav__wrap
+  position: relative
+
+  +clearfix()
+  +adaptive-container()
 
 
 .main-nav__logo
@@ -162,9 +164,9 @@
 @media (min-width: $tablet-max-width)
 
   .main-nav
+    margin-bottom: -110px
     min-height: 110px
 
-    background-color: rgba(#000000, 0.3)
 
     &--closed .main-nav__btn
       right: 32px
@@ -200,14 +202,14 @@
 
   .main-nav
     position: absolute
-    background-size: border-box
-
     padding: 27px 0px
 
     min-height: 56px
     width: 100%
 
     font-size: 0px
+
+    background-color: rgba(#000000, 0.3)
 
     &--closed .main-nav__logo
       position: relative

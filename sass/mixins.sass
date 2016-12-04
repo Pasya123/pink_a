@@ -1,1 +1,23 @@
 
+=clearfix()
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+
+=adaptive-container()
+  width: 320px
+
+  margin-left: auto
+  margin-right: auto
+
+  max-width: $page-max-width
+  min-width: $page-min-width
+
+  @media (min-width: $tablet-max-width)
+    width: $tablet-max-width
+
+  @media (min-width: $desktop-max-width)
+    width: $desktop-max-width
+
