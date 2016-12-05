@@ -1,27 +1,18 @@
 
 .main-nav
-  margin-bottom: -66px
-  min-height: 65px
+  +adaptive-container()
 
-  z-index: 150
+  margin-bottom: -67px
 
-  &--closed .main-nav__btns
-    background-color: rgba(#000000, 0.3)
+  &--closed
+    margin-bottom: -70px
 
   &--closed .main-nav__items
     display: none
 
-  &--closed .main-nav__logo
-    position: absolute
-    padding-bottom: 20px
-    top: 0
-    left: 0
-
-    background-color: transparent
+  &--closed .main-nav__panel
+    background-color: rgba(#000000, 0.3)
     box-shadow: none
-
-  &--closed .main-nav__btn
-    right: 12px
 
   &--closed .main-nav__btn--close
     display: none
@@ -30,28 +21,30 @@
     display: inline-block
 
 
-.main-nav__wrap
+.main-nav__logo
+  display: none
+
+
+.main-nav__panel
   position: relative
 
-  +clearfix()
-  +adaptive-container()
+  min-height: 70px
 
-
-.main-nav__logo
-  box-sizing: border-box
-
-  padding: 20px
-  padding-top: 21px
-  padding-bottom: 25px
+  font-size: 0px;
+  text-align: right
 
   background-color: #283645
   box-shadow: inset 0px -3px 0px -2px #000101
 
-  z-index: 150
+  z-index: 500
 
 
 .main-nav__mobile-logo
   display: block
+
+  float: left
+
+  margin: 20px
 
   &:hover svg path
     fill: #d22856
@@ -70,14 +63,14 @@
     fill: rgba(#fff, 0.3)
 
 
-.main-nav__desktop-logo
-  display: none
-
-
 .main-nav__items
+  position: relative
+
   margin: 0px
   padding: 0px
   list-style-type: none
+
+  z-index: 500
 
 
 .main-nav__a
@@ -103,45 +96,25 @@
     color: rgba(#d22856, 0.3)
 
 
-.main-nav__btns
-  position: absolute
-  box-sizing: border-box
-
-  top: 0
-  right: 0
-
-  width: 100%
-  height: 65px
-
-  text-align: right
-  background: transparent
-  z-index: 100
-
-.nojs .main-nav__btns
-  display: none
-
-
 .main-nav__btn
-  position: absolute
+  position: relative
+  vertical-align: top
 
-  padding: 0px;
+  padding: 0px
 
-  top: 50%
-  right: 0px
-
-  width: 66px
-  height: 66px
+  width: 65px
+  height: 65px
 
   font-size: 0px
 
   border: none
   background: transparent
+  outline: none
   cursor: pointer
-
-  transform: translateY(-50%)
 
   &--open
     display: none
+    margin: 0px 10px
 
   &:hover .main-nav__btn-ico svg path
     fill: #d22856
@@ -149,6 +122,9 @@
   &:active .main-nav__btn-ico svg path
     fill: rgba(#d22856, 0.3)
 
+
+.nojs .main-nav__btn
+  display: none
 
 
 .main-nav__btn-ico
@@ -160,21 +136,14 @@
   transform: translate(-50%, -50%);
 
 
-
 @media (min-width: $tablet-max-width)
 
   .main-nav
     margin-bottom: -110px
+
+
+  .main-nav__panel
     min-height: 110px
-
-
-    &--closed .main-nav__btn
-      right: 32px
-
-
-  .main-nav__logo
-    padding: 27px 40px
-    padding-bottom: 43px
 
 
   .main-nav__mobile-logo
@@ -184,39 +153,41 @@
   .main-nav__tablet-logo
     display: block
 
+    float: left
+
+    margin: 26px 40px
+
     & svg path
       fill: #fff
 
 
-  .main-nav__btns
-    padding-right: 52px
-    height: 110px
-
-
   .main-nav__btn
-    right: 17px
 
+    &--close
+      margin: 23px 19px 22px
+
+    &--open
+      margin: 23px 33px 22px
 
 
 @media (min-width: $desktop-max-width)
 
   .main-nav
-    position: absolute
-    padding: 27px 0px
 
-    min-height: 56px
-    width: 100%
+    +clearfix()
 
-    font-size: 0px
+    position: relative
 
     background-color: rgba(#000000, 0.3)
 
-    &--closed .main-nav__logo
-      position: relative
+    z-index: 500
+
+    &--closed  .main-nav__panel
+      display: none
 
     & .main-nav__logo
-      display: inline-block
-      vertical-align: top
+      display: block
+      position: relative
 
       float: left
 
@@ -226,6 +197,7 @@
 
       background-color: transparent
       box-shadow: none
+      z-index: 150
 
     & .main-nav__items
       display: flex
@@ -241,13 +213,24 @@
       z-index: 150
 
 
+  .main-nav__wrap
+    +clearfix()
+
+    padding: 26px 120px
+
+
+  .main-nav__panel
+    display: none
+
+
   .main-nav__item
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
 
+
   .main-nav__a
-    padding: 16px 0px
+    padding: 19px 0px
 
     font-size: 18px
     line-height: 18px
@@ -268,16 +251,4 @@
 
     &--active:hover
       border-bottom: 2px solid #d22856
-
-
-  .main-nav__tablet-logo
-    display: none
-
-  .main-nav__desktop-logo
-    display: block
-
-  .main-nav__btns
-    display: none
-
-
 
