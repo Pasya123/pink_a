@@ -2,17 +2,22 @@
 .photo-gallery
   background-color: #ffffff
 
-.photo-gallery__content
-  padding: 50px 20px
-  color: #283645
+
+.photo-gallery__intro
+  padding: 45px 35px 49px
+
+  font-size: 14px
   line-height: 30px
+  color: #283645
+
   text-align: center
 
   background-color: #ffffff
 
 
 .photo-gallery__items
-  padding-bottom: 20px
+  padding-bottom: 9px
+
 
 .photo-gallery__item
   font-size: 14px
@@ -23,40 +28,55 @@
     display: block
     margin: 0 auto
 
+  & picture
+    position: relative
+
+  &--panorama picture::before
+    content: "Панорама дня"
+    position: absolute
+
+    top: 0px
+    right: 20px
+
+    padding: 6px 20px
+
+    font-family: $font-family-base
+    font-size: 12px
+    line-height: 24px
+    font-weight: $font-w-bold
+    color: #ffffff
+
+    text-transform: uppercase
+    background-color: #d22856
+
 
 .photo-gallery__caption
-  padding: 15px 20px
+  padding: 18px 17px 17px
   margin: 20px
   margin-top: 0px
 
-  background-color: #f2f2f2
+  min-height: 86px
 
-.photo-gallery__id
+  background-color: #f2f2f2
 
 
 .photo-gallery__name
+  vertical-align: top
   font-weight: $font-w-bold
 
 
 .photo-gallery__date
+  vertical-align: top
+  font-size: 12px
   font-weight: $font-w-light
   text-transform: uppercase
 
 
 .photo-gallery__comment
+  margin-bottom: 5px
+
   color: #283645
 
-
-.photo-gallery__likes-count
-  display: inline-block
-  vertical-align: top
-
-  color: #d22856
-  text-transform: uppercase
-  line-height: 20px
-
-.photo-gallery__likes
-  line-height: 20px
 
 .photo-gallery__like-btn
   position: relative
@@ -64,13 +84,12 @@
   display: inline-block
   vertical-align: top
 
-  padding: 0px
+  padding: 5px 30px
 
-  width: 20px
-  height: 20px
-
-  font-size: 0
+  font-size: 12px
   line-height: 20px
+  color: #d22856
+  text-transform: uppercase
 
   border: none
   background-color: transparent
@@ -81,6 +100,6 @@
   position: absolute
 
   top: 50%
-  left: 50%
+  left: 1px
 
-  transform: translate(-50%, -50%)
+  transform: translateY(-50%)

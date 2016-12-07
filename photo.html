@@ -102,17 +102,29 @@
   </div>
   <header class="page-header">
     <nav class="main-nav">
-      <div class="page-container">
+      <div class="main-nav__wrap">
         <div class="main-nav__logo">
-          <a href="index.html">
-            <svg class="main-nav__mobile-logo" width="74" height="24">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
+          <img src="img/logotype-white-desktop.png" width="147" height="40" alt="PINK">
+        </div>
+        <div class="main-nav__panel">
+          <svg class="main-nav__mobile-logo" width="74" height="24">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="main-nav__tablet-logo" width="146.3" height="40.375">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
+          </svg>
+          <button class="main-nav__btn  main-nav__btn--open">
+            Открыть меню
+            <svg class="main-nav__btn-ico" width="49.945" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use>
             </svg>
-            <svg class="main-nav__tablet-logo" width="146.3" height="40.375">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
+          </button>
+          <button class="main-nav__btn  main-nav__btn--close">
+            Закрыть меню
+            <svg class="main-nav__btn-ico" width="23.867" height="24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-cross"></use>
             </svg>
-            <img class="main-nav__desktop-logo" src="img/logotype-white-desktop.png" width="147" height="40" alt="PINK">
-          </a>
+          </button>
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
@@ -128,36 +140,20 @@
             <a class="main-nav__a" href="#">HTML Academy</a>
           </li>
         </ul>
-        <div class="main-nav__btns">
-          <button class="main-nav__btn  main-nav__btn--open">
-            Открыть меню
-            <svg class="main-nav__btn-ico" width="49.945" height="24">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use>
-            </svg>
-          </button>
-          <button class="main-nav__btn  main-nav__btn--close">
-            Закрыть меню
-            <svg class="main-nav__btn-ico" width="23.867" height="24">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-cross"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </nav>
-    <section class="page-header__intro">
-      <div class="page-container">
-        <div class="page-header__intro-header">
-          <h2>Фотографии пользователей</h2>
-        </div>
+    <div class="page-header__content  page-header__content--short">
+      <div class="page-header__wrap">
+        <h2>Фотографии пользователей</h2>
       </div>
-    </section>
+    </div>
   </header>
   <main class="page-content">
     <section class="photo-gallery">
       <div class="page-container">
-        <h2 class="photo-gallery__header  visually-hidden">Фотографии пользователей</h2>
-        <div class="photo-gallery__content">
-          <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <h2 class="visually-hidden">Фотографии пользователей</h2>
+        <div class="photo-gallery__intro">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </div>
         <div class="photo-gallery__items">
           <figure class="photo-gallery__item  photo-gallery__item--panorama">
@@ -170,19 +166,14 @@
                 <span class="photo-gallery__date">(5 минут назад)</span>
               </div>
               <div class="photo-gallery__comment">
-                <p>
-                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-                </p>
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </div>
-              <div class="photo-gallery__likes">
-                <button class="photo-gallery__like-btn">
-                  Лайк!
-                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-                  </svg>
-                </button>
-                <span class="photo-gallery__likes-count">Нравиться: 215</span>
-              </div>
+              <button class="photo-gallery__like-btn">
+                Нравится: 215
+                <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
             </figcaption>
           </figure>
           <figure class="photo-gallery__item">
@@ -195,17 +186,14 @@
                 <span class="photo-gallery__date">(5 часов назад)</span>
               </div>
               <div class="photo-gallery__comment">
-                <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                Вчера он на луну летал, сегодня в руки к нам попал.
               </div>
-              <div class="photo-gallery__likes">
-                <button class="photo-gallery__like-btn">
-                  Лайк!
-                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-                  </svg>
-                </button>
-                <span class="photo-gallery__likes-count">Нравиться: 356</span>
-              </div>
+              <button class="photo-gallery__like-btn">
+                Нравится: 356
+                <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
             </figcaption>
           </figure>
           <figure class="photo-gallery__item">
@@ -218,17 +206,14 @@
                 <span class="photo-gallery__date">(12 часов назад)</span>
               </div>
               <div class="photo-gallery__comment">
-                <p>Соседи будут рады!</p>
+                Соседи будут рады!
               </div>
-              <div class="photo-gallery__likes">
-                <button class="photo-gallery__like-btn">
-                  Лайк!
-                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-                  </svg>
-                </button>
-                <span class="photo-gallery__likes-count">Нравиться: 666</span>
-              </div>
+              <button class="photo-gallery__like-btn">
+                Нравится: 666
+                <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
             </figcaption>
           </figure>
           <figure class="photo-gallery__item">
@@ -241,17 +226,14 @@
                 <span class="photo-gallery__date">(20 часов назад)</span>
               </div>
               <div class="photo-gallery__comment">
-                <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+                Здесь могла быть ваша цитата о высоком и вечном.
               </div>
-              <div class="photo-gallery__likes">
-                <button class="photo-gallery__like-btn">
-                  Лайк!
-                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-                  </svg>
-                </button>
-                <span class="photo-gallery__likes-count">Нравиться: 215</span>
-              </div>
+              <button class="photo-gallery__like-btn">
+                Нравится: 215
+                <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
             </figcaption>
           </figure>
           <figure class="photo-gallery__item">
@@ -264,17 +246,14 @@
                 <span class="photo-gallery__date">(25 часов назад)</span>
               </div>
               <div class="photo-gallery__comment">
-                <p>Самая кубанская в мире!</p>
+                Самая кубанская в мире!
               </div>
-              <div class="photo-gallery__likes">
-                <button class="photo-gallery__like-btn">
-                  Лайк!
-                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-                  </svg>
-                </button>
-                <span class="photo-gallery__likes-count">Нравиться: 4</span>
-              </div>
+              <button class="photo-gallery__like-btn">
+                Нравится: 4
+                <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
             </figcaption>
           </figure>
           <figure class="photo-gallery__item">
@@ -287,17 +266,14 @@
                 <span class="photo-gallery__date">(40 часов назад)</span>
               </div>
               <div class="photo-gallery__comment">
-                <p>Где снег-то?</p>
+                Где снег-то?
               </div>
-              <div class="photo-gallery__likes">
-                <button class="photo-gallery__like-btn">
-                  Лайк!
-                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-                  </svg>
-                </button>
-                <span class="photo-gallery__likes-count">Нравиться: 150</span>
-              </div>
+              <button class="photo-gallery__like-btn">
+                Нравится: 150
+                <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
             </figcaption>
           </figure>
           <figure class="photo-gallery__item">
@@ -310,17 +286,14 @@
                 <span class="photo-gallery__date">(45 часов назад)</span>
               </div>
               <div class="photo-gallery__comment">
-                <p>Всем GM и взаимные лайки!</p>
+                Всем GM и взаимные лайки!
               </div>
-              <div class="photo-gallery__likes">
-                <button class="photo-gallery__like-btn">
-                  Лайк!
-                  <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-                  </svg>
-                </button>
-                <span class="photo-gallery__likes-count">Нравиться: 2560</span>
-              </div>
+              <button class="photo-gallery__like-btn">
+                Нравится: 2560
+                <svg class="photo-gallery__btn-ico" width="12.545" height="11.99">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
             </figcaption>
           </figure>
         </div>
@@ -330,7 +303,8 @@
       <div class="page-container">
         <h2 class="visually-hidden">Выкладывайте свои фото!</h2>
         <div class="pink-app__content">
-          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          Затмите их всех!
+          <br>Выкладывайте все, что накопилось в телефоне!
         </div>
         <div class="pink-app__interface">
           <div class="pink-app__preview">
@@ -339,7 +313,7 @@
           <form class="pink-app__form" action="/" method="post">
             <input name="file-name" type="file">
             <div class="pink-app__controls">
-              <div class="pink-app__control">
+              <div class="pink-app__control  pink-app__control--active">
                 <button class="pink-app__btn">
                   Обрезать
                   <svg class="pink-app__icon" width="48" height="48">
@@ -366,12 +340,14 @@
                 </button>
                 <input class="pink-app__range" name="contrast" type="range" min="0" max="100" step="1" value="60">
               </div>
-              <div class="pink-app__control">
-                <input class="pink-app__range" name="common" type="range" min="0" max="100" step="1" value="60">
+              <div class="pink-app__control pink-app__control--common">
+                <input class="pink-app__range" name="common" type="range" min="0" max="100" step="1" value="85">
               </div>
             </div>
-            <button class="btn btn--adptive btn--pink" type="submit">Запостить</button>
-            <button class="btn btn--adptive btn--grey" type="reset">Отмена</button>
+            <div class="pink-app__form-wrap">
+              <button class="btn btn--pink" type="submit">Запостить</button>
+              <button class="btn btn--grey" type="reset">Отмена</button>
+            </div>
           </form>
         </div>
       </div>

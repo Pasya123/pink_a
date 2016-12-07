@@ -5,18 +5,19 @@
 
 
 .pink-app__content
-  padding: 10px 20px
+  padding: 10px 30px 42px
 
+  font-size: 14px
+  line-height: 30px
   text-align: center
-
-  & p
-    line-height: 30px
 
 
 .pink-app__interface
-  padding: 20px
+  padding: 20px 0px
   background-color: #f2f2f2
 
+.pink-app__preview
+  padding: 0px 20px
 
 .pink-app__img
   display: block
@@ -34,19 +35,43 @@
 
 
 .pink-app__controls
-  padding: 30px 20px
-  text-align: center
+  display: flex
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 36px 40px 28px
+
   font-size: 0
+  text-align: center
+  border-bottom: 1px solid #dddfe0
 
 
 .pink-app__control
-  display: inline-block
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
 
-  &:not(:last-child) .pink-app__range
+  margin: 0px 10px
+
+  & .pink-app__range
     display: none
 
-  &:last-child
-    font-size: 14px
+  &--common
+    display: block
+    padding: 29px 0px 0px
+    margin: 0px
+    width: 100%
+
+  &--common .pink-app__range
+    display: block
+
+  &--active .pink-app__icon path:last-child
+    fill: #d22856;
+
+
+.pink-app__form-wrap
+  padding: 38px 20px 7px
 
 
 .pink-app__btn

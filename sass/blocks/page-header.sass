@@ -6,6 +6,10 @@
   position: relative
   z-index: 50
 
+  &--short .page-header__wrap
+    min-height: 237px
+    padding: 78px 20px 20px
+
 
 .page-header__wrap
   +adaptive-container()
@@ -22,6 +26,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg")
   background-repeat: no-repeat
   background-position: center top
+
+  & h2
+    margin: 20px 0px
+    text-align: center
 
 
 .page-header__img-wrap
