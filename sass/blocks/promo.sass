@@ -1,11 +1,35 @@
 
+.promo
+  color: #283645
+  background-color: #fff
+
+
 .promo__header
+  padding: 10px
+
   text-align: center
+
+  & h2
+    margin: 30px 20px 22px
+
+
+.promo__items
+  padding: 65px 20px 20px
 
 
 .promo__item
+
+  &:not(:last-child)
+    padding-bottom: 10px
+
   &:not(:last-child) .promo__item-img-wrap
     display: none
+
+  & h3
+    margin: 16px 0px 12px
+
+  & p
+    margin: 10px 0px 5px
 
 
 .promo__item-content
@@ -14,14 +38,14 @@
 
 .promo__item-img-wrap
   position: relative
-  height: 300px
+  height: 313px
 
   overflow: hidden
 
   & img
     display: block
     position: absolute
-    bottom: -50px
+    bottom: -42px
     left: 50%
 
     transform: translateX(-50%)

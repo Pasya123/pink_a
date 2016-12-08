@@ -103,3 +103,70 @@
   left: 1px
 
   transform: translateY(-50%)
+
+
+@media (min-width: $tablet-max-width)
+
+  .photo-gallery__intro
+    padding: 91px 70px 76px
+
+    font-size: 18px
+    line-height: 30px
+
+
+  .photo-gallery__items
+    display: flex
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    padding: 0px 40px
+
+
+  .photo-gallery__item
+    width: 48.387096%
+
+    & img
+      display: block
+      width: 100%
+      height: auto
+
+    & picture
+      position: relative
+      height: 300px
+
+    &--panorama
+      width: calc(100% + 80px)
+      margin: 0px -40px 30px
+
+    &--panorama .photo-gallery__caption
+      position: relative
+
+      margin: 0px 40px 20px
+      padding: 24px 27px 11px
+
+    &--panorama picture
+      height: 509px
+
+    &--panorama picture::before
+      top: 57px
+      right: 40px
+
+
+    &--panorama .photo-gallery__like-btn
+      position: absolute
+      top: 20px
+      right: 25px
+
+
+    &--panorama .photo-gallery__btn-ico
+      left: auto
+      right: 4px
+
+
+  .photo-gallery__caption
+    position: relative
+
+    margin: 0px
+    margin-bottom: 20px
+

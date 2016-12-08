@@ -1,13 +1,13 @@
 
 .reviews
-  padding: 20px 0px
+  padding: 0px 0px 25px
 
   background-color: #ffffff
   text-align: center
 
 
 .reviews__item
-  padding: 10px 20px
+  padding: 22px 20px 20px
 
   text-align: center
 
@@ -16,6 +16,8 @@
 
 
 .reviews__author-name
+  font-size: 18px
+  line-height: 30px
   font-weight: $font-w-bold
   color: #000000
 
@@ -25,12 +27,42 @@
 
 
 .reviews__comment
-  & p
-    line-height: 30px
+  padding: 13px 0px 10px
+
+  font-size: 14px
+  line-height: 30px
+  font-weight: $font-w-regular
 
 
 .reviews__toggles
   display: inline-block
+  vertical-align: top
+
+  height: 19px
+  line-height: 19px
+
+  font-size: 0px
+  text-align: center
+
+
+.reviews__toggle
+  display: inline-block
+  vertical-align: middle
+
+  box-sizing: border-box
+  margin: 0px 7px
+
+  width: 12px
+  height: 12px
+
+  background-color: #bec2c7
+  border: 3px solid #ffffff
+  border-radius: 50%
+  cursor: pointer
+
+  &--active
+    background-color: #fff
+    border: 3px solid #283645
 
 
 .reviews__control
