@@ -27,6 +27,12 @@
     border-top: none
     border-bottom: none
 
+  & .price-table__cell:nth-child(2)
+    border-left: none
+
+  & .price-table__cell:last-child
+    border-right: none
+
 
 .price-table__head-cell
   display: none
@@ -38,6 +44,13 @@
   height: 31px
   width: 280px
 
+  border: 2px solid #e5e5e5
+  background-color: #ffffff
+  background-clip: padding-box
+
+  &--hide
+    visibility: hidden
+    border: none
 
 
 .price-table__row
@@ -130,3 +143,72 @@
 
   &--yes path
     fill: #3dc644
+
+
+@media (min-width: $tablet-max-width)
+
+  .price-table
+    right: 0px
+    width: 620px
+
+
+  .price-table__header
+
+    & .price-table__cell
+      padding: 10px 5px 10px
+      width: 156px
+
+
+  .price-table__head-cell
+    display: table-cell
+    box-sizing: border-box
+
+    padding: 5px 15px
+    width: 156px
+    height: 46px
+
+    font-size: 14px
+    line-height: 30px
+    text-align: left
+    font-weight: $font-w-regular
+
+    color: #283645
+    text-transform: none
+
+
+  .price-table__row
+    &:first-child .price-table__cell
+      height: 46px
+      width: 156px
+      border-top: none
+
+
+  .price-table__cell
+    box-sizing: border-box
+
+    padding: 0px
+
+    height: 46px
+    width: 156px
+
+    font-size: 0px
+    text-align: center
+
+    &--hit::before
+      top: 4px
+      left: -56px
+
+
+  .price-table__title
+    font-size: 16px
+
+
+  .price-table__cost
+    font-size: 18px
+
+
+  .price-table__mark
+    position: relative
+    top: auto
+    right: auto
+    transform: none
