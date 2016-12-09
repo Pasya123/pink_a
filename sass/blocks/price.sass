@@ -1,13 +1,7 @@
 
 .price
-  position: relative
-  padding-top: 53px
-  padding-bottom: 30px
 
-  overflow: hidden
-  text-align: center
-
-  background-color: #f2f2f2
+  background-color: #fff
 
   & #toggle-1,
   & #toggle-2,
@@ -17,10 +11,10 @@
   & #toggle-1:checked ~ .price__toggles #toggle-lb-1,
   & #toggle-2:checked ~ .price__toggles #toggle-lb-2,
   & #toggle-3:checked ~ .price__toggles #toggle-lb-3
-    width: 12px
-    height: 12px
     background-color: #fff
     border: 3px solid #283645
+    &::after
+      display: none
 
   & #toggle-1:checked ~ .price__table-wrap .price-table
     right: 0px
@@ -30,6 +24,19 @@
 
   & #toggle-3:checked ~ .price__table-wrap .price-table
     right: 560px
+
+
+.price__wrap
+  +adaptive-container()
+  position: relative
+
+  padding-top: 53px
+  padding-bottom: 30px
+
+  text-align: center
+  background-color: #f2f2f2
+  overflow: hidden
+
 
 .price__separator
   position: absolute
@@ -60,8 +67,8 @@
   display: inline-block
   vertical-align: top
 
-  height: 16px
-  line-height: 16px
+  height: 15px
+  line-height: 15px
 
   font-size: 0px
   text-align: center
@@ -70,19 +77,27 @@
 .price__toggle
   display: inline-block
   vertical-align: middle
+  position: relative
 
   box-sizing: border-box
-  margin: 0px 8px
+  margin: 0px 7px
 
-  width: 6px
-  height: 6px
+  width: 12px
+  height: 12px
 
-  background-color: #bec2c7
   border-radius: 50%
   cursor: pointer
 
-  &--active
-    width: 12px
-    height: 12px
-    background-color: #fff
-    border: 3px solid #283645
+  &::after
+    content: ""
+    position: absolute
+
+    top: 50%
+    left: 50%
+
+    width: 6px
+    height: 6px
+
+    background-color: #bec2c7
+    border-radius: 50%
+    transform: translate(-50%, -50%)

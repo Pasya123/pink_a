@@ -38,8 +38,8 @@
   display: inline-block
   vertical-align: top
 
-  height: 16px
-  line-height: 16px
+  height: 15px
+  line-height: 15px
 
   font-size: 0px
   text-align: center
@@ -48,22 +48,37 @@
 .reviews__toggle
   display: inline-block
   vertical-align: middle
+  position: relative
 
   box-sizing: border-box
-  margin: 0px 9px
+  margin: 0px 7px
 
-  width: 6px
-  height: 6px
+  width: 12px
+  height: 12px
 
-  background-color: #bec2c7
   border-radius: 50%
   cursor: pointer
 
+  &::after
+    content: ""
+    position: absolute
+
+    top: 50%
+    left: 50%
+
+    width: 6px
+    height: 6px
+
+    background-color: #bec2c7
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+
   &--active
-    width: 12px
-    height: 12px
     background-color: #fff
     border: 3px solid #283645
+
+    &::after
+      display: none
 
 
 .reviews__control
