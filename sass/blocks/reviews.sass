@@ -7,7 +7,7 @@
 
 
 .reviews__item
-  padding: 22px 20px 20px
+  padding: 42px 20px 20px
 
   text-align: center
 
@@ -38,8 +38,8 @@
   display: inline-block
   vertical-align: top
 
-  height: 19px
-  line-height: 19px
+  height: 16px
+  line-height: 16px
 
   font-size: 0px
   text-align: center
@@ -50,20 +50,63 @@
   vertical-align: middle
 
   box-sizing: border-box
-  margin: 0px 7px
+  margin: 0px 9px
 
-  width: 12px
-  height: 12px
+  width: 6px
+  height: 6px
 
   background-color: #bec2c7
-  border: 3px solid #ffffff
   border-radius: 50%
   cursor: pointer
 
   &--active
+    width: 12px
+    height: 12px
     background-color: #fff
     border: 3px solid #283645
 
 
 .reviews__control
   display: none
+
+
+@media (min-width: $tablet-max-width)
+
+  .reviews
+    padding-bottom: 0px
+
+
+  .reviews__items
+    margin-bottom: 28px
+
+
+  .reviews__item
+    position: relative
+    padding-top: 52px
+    padding-bottom: 88px
+
+
+  .reviews__author
+    position: absolute
+    bottom: 0px
+    left: 50%
+
+    transform: translateX(-50%)
+
+
+  .reviews__author-name
+    font-size: 20px
+    line-height: 30px
+    font-weight: $font-w-bold
+
+
+  .reviews__author-id
+    display: block
+    font-size: 14px
+    line-height: 35px
+    font-weight: $font-w-regular
+
+
+  .reviews__comment
+    font-size: 18px
+    line-height: 30px

@@ -1,61 +1,99 @@
 
 .price-table
   display: inline-table
+  position: relative
+
+  right: 280px
+
+  transition: right 0.5s ease-out 0s;
+
+  margin: 0px 20px
+  width: 840px
+
   border-collapse: collapse
 
 
+.price-table__header
+
+  & .price-table__cell
+    box-sizing: border-box
+    padding: 17px 10px 22px
+
+    width: 280px
+
+    color: #ffffff
+    text-align: center
+    background-color: #283645
+    border-top: none
+    border-bottom: none
+
+
 .price-table__head-cell
-  font-weight: $font-w-bold
-  color: #ffffff
-  background-color: #283645
-  text-transform: uppercase
+  display: none
+  box-sizing: border-box
+
+  padding: 15px
+  padding-left: 23px
+
+  height: 31px
+  width: 280px
 
 
-.price-table__head-cell,
+
+.price-table__row
+  &:first-child .price-table__cell
+    height: 58px
+    border-top: none
+
+
 .price-table__cell
   box-sizing: border-box
-  height: 63px
-  width: 25%
-
-
-  font-size: 0px
-  text-align: center
   vertical-align: middle
-  border: 2px solid #e5e5e5
-  background-color: #ffffff
 
+  padding: 0px
+  padding-right: 10px
+  padding-left: 23px
 
-.price-table__head-cell
-  padding: 5px 20px
-  font-size: 18px
-  line-height: 30px
+  height: 61px
+
+  font-size: 14px
+  line-height: 45px
   font-weight: $font-w-regular
-  color: #283645
-  text-transform: none
+  text-align: left
+  text-transform: uppercase
 
-  &--inverse
-    color: #ffffff
-    background-color: #283645
+  background-color: #fff
+  border: 2px solid #e5e5e5
 
 
 .price-table__title
+  font-size: 18px
+  line-height: 30px
   font-weight: $font-w-bold
+
+  text-align: center
   text-transform: uppercase
 
 
 .price-table__cost
   font-size: 24px
+  line-height: 30px
   font-weight: $font-w-light
-  text-transform: uppercase
 
 
 .price-table__mark
   display: inline-block
+  vertical-align: middle
+
   position: relative
 
-  width: 50px
-  height: 50px
+  width: 45px
+  height: 45px
 
+  float: right
+
+  font-size: 0px
+  line-height: 45px
 
 .price-table__mark-icon
   display: block;
@@ -65,3 +103,9 @@
   left: 50%
 
   transform: translate(-50%, -50%)
+
+  &--no path
+    fill: #f25b26
+
+  &--yes path
+    fill: #3dc644

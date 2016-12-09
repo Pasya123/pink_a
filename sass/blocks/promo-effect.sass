@@ -1,3 +1,49 @@
 
 .promo-effect
   display: none
+
+  padding-top: 40px
+
+  background-color: #fff
+
+
+@media (min-width: $tablet-max-width)
+
+  .promo-effect
+    display: block
+
+    +clearfix()
+
+  .promo-effect__img-wrap
+    box-sizing: border-box
+    float: left
+    width: 50%
+    min-height: 330px
+
+
+  .promo-effect__content
+    box-sizing: border-box
+    padding-top: 25px
+    padding-right: 50px
+
+    float: right
+    width: 50%
+
+    & h3
+      margin-bottom: 12px
+      font-size: 30px
+      line-height: 36px
+      font-weight: $font-w-bold
+      color: #000000
+
+    & p
+      margin: 10px 0px
+      font-size: 14px
+      line-height: 24px
+      font-weight: $font-w-regular
+      color: #283645
+
+    & a
+      font-size: 14px
+      line-height: 24px
+      font-weight: $font-w-regular
