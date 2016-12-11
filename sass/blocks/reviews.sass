@@ -1,13 +1,13 @@
 
 .reviews
-  padding: 0px 0px 25px
+  padding: 22px 0px 25px
 
   background-color: #ffffff
   text-align: center
 
 
 .reviews__item
-  padding: 42px 20px 20px
+  padding: 20px
 
   text-align: center
 
@@ -88,16 +88,17 @@
 @media (min-width: $tablet-max-width)
 
   .reviews
+    padding-top: 32px
     padding-bottom: 0px
 
 
   .reviews__items
-    margin-bottom: 28px
+    padding-bottom: 28px
 
 
   .reviews__item
     position: relative
-    padding-top: 52px
+    padding-top: 20px
     padding-bottom: 88px
 
 
@@ -125,3 +126,55 @@
   .reviews__comment
     font-size: 18px
     line-height: 30px
+
+
+@media (min-width: $desktop-max-width)
+
+  .reviews
+    padding-top: 155px
+    padding-bottom: 40px
+
+
+  .reviews__content-wrap
+    position: relative
+    margin: 0 auto
+    max-width: $desktop-content-max-width
+
+
+  .reviews__items
+    padding: 0px 95px 0px
+
+
+  .reviews__author-name
+    font-size: 24px
+    line-height: 36px
+
+
+  .reviews__author-id
+    font-size: 18px
+    line-height: 30px
+
+  .reviews__toggles
+    display: none
+
+
+  .reviews__control
+    display: block
+    position: absolute
+
+    top: 25%
+
+    width: 50px
+    height: 50px
+
+    font-size: 0px
+    cursor: pointer
+
+    &--prev
+      left: 0px
+
+    &--next
+      right: 0px
+
+
+

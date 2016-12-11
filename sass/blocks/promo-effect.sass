@@ -12,7 +12,12 @@
   .promo-effect
     display: block
 
+
+  .promo-effect__content-wrap
     +clearfix()
+
+    padding: 0px 40px
+
 
   .promo-effect__img-wrap
     box-sizing: border-box
@@ -23,8 +28,7 @@
 
   .promo-effect__content
     box-sizing: border-box
-    padding-top: 25px
-    padding-right: 50px
+    padding: 25px 0px
 
     float: right
     width: 50%
@@ -47,3 +51,41 @@
       font-size: 14px
       line-height: 24px
       font-weight: $font-w-regular
+
+
+@media (min-width: $desktop-max-width)
+
+  .promo-effect
+    background-color: #f2f2f2
+    padding-top: 20px
+    padding-bottom: 20px
+
+  .promo-effect__content-wrap
+    margin: 0 auto
+    max-width: $desktop-content-max-width
+
+
+  .promo-effect__img-wrap
+    width: 37.5%
+    min-height: 350px
+
+
+  .promo-effect__content
+    padding: 60px 15px
+
+    width: 62.5%
+
+    & h3
+      margin-top: 35px
+      margin-bottom: 25px
+      font-size: 30px
+      line-height: 30px
+
+    & p
+      margin-bottom: 31px
+      font-size: 18px
+      line-height: 30px
+
+    & a
+      font-size: 18px
+      line-height: 30px

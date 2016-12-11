@@ -1,7 +1,9 @@
 
 .price
+  position: relative
+  padding-top: 92px
 
-  background-color: #fff
+  background-color: #f2f2f2
 
   & #toggle-1,
   & #toggle-2,
@@ -26,18 +28,6 @@
     right: 560px
 
 
-.price__wrap
-  +adaptive-container()
-  position: relative
-
-  padding-top: 50px
-  padding-bottom: 27px
-
-  text-align: center
-  background-color: #f2f2f2
-  overflow: hidden
-
-
 .price__separator
   position: absolute
 
@@ -53,19 +43,26 @@
     fill: #fff
 
 
-.price__table-wrap
+.price__content-wrap
   +adaptive-container()
 
   position: relative
 
-  margin: 42px 0px
+  text-align: center
+  background-color: #f2f2f2
 
+
+.price__table-wrap
+  position: relative
+  padding: 0px 20px
   overflow: hidden
 
 
 .price__toggles
   display: inline-block
   vertical-align: top
+
+  padding: 42px
 
   height: 15px
   line-height: 15px
@@ -116,14 +113,22 @@
     & #toggle-3:checked ~ .price__table-wrap > *
       right: 0px
 
-  .price__wrap
-    padding-top: 52px
-
-
   .price__separator
     height: 60px
+
+  .price__content-wrap
+    padding-top: 4px
+    padding-bottom: 69px
+
+  .price__table-wrap
+    padding: 0px 40px
 
 
   .price__toggles
     display: none
 
+
+@media (min-width: $desktop-max-width)
+
+  .price__separator
+    height: 80px
