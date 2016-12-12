@@ -1,8 +1,10 @@
 
 .contest-form
 
+
 .contest-form__contacts-input
   position: relative
+
 
 .contest-form__input-btn
   display: none
@@ -21,6 +23,7 @@
 .contest-form & input[type="radio"]
   display: none
 
+
 .contest-form__checkbox-icon-tick,
 .contest-form__radio-icon-tick
   display: none
@@ -35,7 +38,7 @@
   display: block
   position: relative
   padding: 5px
-  padding-left: 65px
+  padding-left: 70px
 
   &:hover .contest-form__checkbox-icon
     border-color: #283645
@@ -98,7 +101,7 @@
   display: block
   position: relative
   padding: 5px
-  padding-left: 65px
+  padding-left: 70px
 
   &:hover .contest-form__radio-icon
     border-color: #283645
@@ -130,21 +133,28 @@
   &--id
     background-color: #ffffff
 
+  &--efforts
+    padding-bottom: 0px
+
   &--efforts .contest-form__title
     padding: 40px 20px
     padding-bottom: 20px
 
   &--contacts
+    padding-top: 35px
     background-color: #ffffff
+
+  &--app
+    padding-bottom: 5px
 
   &--app .contest-form__title
     padding: 40px 20px
-    padding-bottom: 20px
+    padding-bottom: 15px
 
   &--message
     position: relative
-    padding:  90px 20px
-    padding-bottom: 40px
+    padding:  75px 20px
+    padding-bottom: 45px
     background-color: #ffffff
 
   &--message .contest-form__title
@@ -157,7 +167,7 @@
     width: 100%
 
     padding: 0px
-    padding-top: 50px
+    padding-top: 40px
     transform: translateX(-50%)
 
 
@@ -167,19 +177,21 @@
 
 .contest-form__id-label
   display: block
+  vertical-align: top
 
   padding-left: 20px
   padding-right: 10px
+  padding-bottom: 10px
 
   font-size: 14px
-  line-height: 30px
+  line-height: 21px
   color: #d22856
 
   text-transform: uppercase
 
 
 .contest-form__efforts-item
-  padding-bottom: 43px
+  padding-bottom: 42px
 
 
 .contest-form__contacts-item
@@ -191,9 +203,10 @@
 
   padding-left: 20px
   padding-right: 10px
+  padding-bottom: 10px
 
   font-size: 14px
-  line-height: 30px
+  line-height: 21px
   color: #d22856
 
   text-transform: uppercase
@@ -204,15 +217,253 @@
 
 
 .contest-form__bottom-wrap
+  padding: 0px 20px
   background-color: #FFF
 
   text-align: center
 
 
 .contest-form__wran-message
-  margin-top: 40px
+  margin-top: 33px
 
   font-size: 14px
   line-height: 30px
 
   text-transform: uppercase
+
+  & em
+    font-size: 14px
+
+
+@media (min-width: $tablet-max-width)
+
+  .contest-form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    padding-bottom: 22px
+
+    background-color: #fff
+
+
+  .contest-form__radio-control
+    padding-left: 58px
+
+
+  .contest-form__checkbox-control
+    padding-left: 58px
+
+
+  .contest-form__section
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+
+    box-sizing: border-box
+
+    padding: 40px
+    margin: 0px 40px
+
+    background-color: #fff
+    border: 2px solid #e5e5e5
+    border-radius: 3px
+
+    &--id
+      margin: 0px
+      padding-bottom: 50px
+      width: 100%
+      border: none
+      order: 1
+
+    &--efforts
+      padding: 40px 60px 36px
+      margin-bottom: 50px
+      order: 4
+
+    &--efforts .contest-form__title
+      padding: 0px 20px
+      margin: 0px 40px
+
+    &--contacts
+      padding: 31px 60px 10px
+      margin-bottom: 50px
+      order: 3
+
+    &--contacts .contest-form__title
+      padding: 0px 27px
+      margin: 0px 120px
+
+    &--app
+      padding: 40px 60px
+      margin-bottom: 51px
+      order: 2
+
+    &--app .contest-form__title
+      padding: 0px 24px
+      margin: 0px 65px
+
+    &--message
+      padding: 31px 60px 50px
+      margin-bottom: 45px
+      order: 5
+
+    &--message .contest-form__title
+      padding: 0px 35px
+      margin: 0px 120px
+      width: auto
+      left: 0
+      transform: none
+      order: 5
+
+    &--message textarea
+      min-height: 193px
+
+    & .contest-form__title
+      position: relative
+      display: inline-block
+
+      font-size: 14px
+      line-height: 30px
+      text-align: center
+
+
+  .contest-form__id-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    padding-bottom: 52px
+
+    &:last-child
+      padding-bottom: 0px
+
+    & .contest-form__id-label
+      flex-grow: 0
+      flex-shrink: 1
+      flex-basis: auto
+
+    & input
+      flex-grow: 1
+      flex-shrink: 1
+      flex-basis: auto
+
+
+  .contest-form__id-label
+    padding: 0px
+    padding-right: 20px
+
+
+  .contest-form__app-item
+
+    &:last-child
+      padding-bottom: 11px
+
+
+  .contest-form__contacts-item
+    position: relative
+    padding-top: 80px
+
+    &:last-child
+      padding-bottom: 10px
+
+
+  .contest-form__contacts-label
+
+
+  .contest-form__contacts-input
+    position: absolute
+    top: 0
+    left: 0
+
+    width: 100%
+
+
+  .contest-form__efforts-item
+
+    &:last-child
+      padding-bottom: 10px
+
+
+  .contest-form__input-btn
+    display: block
+
+
+  .contest-form__bottom-wrap
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+    order: 6
+
+    padding: 20px 40px
+    text-align: left
+
+
+  .btn
+    width: 300px
+
+
+  .contest-form__wran-message
+    float: right
+    margin-top: 20px
+
+
+@media (min-width: $desktop-max-width)
+
+  .contest-form
+    padding: 0px 10px
+
+  .contest-form__section
+    box-sizing: border-box
+
+    &--id
+      padding: 0px
+      padding-top: 15px
+      width: 46.27659%
+
+    &--app
+      margin: 0px
+      padding: 20px
+      width: 46.27659%
+
+    &--app .contest-form__title
+      padding: 0px 25px
+      margin: 0px 5px
+
+    &--contacts
+      margin: 30px 0px
+      width: 100%
+
+    &--contacts .contest-form__title
+      padding: 0px 27px
+      margin: 0px 120px
+
+    &--efforts
+      margin: 0px
+      width: 100%
+
+    &--message
+      margin: 0px
+      width: 100%
+
+
+  .contest-form__id-item
+    padding-bottom: 54px
+
+
+  .contest-form__contacts
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+
+  .contest-form__contacts-item
+    width: 45.731707%
+
+
+  .contest-form__efforts
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap

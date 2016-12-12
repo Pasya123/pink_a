@@ -16,14 +16,17 @@
 
   z-index: 50
 
-  &--short .page-header__wrap
-    //min-height: 237px
-    //padding: 78px 20px 20px
+  &--short .page-header__content-wrap
+    padding: 75px 20px 20px
+    min-height: 237px
 
-
-  & h2
-    margin: 20px 0px
+  &--short .page-header__intro
+    padding: 0px
     text-align: center
+
+  &--short .page-header__intro h2
+    display: inline-block
+    line-height: 30px
 
 
 .page-header__content-wrap
@@ -57,9 +60,21 @@
   .page-header__content
     padding: 170px 20px 0px
 
-    &--short .page-header__wrap
-      min-height: 440px
-      padding: 159px 25px 20px
+    &--short
+      padding: 150px 20px 52px
+
+    &--short .page-header__content-wrap
+      padding: 0px 20px
+      min-height: 237px
+
+    &--short .page-header__intro
+      padding: 0px
+      width: 100%
+
+    &--short .page-header__intro h2
+      margin: 27px 0px
+      font-size: 50px
+      line-height: 1.2
 
 
   .page-header__content-wrap
@@ -78,24 +93,26 @@
 
 
   .page-header__intro
-    padding: 30px 20px
+    padding: 20px 20px
 
     width: 300px
 
     text-align: center
 
-    & h2
-      display: inline-block
-      margin: 0px 55px 32px
-
-      font-size: 40px
-
 
 @media (min-width: $desktop-max-width)
 
+  .page-header__content
+
+    &--short
+      padding: 150px 20px 7px
+
+    &--short .page-header__intro h2
+      margin: 23px 0px
+
+
   .page-header__content-wrap
     margin: 0 auto
-
     max-width: $desktop-content-max-width
     min-height: 683px
 

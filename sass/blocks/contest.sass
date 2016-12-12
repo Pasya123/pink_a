@@ -1,7 +1,41 @@
 
-.contest__content
-  padding: 40px 20px
+.contest
+
+  background-color: #fff
+
+.contest__content-wrap
+  +adaptive-container()
+
+.contest__header
+  padding: 36px 20px 9px
   background-color: #ffffff
 
   text-align: center
+
+  & h2
+    margin: 10px 0px
+    font-size: 14px
+    font-weight: $font-w-regular
+    line-height: 30px
+
+
+@media (min-width: $tablet-max-width)
+
+  .contest__header
+    padding: 80px 70px 20px
+
+    & h2
+      margin: 12px 0px
+      font-size: 18px
+
+
+@media (min-width: $desktop-max-width)
+
+  .contest__content-wrap
+    margin: 0 auto
+    max-width: $desktop-content-max-width
+
+  .contest__header
+    padding: 80px 80px 55px
+
 

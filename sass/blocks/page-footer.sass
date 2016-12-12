@@ -1,5 +1,6 @@
 
 .page-footer
+  padding-top: 10px
   background-color: #ffffff
 
   &--mb-hide
@@ -30,11 +31,15 @@
 
 
 .page-footer__copy
-  margin-top: 35px
+  margin: 35px auto 20px
 
-  height: 35px
-  line-height: 30px
+  height: 40px
+  width: 140px
+
+  line-height: 40px
   text-align: center
+
+
 
   &:hover .page-footer__copy-logo path
     fill: #283645
@@ -44,7 +49,12 @@
 
 
 .page-footer__copy-link
+  display: inline-block
   vertical-align: middle
+
+  padding: 4px 8px 8px
+  padding-left: 0px
+
   font-size: 14px
   line-height: 18px
   color: #283645
@@ -54,8 +64,6 @@
 .page-footer__copy-logo
   display: inline-block
   vertical-align: middle
-
-  margin-left: 8px
 
 
 @media (min-width: $tablet-max-width)
@@ -86,8 +94,9 @@
 
   .page-footer__copy
     margin: 0px
-    padding-right: 20px
+    padding-right: 15px
     padding-left: 35px
+
 
 
 @media (min-width: $desktop-max-width)
