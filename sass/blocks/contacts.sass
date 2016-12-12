@@ -71,7 +71,7 @@
     font-size: 0px
 
     & h2
-      margin: 15px 35px 30px
+      margin: 15px 35px 28px
       font-size: 40px
       line-height: 1.2
 
@@ -123,7 +123,85 @@
   .contacts__separator
     height: 75px
 
+
   .contacts__map-wrap
     margin-top: -80px
 
     height: 378px
+
+
+@media (min-width: $desktop-max-width)
+
+  .contacts__content-wrap
+    margin: 0 auto
+    max-width: $page-max-width
+
+
+  .contacts__content
+    padding: 45px 0px 0px
+    margin: 0 auto
+    max-width: $desktop-content-max-width
+
+    display: flex
+    justify-content: space-between
+    aling-items: flex-start
+    flex-wrap: wrap
+
+    & h2
+      flex-grow: 0
+      flex-shrink: 1
+      flex-basis: auto
+      order: 1
+
+      margin: 19px 200px 40px
+      width: 100%
+      font-size: 50px
+
+    & h5
+      margin-bottom: 24px
+
+
+  .contacts__phone
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+    order: 2
+
+    padding: 10px 5px
+    width: 33%
+
+
+  .contacts__mail
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+    order: 4
+
+    padding: 10px 10px 20px
+    width: 33%
+
+
+  .contacts_addres
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+    order: 3
+
+    padding: 10px 20px 10px
+    width: 34%
+
+    & h5
+      margin-bottom: 30px
+
+    & em
+      line-height: 15px
+
+
+  .contacts__separator
+    height: 103px
+
+
+  .contacts__map-wrap
+    margin-top: -111px
+
+    height: 501px

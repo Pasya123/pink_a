@@ -1,7 +1,7 @@
 
 .price
   position: relative
-  padding-top: 92px
+  padding-top: 93px
 
   background-color: #f2f2f2
 
@@ -104,6 +104,8 @@
 
   .price
 
+    padding-top: 91px
+
     & #toggle-1:checked ~ .price__table-wrap > *
       right: 0px
 
@@ -116,9 +118,11 @@
   .price__separator
     height: 60px
 
+
   .price__content-wrap
     padding-top: 4px
     padding-bottom: 69px
+
 
   .price__table-wrap
     padding: 0px 40px
@@ -130,5 +134,19 @@
 
 @media (min-width: $desktop-max-width)
 
+  .price
+    padding-top: 143px
+
+
   .price__separator
     height: 80px
+
+
+  .price__content-wrap
+    padding-bottom: 97px
+    margin: 0 auto
+    max-width: $desktop-content-max-width
+
+
+  .price__table-wrap
+    padding: 0px 10px
