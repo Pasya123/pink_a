@@ -1,0 +1,65 @@
+/**
+  * Radio input style
+  */
+
+.radio-input
+  display: block
+  position: relative
+  padding: 5px
+  padding-left: 70px
+
+  &:hover input:not(:disabled) + .radio-input__icon
+    border-color: #283645
+
+  &:active input:not(:disabled) + .radio-input__icon
+    border-color: #d22856
+
+  & input
+    display: none
+
+
+.radio-input input
+  &:checked + .radio-input__icon::before
+    content: ""
+    display: block
+    position: absolute
+
+    top: 50%
+    left: 50%
+
+    width: 16px
+    height: 16px
+
+    background-color: #d22856
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+
+  &:disabled + .radio-input__icon
+    opacity: 0.5
+
+  &:disabled ~ .radio-input__label
+    opacity: 0.5
+
+
+.radio-input__icon
+  position: absolute
+  box-sizing: border-box
+
+  top: 0
+  left: 0
+
+  width: 38px
+  height: 38px
+
+  background-color: #FFF
+  border: 2px solid #e5e5e5
+  border-radius: 50%
+
+
+/**
+  * Radio input style TABLET
+  */
+@media (min-width: $tablet-max-width)
+
+  .radio-input
+    padding-left: 60px

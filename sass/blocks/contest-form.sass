@@ -1,187 +1,67 @@
+/**
+  * Contest form style MOBILE
+  */
 
 .contest-form
 
+  display: flex
+  flex-direction: column
+  aling-content: flex-start
+  align-items: stretch
+  flex-wrap: wrap
 
-.contest-form__contacts-input
-  position: relative
+  padding: 0px
 
+  color: #283645
+  background-color: #fff
 
-.contest-form__input-btn
-  display: none
-  position: absolute
-
-  top: 0px
-  right: 0px
-
-  width: 63px
-  height: 63px
-
-  font-size: 0px
-
-
-.contest-form & input[type="checkbox"],
-.contest-form & input[type="radio"]
-  display: none
-
-
-.contest-form__checkbox-icon-tick,
-.contest-form__radio-icon-tick
-  display: none
-
-
-.contest-form input[type="checkbox"]
-  &:checked + .contest-form__checkbox-icon .contest-form__checkbox-icon-tick
-    display: inline-block
-
-
-.contest-form__checkbox-control
-  display: block
-  position: relative
-  padding: 5px
-  padding-left: 70px
-
-  &:hover .contest-form__checkbox-icon
-    border-color: #283645
-
-  &:active .contest-form__checkbox-icon
-    border-color: #d22856
-
-
-.contest-form__checkbox-icon
-  position: absolute
-  box-sizing: border-box
-
-  top: 0
-  left: 0
-
-  width: 39px
-  height: 39px
-
-  background-color: #FFF
-  border: 2px solid #e5e5e5
-  border-radius: 3px
-
-
-.contest-form__checkbox-icon-tick
-  position: absolute
-
-  top: 50%
-  left: 50%
-
-  transform: translate(-50%, -50%)
-
-
-.contest-form__checkbox-label
-  display: inline-block
-  vertical-align: top
-
-
-.contest-form__radio-icon
-  position: relative
-
-
-.contest-form input[type="radio"]
-  &:checked + .contest-form__radio-icon::before
-    content: ""
+  & fieldset
     display: block
-    position: absolute
-
-    top: 50%
-    left: 50%
-
-    width: 16px
-    height: 16px
-
-    background-color: #d22856
-    border-radius: 50%
-    transform: translate(-50%, -50%)
-
-
-.contest-form__radio-control
-  display: block
-  position: relative
-  padding: 5px
-  padding-left: 70px
-
-  &:hover .contest-form__radio-icon
-    border-color: #283645
-
-  &:active .contest-form__radio-icon
-    border-color: #d22856
-
-
-.contest-form__radio-icon
-  position: absolute
-  box-sizing: border-box
-
-  top: 0
-  left: 0
-
-  width: 38px
-  height: 38px
-
-  background-color: #FFF
-  border: 2px solid #e5e5e5
-  border-radius: 50%
-
-
-.contest-form__section
-  margin: 0px
-  padding: 20px
-  border: none
-
-  &--id
-    background-color: #ffffff
-
-  &--efforts
-    padding-bottom: 0px
-
-  &--efforts .contest-form__title
-    padding: 40px 20px
-    padding-bottom: 20px
-
-  &--contacts
-    padding-top: 35px
-    background-color: #ffffff
-
-  &--app
-    padding-bottom: 5px
-
-  &--app .contest-form__title
-    padding: 40px 20px
-    padding-bottom: 15px
-
-  &--message
     position: relative
-    padding:  75px 20px
-    padding-bottom: 45px
-    background-color: #ffffff
 
-  &--message .contest-form__title
-    position: absolute
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+
+    margin: 20px 0px 0px
+    padding: 20px 0px 0px
+
+    border: none
+    background-color: #fff
+
+  & legend
     display: block
+    position: absolute
+    box-sizing: border-box
 
-    top: 0px
+    top: -20px
     left: 50%
 
-    width: 100%
+    max-width: 95%
 
-    padding: 0px
-    padding-top: 40px
-    transform: translateX(-50%)
+    margin: 0px
+    padding: 0px 30px
+
+    background-color: #fff
+    transform: translate(-50%, 50%)
 
 
-.contest-form__id-item
-  padding-bottom: 20px
+/* ID section */
+.contest-form .contest-form__section-id
+  margin: 0px
+  padding: 0px 0px 40px
 
+
+.contest-form__id-items
+  padding: 0px 20px
+
+//.contest-form__id-item
 
 .contest-form__id-label
   display: block
   vertical-align: top
 
-  padding-left: 20px
-  padding-right: 10px
-  padding-bottom: 10px
+  padding: 20px 20px 10px
 
   font-size: 14px
   line-height: 21px
@@ -190,20 +70,48 @@
   text-transform: uppercase
 
 
+/* Efforts section */
+.contest-form .contest-form__section-efforts
+  margin: 0px
+  padding: 115px 0px 0px
+
+  background-color: #f2f2f2
+
+.contest-form__section-efforts .contest-form__title
+  padding: 20px 10px
+
+  max-height: 76px
+
+  background-color: #f2f2f2
+  overflow: hidden
+
+
+.contest-form__efforts-items
+  padding: 0px 20px
+
+
 .contest-form__efforts-item
-  padding-bottom: 42px
+  padding: 0px 0px 42px
 
 
-.contest-form__contacts-item
-  padding-bottom: 20px
+/* Contacts section */
+.contest-form .contest-form__section-contacts
+  margin: 0px
+  padding: 15px 0px 42px
 
+.contest-form__section-contacts .contest-form__title
+  display: none
+
+
+.contest-form__contacts-items
+  padding: 0px 20px
+
+//.contest-form__contacts-item
 
 .contest-form__contacts-label
   display: block
 
-  padding-left: 20px
-  padding-right: 10px
-  padding-bottom: 10px
+  padding: 20px 20px 10px
 
   font-size: 14px
   line-height: 21px
@@ -212,202 +120,241 @@
   text-transform: uppercase
 
 
-.contest-form__app-item
-  padding-bottom: 35px
+/* App section */
+.contest-form .contest-form__section-app
+  margin: 0px
+  padding: 110px 0px 0px
+
+  background-color: #f2f2f2
+
+.contest-form__section-app .contest-form__title
+  padding: 20px 10px
+
+  max-height: 76px
+
+  background-color: #f2f2f2
+  overflow: hidden
 
 
-.contest-form__bottom-wrap
+.contest-form__app-items
   padding: 0px 20px
-  background-color: #FFF
+
+
+.contest-form__app-item
+  padding: 0px 0px 35px
+
+  &:last-child
+    padding: 0px 0px 40px
+
+
+/* Message section */
+.contest-form .contest-form__section-message
+  position: relative
+
+  margin: 0px
+  padding:  75px 20px
+  padding-bottom: 45px
+
+.contest-form__section-message .contest-form__title
+  padding: 25px 10px 20px
+
+  max-height: 76px
+
+  +text-overflow()
+
+
+/* Bottom */
+.contest-form .contest-form__section-submit
+  margin: 0px
+  padding: 0px 20px
 
   text-align: center
 
 
-.contest-form__wran-message
-  margin-top: 33px
+.contest-form__section-submit
 
+  & .contest-form__label
+    margin: 33px 0px 0px
+
+
+.contest-form__label
   font-size: 14px
   line-height: 30px
-
   text-transform: uppercase
 
   & em
     font-size: 14px
 
 
+/**
+  * Contest form style TABLET
+  */
 @media (min-width: $tablet-max-width)
 
-  .contest-form
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-
-    padding-bottom: 22px
-
-    background-color: #fff
+  /* ID section */
+  .contest-form .contest-form__section-id
+    padding: 40px 0px 20px
+    order: 1
 
 
-  .contest-form__radio-control
-    padding-left: 58px
-
-
-  .contest-form__checkbox-control
-    padding-left: 58px
-
-
-  .contest-form__section
-    flex-grow: 0
-    flex-shrink: 1
-    flex-basis: auto
-
-    box-sizing: border-box
-
-    padding: 40px
-    margin: 0px 40px
-
-    background-color: #fff
-    border: 2px solid #e5e5e5
-    border-radius: 3px
-
-    &--id
-      margin: 0px
-      padding-bottom: 50px
-      width: 100%
-      border: none
-      order: 1
-
-    &--efforts
-      padding: 40px 60px 36px
-      margin-bottom: 50px
-      order: 4
-
-    &--efforts .contest-form__title
-      padding: 0px 20px
-      margin: 0px 40px
-
-    &--contacts
-      padding: 31px 60px 10px
-      margin-bottom: 50px
-      order: 3
-
-    &--contacts .contest-form__title
-      padding: 0px 27px
-      margin: 0px 120px
-
-    &--app
-      padding: 40px 60px
-      margin-bottom: 51px
-      order: 2
-
-    &--app .contest-form__title
-      padding: 0px 24px
-      margin: 0px 65px
-
-    &--message
-      padding: 31px 60px 50px
-      margin-bottom: 45px
-      order: 5
-
-    &--message .contest-form__title
-      padding: 0px 35px
-      margin: 0px 120px
-      width: auto
-      left: 0
-      transform: none
-      order: 5
-
-    &--message textarea
-      min-height: 193px
-
-    & .contest-form__title
-      position: relative
-      display: inline-block
-
-      font-size: 14px
-      line-height: 30px
-      text-align: center
+  .contest-form__id-items
+    padding: 0px 40px
 
 
   .contest-form__id-item
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
     align-items: center
+    flex-wrap: nowrap
 
-    padding-bottom: 52px
+    padding: 0px 0px 52px
 
-    &:last-child
-      padding-bottom: 0px
-
-    & .contest-form__id-label
+    & > *
       flex-grow: 0
       flex-shrink: 1
       flex-basis: auto
 
-    & input
-      flex-grow: 1
-      flex-shrink: 1
-      flex-basis: auto
+    &:last-child
+      padding: 0px 0px 25px
 
 
   .contest-form__id-label
-    padding: 0px
-    padding-right: 20px
+    padding: 0px 20px 0px 0px
 
 
-  .contest-form__app-item
+  /* Efforts section */
+  .contest-form .contest-form__section-efforts
+    margin: 20px 40px 45px
+    padding: 20px 0px 0px
 
-    &:last-child
-      padding-bottom: 11px
-
-
-  .contest-form__contacts-item
-    position: relative
-    padding-top: 80px
-
-    &:last-child
-      padding-bottom: 10px
+    border: 2px solid #e5e5e5
+    background-color: #ffffff
+    order: 4
 
 
-  .contest-form__contacts-label
+  .contest-form__section-efforts .contest-form__title
+    display: block
+    padding: 0px 30px
+
+    background-color: #ffffff
+
+    +text-overflow()
 
 
-  .contest-form__contacts-input
-    position: absolute
-    top: 0
-    left: 0
-
-    width: 100%
+  .contest-form__efforts-items
+    padding: 33px 58px 12px
 
 
   .contest-form__efforts-item
 
     &:last-child
-      padding-bottom: 10px
+      padding: 0px 0px 35px
+
+  /* Contacts section */
+  .contest-form .contest-form__section-contacts
+    margin: 20px 40px 45px
+    padding: 20px 0px 0px
+
+    border: 2px solid #e5e5e5
+    background-color: #ffffff
+    order: 3
 
 
-  .contest-form__input-btn
+  .contest-form__section-contacts .contest-form__title
     display: block
+    padding: 0px 30px
+
+    background-color: #ffffff
+
+    +text-overflow()
 
 
-  .contest-form__bottom-wrap
-    flex-grow: 0
-    flex-shrink: 1
-    flex-basis: auto
+  .contest-form__contacts-items
+    padding: 26px 58px 12px
+
+
+  .contest-form__contacts-item
+    position: relative
+    padding: 63px 0px 20px
+
+    &:last-child
+      padding: 63px 0px 0px
+
+    & .contest-form__contacts-label
+      padding: 15px 20px 15px
+
+    & .text-btn-input
+      position: absolute
+
+      top: 0px
+      left: 0px
+
+      width: 100%
+
+
+  /* App section */
+  .contest-form .contest-form__section-app
+    margin: 20px 40px 45px
+    padding: 20px 0px 0px
+
+    border: 2px solid #e5e5e5
+    background-color: #ffffff
+    order: 2
+
+
+  .contest-form__section-app .contest-form__title
+    padding: 0px 30px
+
+    background-color: #ffffff
+
+    +text-overflow()
+
+
+  .contest-form__app-items
+    padding: 32px 58px 12px
+
+
+  /* Message section */
+  .contest-form .contest-form__section-message
+    margin: 20px 40px 65px
+    padding: 45px 58px 49px
+
+    border: 2px solid #e5e5e5
+    order: 5
+
+
+  .contest-form__section-message .contest-form__title
+    padding: 0px 30px
+
+    +text-overflow()
+
+  .contest-form__message-wrap
+
+    & textarea
+      min-height: 195px
+
+  /* Bottom */
+  .contest-form .contest-form__section-submit
+    margin: 0px 0px 42px
+    padding: 0px 40px
     order: 6
 
-    padding: 20px 40px
-    text-align: left
 
+  .contest-form__section-submit
+    +clearfix()
 
-  .btn
-    width: 300px
+    & .btn
+      width: 300px
+      float: left
 
+    & .contest-form__label
+      float: right
+      margin: 0px
+      padding: 20px 0px 15px
 
-  .contest-form__wran-message
-    float: right
-    margin-top: 20px
-
-
+/**
+  * Contest form style DESKTOP
+  */
 @media (min-width: $desktop-max-width)
 
   .contest-form

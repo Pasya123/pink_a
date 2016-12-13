@@ -165,9 +165,10 @@
           </h2>
         </div>
         <form class="contest-form" action="/" method="post">
-          <fieldset class="contest-form__section  contest-form__section--id">
+          <!-- ID SECTION -->
+          <fieldset class="contest-form__section-id">
             <legend class="contest-form__title  visually-hidden">Представтесь:</legend>
-            <ul class="contest-form__id">
+            <ul class="contest-form__id-items">
               <li class="contest-form__id-item">
                 <label class="contest-form__id-label" for="surname">Фамилия:</label>
                 <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
@@ -182,89 +183,91 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__section  contest-form__section--efforts">
+          <!-- EFFORTS SECTION -->
+          <fieldset class="contest-form__section-efforts">
             <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="contest-form__efforts">
+            <ul class="contest-form__efforts-items">
               <li class="contest-form__efforts-item">
-                <label class="contest-form__checkbox-control">
+                <label class="checkbox-input">
                   <input type="checkbox" name="shark-selfi" checked>
-                  <div class="contest-form__checkbox-icon">
-                    <svg class="contest-form__checkbox-icon-tick" width="21.698" height="16.09">
+                  <div class="checkbox-input__icon">
+                    <svg class="checkbox-input__checked-icon" width="21.698" height="16.09">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
-                  <span class="contest-form__checkbox-label">Сделал селфи с акулой</span>
+                  <span class="checkbox-input__label">Сделал селфи с акулой</span>
                 </label>
               </li>
               <li class="contest-form__efforts-item">
-                <label class="contest-form__checkbox-control">
+                <label class="checkbox-input">
                   <input type="checkbox" name="burned" checked>
-                  <div class="contest-form__checkbox-icon">
-                    <svg class="contest-form__checkbox-icon-tick" width="21.698" height="16.09">
+                  <div class="checkbox-input__icon">
+                    <svg class="checkbox-input__checked-icon" width="21.698" height="16.09">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
-                  <span class="contest-form__checkbox-label">Обгорел на пляже</span>
+                  <span class="checkbox-input__label">Обгорел на пляже</span>
                 </label>
               </li>
               <li class="contest-form__efforts-item">
-                <label class="contest-form__checkbox-control">
+                <label class="checkbox-input">
                   <input type="checkbox" name="ChuckNorris">
-                  <div class="contest-form__checkbox-icon">
-                    <svg class="contest-form__checkbox-icon-tick" width="21.698" height="16.09">
+                  <div class="checkbox-input__icon">
+                    <svg class="checkbox-input__checked-icon" width="21.698" height="16.09">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
-                  <span class="contest-form__checkbox-label">Видел Чака Норриса</span>
+                  <span class="checkbox-input__label">Видел Чака Норриса</span>
                 </label>
               </li>
               <li class="contest-form__efforts-item">
-                <label class="contest-form__checkbox-control">
+                <label class="checkbox-input">
                   <input type="checkbox" name="souvenirs">
-                  <div class="contest-form__checkbox-icon">
-                    <svg class="contest-form__checkbox-icon-tick" width="21.698" height="16.09">
+                  <div class="checkbox-input__icon">
+                    <svg class="checkbox-input__checked-icon" width="21.698" height="16.09">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
-                  <span class="contest-form__checkbox-label">Накупил сувениров</span>
+                  <span class="checkbox-input__label">Накупил сувениров</span>
                 </label>
               </li>
               <li class="contest-form__efforts-item">
-                <label class="contest-form__checkbox-control">
+                <label class="checkbox-input">
                   <input type="checkbox" name="tower-defence" checked>
-                  <div class="contest-form__checkbox-icon">
-                    <svg class="contest-form__checkbox-icon-tick" width="21.698" height="16.09">
+                  <div class="checkbox-input__icon">
+                    <svg class="checkbox-input__checked-icon" width="21.698" height="16.09">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
-                  <span class="contest-form__checkbox-label">Удержал башню</span>
+                  <span class="checkbox-input__label">Удержал башню</span>
                 </label>
               </li>
               <li class="contest-form__efforts-item">
-                <label class="contest-form__checkbox-control">
+                <label class="checkbox-input">
                   <input type="checkbox" name="hotel-destroy">
-                  <div class="contest-form__checkbox-icon">
-                    <svg class="contest-form__checkbox-icon-tick" width="21.698" height="16.09">
+                  <div class="checkbox-input__icon">
+                    <svg class="checkbox-input__checked-icon" width="21.698" height="16.09">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
-                  <span class="contest-form__checkbox-label">Разгромил отель</span>
+                  <span class="checkbox-input__label">Разгромил отель</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__section  contest-form__section--contacts">
-            <legend class="contest-form__title  mb-hidden">Контактная информация:</legend>
-            <ul class="contest-form__contacts">
+          <!-- CONTACTS SECTION -->
+          <fieldset class="contest-form__section-contacts">
+            <legend class="contest-form__title">Контактная информация</legend>
+            <ul class="contest-form__contacts-items">
               <li class="contest-form__contacts-item">
                 <label class="contest-form__contacts-label" for="tel">
                   Номер телефона
                 </label>
-                <div class="contest-form__contacts-input">
+                <div class="text-btn-input">
                   <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
-                  <button class="contest-form__input-btn" type="button">
+                  <button class="text-btn-input__btn mb-hidden" type="button">
                     Набрать номер
-                    <svg class="contest-form__input-btn-icon" width="18" height="18">
+                    <svg class="text-btn-input__icon" width="18" height="18">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
                     </svg>
                   </button>
@@ -272,11 +275,11 @@
               </li>
               <li class="contest-form__contacts-item">
                 <label class="contest-form__contacts-label" for="email">Адрес почты</label>
-                <div class="contest-form__contacts-input">
+                <div class="text-btn-input">
                   <input type="email" id="email" name="email" placeholder="Введите почту *">
-                  <button class="contest-form__input-btn" type="button">
+                  <button class="text-btn-input__btn  mb-hidden" type="button">
                     Отправить письмо
-                    <svg class="contest-form__input-btn-icon" width="18" height="18">
+                    <svg class="text-btn-input__icon" width="18" height="18">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
                     </svg>
                   </button>
@@ -284,44 +287,47 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__section  contest-form__section--app">
+          <!-- APP SECTION -->
+          <fieldset class="contest-form__section-app">
             <legend class="contest-form__title">С каким приложением путешествовали?</legend>
-            <ul class="contest-form__app">
+            <ul class="contest-form__app-items">
               <li class="contest-form__app-item">
-                <label class="contest-form__radio-control">
+                <label class="radio-input">
                   <input type="radio" name="app" value="iOS" checked>
-                  <span class="contest-form__radio-icon"></span>
-                  <span class="contest-form__radio-label">Pink для iOS</span>
+                  <span class="radio-input__icon"></span>
+                  <span class="radio-input__label">Pink для iOS</span>
                 </label>
               </li>
               <li class="contest-form__app-item">
-                <label class="contest-form__radio-control">
+                <label class="radio-input">
                   <input type="radio" name="app" value="Android">
-                  <span class="contest-form__radio-icon"></span>
-                  <span class="contest-form__radio-label">Pink на Android</span>
+                  <span class="radio-input__icon"></span>
+                  <span class="radio-input__label">Pink на Android</span>
                 </label>
               </li>
               <li class="contest-form__app-item">
-                <label class="contest-form__radio-control">
+                <label class="radio-input">
                   <input type="radio" name="app" value="win">
-                  <span class="contest-form__radio-icon"></span>
-                  <span class="contest-form__radio-label">Windows Phone</span>
+                  <span class="radio-input__icon"></span>
+                  <span class="radio-input__label">Windows Phone</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__section  contest-form__section--message">
+          <!-- MESSAGE SECTION -->
+          <fieldset class="contest-form__section-message">
             <legend class="contest-form__title">Опишите свои эмоции</legend>
             <div class="contest-form__message-wrap">
               <textarea class="contest-form__message-input" id="message" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
-          <div class="contest-form__bottom-wrap">
+          <!-- SUBMIT SECTION -->
+          <fieldset class="contest-form__section-submit">
             <input class="btn  btn--flat" type="submit" value="Отправить форму">
-            <div class="contest-form__wran-message">
+            <div class="contest-form__label">
               <em>*</em> ‒ Обязательные поля
             </div>
-          </div>
+          </fieldset>
         </form>
       </div>
     </section>
