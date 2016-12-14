@@ -41,17 +41,16 @@
 
 .pink-app__control-items
   display: flex
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
 
-  padding: 18px 40px
+  padding: 18px 40px 16px
 
   min-height: 105px
 
   font-size: 0
   text-align: center
-  border-bottom: 1px solid #dddfe0
 
 
 .pink-app__control-item
@@ -63,18 +62,21 @@
 
   &--main
     display: block
-    align-self: flex-end
 
-    margin: 0px
+    margin: 16px 0px 18px
     padding: 10px 0px
     width: 100%
 
   &--main .pink-app__range
     display: block
 
+  &--submit
+    margin: 0px -40px
+    border-top: 1px solid #dddfe0
 
 .pink-app__submit
-  padding: 38px 20px
+  margin: 0px
+  padding: 40px 20px 22px
 
   & .btn
     margin-bottom: 12px
@@ -213,3 +215,106 @@
 .pink-app__range:focus::-ms-fill-upper
   background: #283645
 
+
+@media (min-width: $tablet-max-width)
+
+  .pink-app__header
+    padding: 45px 20px
+
+    min-height: 85px
+
+    & h2
+      margin: 0px
+      font-size: 18px
+      line-height: 30px
+
+
+  .pink-app__form
+    +clearfix()
+
+    padding: 57px 40px 54px
+
+
+  .pink-app__preview
+    box-sizing: border-box
+
+    padding: 0px
+    width: 48.387096774%
+    height: 400px
+
+    float: left
+
+
+  .pink-app__control-items
+    display: flex
+    flex-direction: column
+    align-items: stretch
+
+    box-sizing: border-box
+
+    padding: 0px 0px 0px 25px
+
+    width: 48.387096774%
+
+    float: right
+
+
+  .pink-app__control-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin: 0px
+    height: 70px
+
+    border-bottom: 1px solid #dddfe0
+
+    &--main
+      display: none
+
+    &--submit
+      margin: 0px
+      height: auto
+
+      border: none
+
+    &:first-child
+      height: 39px
+      padding-bottom: 15px
+
+
+  .pink-app__btn
+
+    margin: 0px 5px 0px 0px
+    padding: 5px
+
+    width: 35px
+    height: 35px
+
+
+  .pink-app__icon
+    width: 28px
+    height: 28px
+
+    &--contrast
+      width: 18px
+      height: 18px
+
+    & path:last-child
+      fill: #d22856
+
+
+  .pink-app__range
+    display: inline-block
+
+    margin: 5px 20px
+
+
+  .pink-app__submit
+    padding: 66px 0px 0px
+
+    text-align: left
+
+    & .btn
+      margin-bottom: 24px
+      width: 260px

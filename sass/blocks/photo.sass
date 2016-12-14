@@ -12,7 +12,7 @@
   &--panorama .photo__caption
     margin: 0px 20px
 
-  &--panorama picture::before
+  &--panorama .photo__img-wrap::before
     content: "Панорама дня"
     position: absolute
 
@@ -43,9 +43,9 @@
 
 .photo__caption
   margin: 0px
-  padding: 18px 17px 17px
+  padding: 18px 17px 13px
 
-  min-height: 86px
+  font-size: 0px
 
   background-color: #f2f2f2
 
@@ -64,6 +64,8 @@
 .photo__date
   vertical-align: top
 
+  padding: 0px 5px
+
   font-size: 12px
   line-height: 24px
   font-weight: $font-w-light
@@ -71,11 +73,25 @@
 
 
 .photo__comment
-  margin: 0px 0px 5px
+  margin: 0px 0px 10px
+
+  min-height: 27px
 
   font-size: 14px
   line-height: 24px
   font-weight: $font-w-regular
+
+
+.photo__likes
+  display: inline-block
+  vertical-align: top
+
+  padding: 0px 11px
+
+  font-size: 12px
+  line-height: 20px
+  color: #d22856
+  text-transform: uppercase
 
 
 .photo__like-btn
@@ -84,12 +100,12 @@
   display: inline-block
   vertical-align: top
 
-  padding: 5px 30px
+  padding: 0px
 
-  font-size: 12px
-  line-height: 20px
-  color: #d22856
-  text-transform: uppercase
+  width: 20px
+  height: 20px
+
+  font-size: 0px
 
   border: none
   background-color: transparent
@@ -107,65 +123,64 @@
 
 @media (min-width: $tablet-max-width)
 
-  .gallery__intro
-    padding: 91px 70px 76px
+  .photo
+    box-sizing: border-box
 
-    font-size: 18px
-    line-height: 30px
-
-
-  .gallery__items
-    display: flex
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
-    padding: 0px 40px
-
-
-  .gallery__item
-    width: 48.387096%
-
-    & img
-      display: block
-      width: 100%
-      height: auto
-
-    & picture
-      position: relative
-      height: 300px
+    padding: 0px
+    width: 46.875%
 
     &--panorama
-      width: calc(100% + 80px)
-      margin: 0px -40px 30px
+      box-sizing: border-box
+      margin: 0px -30px 50px
+      padding: 0px
+      width: calc(100% + 60px)
 
-    &--panorama .gallery__caption
-      position: relative
+    &--panorama .photo__img-wrap
+      min-height: 509px
 
-      margin: 0px 40px 20px
-      padding: 24px 27px 11px
+    &--panorama .photo__caption
+      margin: 0px 40px
 
-    &--panorama picture
-      height: 509px
-
-    &--panorama picture::before
+    &--panorama .photo__img-wrap::before
       top: 57px
       right: 40px
 
+    &--panorama  .photo__comment
+      margin: 0px 0px 10px
 
-    &--panorama .gallery__like-btn
+    &--panorama .photo__like-btn
       position: absolute
-      top: 20px
-      right: 25px
+
+      top: 25px
+      right: 20px
+
+    &--panorama .photo__likes
+      position: absolute
+
+      top: 25px
+      right: 48px
 
 
-    &--panorama .gallery__btn-ico
-      left: auto
-      right: 4px
+  .photo__img-wrap
+    min-height: 300px
 
 
-  .gallery__caption
+  .photo__caption
     position: relative
 
-    margin: 0px
-    margin-bottom: 20px
+    padding: 25px 27px 14px
+    min-height: 79px
+
+
+  .photo__comment
+    margin: 0px 0px 14px
+    height: 48px
+
+  .photo__like-btn
+    float: right
+
+
+  .photo__likes
+    padding: 0px
+
+

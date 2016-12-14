@@ -178,11 +178,12 @@
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </div>
               <button class="photo__like-btn">
-                Нравится: 215
+                Нравится
                 <svg class="photo__like-icon" width="12.545" height="11.99">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                 </svg>
               </button>
+              <span class="photo__likes">Нравится: 215</span>
             </figcaption>
           </figure>
           <figure class="photo">
@@ -198,11 +199,12 @@
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </div>
               <button class="photo__like-btn">
-                Нравится: 356
+                Нравится
                 <svg class="photo__like-icon" width="12.545" height="11.99">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                 </svg>
               </button>
+              <span class="photo__likes">Нравится: 356</span>
             </figcaption>
           </figure>
           <figure class="photo">
@@ -218,11 +220,12 @@
                 Соседи будут рады!
               </div>
               <button class="photo__like-btn">
-                Нравится: 666
+                Нравится
                 <svg class="photo__like-icon" width="12.545" height="11.99">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                 </svg>
               </button>
+              <span class="photo__likes">Нравится: 666</span>
             </figcaption>
           </figure>
           <figure class="photo">
@@ -238,11 +241,12 @@
                 Здесь могла быть ваша цитата о высоком и вечном.
               </div>
               <button class="photo__like-btn">
-                Нравится: 215
+                Нравится
                 <svg class="photo__like-icon" width="12.545" height="11.99">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                 </svg>
               </button>
+              <span class="photo__likes">Нравится: 215</span>
             </figcaption>
           </figure>
           <figure class="photo">
@@ -258,11 +262,12 @@
                 Самая кубанская в мире!
               </div>
               <button class="photo__like-btn">
-                Нравится: 4
+                Нравится
                 <svg class="photo__like-icon" width="12.545" height="11.99">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                 </svg>
               </button>
+              <span class="photo__likes">Нравится: 4</span>
             </figcaption>
           </figure>
           <figure class="photo">
@@ -278,11 +283,12 @@
                 Где снег-то?
               </div>
               <button class="photo__like-btn">
-                Нравится: 150
+                Нравится
                 <svg class="photo__like-icon" width="12.545" height="11.99">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                 </svg>
               </button>
+              <span class="photo__likes">Нравится: 150</span>
             </figcaption>
           </figure>
           <figure class="photo">
@@ -298,11 +304,12 @@
                 Всем GM и взаимные лайки!
               </div>
               <button class="photo__like-btn">
-                Нравится: 2560
+                Нравится
                 <svg class="photo__like-icon" width="12.545" height="11.99">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                 </svg>
               </button>
+              <span class="photo__likes">Нравится: 2560</span>
             </figcaption>
           </figure>
         </div>
@@ -323,7 +330,7 @@
             <div class="pink-app__control-item">
               <button class="pink-app__btn  pink-app__btn--active">
                 Обрезать
-                <svg class="pink-app__icon" width="48" height="48">
+                <svg class="pink-app__icon  pink-app__icon--crop" width="48" height="48">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
                 </svg>
               </button>
@@ -332,7 +339,7 @@
             <div class="pink-app__control-item">
               <button class="pink-app__btn">
                 Заливка
-                <svg class="pink-app__icon" width="48" height="48">
+                <svg class="pink-app__icon  pink-app__icon--fill" width="48" height="48">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use>
                 </svg>
               </button>
@@ -341,7 +348,7 @@
             <div class="pink-app__control-item">
               <button class="pink-app__btn">
                 Контраст
-                <svg class="pink-app__icon" width="31.92" height="31.92">
+                <svg class="pink-app__icon  pink-app__icon--contrast" width="32" height="32">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
                 </svg>
               </button>
@@ -350,10 +357,12 @@
             <div class="pink-app__control-item  pink-app__control-item--main">
               <input class="pink-app__range" name="common" type="range" min="0" max="100" step="1" value="85">
             </div>
-          </div>
-          <div class="pink-app__submit">
-            <button class="btn btn--pink" type="submit">Запостить</button>
-            <button class="btn btn--grey" type="reset">Отмена</button>
+            <div class="pink-app__control-item  pink-app__control-item--submit">
+              <div class="pink-app__submit">
+                <button class="btn btn--pink" type="submit">Запостить</button>
+                <button class="btn btn--grey" type="reset">Отмена</button>
+              </div>
+            </div>
           </div>
         </form>
       </div>
