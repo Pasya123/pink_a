@@ -1,77 +1,86 @@
 
-
 .pink-app
-  background-color: #fff
+  color: #283645
+  background-color: #ffffff
 
 
-.pink-app__content
-  padding: 10px 30px 42px
+.pink-app__content-wrap
+  +adaptive-container()
+
+
+.pink-app__header
+  padding: 20px 30px 40px
 
   font-size: 14px
   line-height: 30px
   text-align: center
 
-
-.pink-app__interface
-  padding: 20px 0px
-  background-color: #f2f2f2
-
-.pink-app__preview
-  padding: 0px 20px
-
-.pink-app__img
-  display: block
-  margin: 0 auto
+  & h2
+    margin: 0px
+    font-size: 14px
+    line-height: 30px
+    font-weight: $font-w-regular
 
 
 .pink-app__form
+  background-color: #f2f2f2
 
   & input[type=file]
     display: none
 
-  & .btn
-    margin-bottom: 12px
-    width: 100%
+
+.pink-app__preview
+  padding: 20px
 
 
-.pink-app__controls
+.pink-app__img
+  display: block
+  width: 100%
+  height: auto
+
+
+.pink-app__control-items
   display: flex
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 
-  padding: 36px 40px 28px
+  padding: 18px 40px
+
+  min-height: 105px
 
   font-size: 0
   text-align: center
   border-bottom: 1px solid #dddfe0
 
 
-.pink-app__control
+.pink-app__control-item
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
 
   margin: 0px 10px
 
-  & .pink-app__range
-    display: none
-
-  &--common
+  &--main
     display: block
-    padding: 29px 0px 0px
+    align-self: flex-end
+
     margin: 0px
+    padding: 10px 0px
     width: 100%
 
-  &--common .pink-app__range
+  &--main .pink-app__range
     display: block
 
-  &--active .pink-app__icon path:last-child
-    fill: #d22856;
 
+.pink-app__submit
+  padding: 38px 20px
 
-.pink-app__form-wrap
-  padding: 38px 20px 7px
+  & .btn
+    margin-bottom: 12px
+
+  & .btn:last-child
+    margin-bottom: 0px
 
 
 .pink-app__btn
@@ -86,6 +95,9 @@
   border: none
   cursor: pointer
 
+  &--active .pink-app__icon path:last-child
+    fill: #d22856
+
 
 .pink-app__icon
   position: absolute
@@ -96,7 +108,10 @@
   transform: translate(-50%, -50%)
 
 
+/* Custom Range*/
 .pink-app__range
+  display: none
+
   -webkit-appearance: none
   width: 100%
   margin: 5px 0
