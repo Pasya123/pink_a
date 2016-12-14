@@ -3,15 +3,13 @@
   padding-top: 10px
   background-color: #ffffff
 
-  &--mb-hide
-    display: none
-
 
 .page-footer__wrap
   +adaptive-container()
 
   box-sizing: border-box
   padding-bottom: 20px
+
 
 .page-footer__logo
   width: 146px
@@ -33,13 +31,14 @@
 .page-footer__copy
   margin: 35px auto 20px
 
-  height: 40px
-  width: 140px
+  min-height: 40px
+  min-width: 140px
 
   line-height: 40px
   text-align: center
 
-
+  & a
+    text-decoration: none
 
   &:hover .page-footer__copy-logo path
     fill: #283645
@@ -68,11 +67,6 @@
 
 @media (min-width: $tablet-max-width)
 
-  .page-footer
-
-    &--mb-hide
-      display: block
-
   .page-footer__wrap
     display: flex;
     justify-content: space-between;
@@ -80,7 +74,6 @@
     flex-wrap: wrap;
 
     padding: 20px 20px 15px
-
 
     & > *
       flex-grow: 0;
@@ -98,18 +91,16 @@
     padding-left: 35px
 
 
-
 @media (min-width: $desktop-max-width)
 
   .page-footer__wrap
-    padding: 54px 10px 50px
+    padding: 34px 10px 70px
     margin: 0 auto
     max-width: $desktop-content-max-width
 
 
   .page-footer__logo
-    padding: 0px
-    padding-right: 40px
+    padding: 0px 50px 0px 0px
 
 
   .page-footer__copy
@@ -118,3 +109,4 @@
 
   .page-footer__copy-link
     font-size: 18px
+    line-height: 18px

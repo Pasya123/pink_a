@@ -18,6 +18,7 @@
   & fieldset
     display: block
     position: relative
+    box-sizing: border-box
 
     flex-grow: 0
     flex-shrink: 1
@@ -27,6 +28,7 @@
     padding: 20px 0px 0px
 
     border: none
+    border-radius: 3px
     background-color: #fff
 
   & legend
@@ -358,59 +360,104 @@
 @media (min-width: $desktop-max-width)
 
   .contest-form
-    padding: 0px 10px
-
-  .contest-form__section
-    box-sizing: border-box
-
-    &--id
-      padding: 0px
-      padding-top: 15px
-      width: 46.27659%
-
-    &--app
-      margin: 0px
-      padding: 20px
-      width: 46.27659%
-
-    &--app .contest-form__title
-      padding: 0px 25px
-      margin: 0px 5px
-
-    &--contacts
-      margin: 30px 0px
-      width: 100%
-
-    &--contacts .contest-form__title
-      padding: 0px 27px
-      margin: 0px 120px
-
-    &--efforts
-      margin: 0px
-      width: 100%
-
-    &--message
-      margin: 0px
-      width: 100%
-
-
-  .contest-form__id-item
-    padding-bottom: 54px
-
-
-  .contest-form__contacts
     display: flex
-    justify-content: space-between
-    align-items: flex-start
-
-
-  .contest-form__contacts-item
-    width: 45.731707%
-
-
-  .contest-form__efforts
-    display: flex
-    flex-direction: column
+    flex-direction: row
     justify-content: space-between
     align-items: flex-start
     flex-wrap: wrap
+
+    padding: 0px 10px
+
+
+  /* ID section */
+  .contest-form .contest-form__section-id
+    padding: 0px 0px
+    width: 46.27659%
+
+  .contest-form__id-items
+    padding: 18px 0px
+
+
+  /* Efforts section */
+  .contest-form .contest-form__section-efforts
+    margin: 20px 0px 40px
+    width: 100%
+
+
+  .contest-form__efforts-items
+    padding: 33px 22px 12px
+    padding-left: 57px
+    padding-right: 0px
+
+    column-count: 3
+    column-gap: 40px
+
+  .contest-form__efforts-item
+    box-sizing: border-box
+
+    padding: 0px 0px 42px
+
+    //padding-rigt: 10px
+
+    &:last-child
+      padding: 0px 0px 42px
+
+      //padding-left: 10px
+
+
+  /* Contacts section */
+  .contest-form .contest-form__section-contacts
+    margin: 25px 0px 45px
+    width: 100%
+
+
+  .contest-form__contacts-items
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+
+    padding: 20px 58px 0px
+
+
+  .contest-form__contacts-item
+    box-sizing: border-box
+
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+
+    padding: 63px 0px 0px
+
+    width: 45.7317073%
+
+
+  /* App section */
+  .contest-form .contest-form__section-app
+    margin: 12px 0px 0px
+    width: 46.27659%
+
+
+  .contest-form__app-items
+    padding: 34px 74px 11px
+
+
+  /* Message section */
+  .contest-form .contest-form__section-message
+    margin: 25px 0px 65px
+    padding: 45px 58px 40px
+    width: 100%
+
+
+  .contest-form__message-wrap
+    & textarea
+      min-height: 126px
+
+
+  /* Bottom */
+  .contest-form .contest-form__section-submit
+    margin: 0px 0px 12px
+    padding: 0px
+    width: 100%
+
+
