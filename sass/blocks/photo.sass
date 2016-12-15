@@ -37,7 +37,7 @@
     display: block
     margin: 0 auto
 
-    min-width: 100%
+    max-width: 100%
     height: auto
 
 
@@ -131,9 +131,9 @@
 
     &--panorama
       box-sizing: border-box
-      margin: 0px -30px 50px
+      margin: 0px 0px 50px
       padding: 0px
-      width: calc(100% + 60px)
+      width: 100%
 
     &--panorama .photo__img-wrap
       min-height: 509px
@@ -152,13 +152,13 @@
       position: absolute
 
       top: 25px
-      right: 20px
+      right: 23px
 
     &--panorama .photo__likes
       position: absolute
 
       top: 25px
-      right: 48px
+      right: 60px
 
 
   .photo__img-wrap
@@ -174,7 +174,7 @@
 
   .photo__comment
     margin: 0px 0px 14px
-    height: 48px
+    min-height: 48px
 
   .photo__like-btn
     float: right
@@ -182,5 +182,37 @@
 
   .photo__likes
     padding: 0px
+
+
+@media (min-width: $desktop-max-width)
+
+  .photo
+    margin: 0px 0px 54px
+
+    width: 31.9148936%
+
+    &--panorama
+      margin: 0px 0px 50px
+      width: 100%
+
+    &--panorama .photo__img-wrap
+      min-height: 506px
+
+    &--panorama .photo__img-wrap::before
+      top: 54px
+      right: 130px
+
+    &--panorama .photo__caption
+      box-sizing: border-box
+      margin: 0px auto
+
+      width: $desktop-content-max-width - 20px
+
+    &--panorama  .photo__comment
+      min-height: 0px
+
+
+  .photo__img-wrap
+    min-height: 400px
 
 
