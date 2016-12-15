@@ -1,0 +1,301 @@
+
+.pink-app
+  color: #283645
+  background-color: #ffffff
+
+
+.pink-app__content-wrap
+  +adaptive-container()
+
+
+.pink-app__header
+  padding: 20px 30px 40px
+
+  font-size: 14px
+  line-height: 30px
+  text-align: center
+
+  & h2
+    margin: 0px
+    font-size: 14px
+    line-height: 30px
+    font-weight: $font-w-regular
+
+
+.pink-app__form
+  background-color: #f2f2f2
+
+  & input[type=file]
+    display: none
+
+
+.pink-app__preview
+  padding: 20px
+
+
+.pink-app__img
+  display: block
+  max-width: 100%
+  height: auto
+
+
+.pink-app__edit
+  padding: 18px 50px 14px
+
+  font-size: 0px
+
+  & > *
+    display: inline-block
+    margin-right: 25px
+
+  & > *:nth-child(3n)
+    margin-right: 0px
+
+
+.pink-app__btn
+  position: relative
+  padding: 5px
+
+  width: 56px
+  height: 56px
+
+  font-size: 0
+
+  background-color: transparent
+  border: none
+  cursor: pointer
+
+  &--active .pink-app__icon path
+    fill: #d22856
+
+
+.pink-app__icon
+  position: absolute
+
+  top: 50%
+  left: 50%
+
+  transform: translate(-50%, -50%)
+
+
+.range-input
+  display: none
+
+
+.pink-app__main-range
+
+  padding: 0px
+  padding-left: 38px
+  padding-right: 42px
+  padding-bottom: 18px
+
+  & .range-input
+    display: block
+
+
+.pink-app__submit
+  padding: 38px 20px 41px
+
+  & > *:not(:last-child)
+    margin-bottom: 12px
+
+
+@media (min-width: $tablet-max-width)
+
+  .pink-app__header
+    padding: 45px 20px
+
+    min-height: 85px
+
+    & h2
+      margin: 0px
+      font-size: 18px
+      line-height: 30px
+
+
+  .pink-app__form
+    +clearfix()
+
+    padding: 57px 40px 54px
+
+
+  .pink-app__preview
+    box-sizing: border-box
+
+    padding: 0px
+    width: 300px
+    height: 400px
+
+    float: left
+
+
+  .pink-app__controls
+    box-sizing: border-box
+
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+    flex-wrap: wrap
+
+
+    padding: 0px
+
+    width: 300px
+    min-height: 400px
+
+    float: right
+
+
+  .pink-app__edit
+    padding: 0px
+    padding-left: 20px
+
+    width: 100%
+
+    display: flex
+    flex-direction: column
+
+    & > *
+      margin: 0px
+      height: 70px
+
+      line-height: 70px
+
+      flex-grow: 0
+      flex-shrink: 1
+      flex-basis: auto
+
+    & > *:first-child
+
+      padding-bottom: 17px
+      height: 40px
+
+      line-height: 40px
+
+    & .range-input
+      display: inline-block
+      vertical-align: middle
+
+      margin: 0px
+      padding: 10px 0px 10px 25px
+      width: 202px
+
+
+  .pink-app__btn
+    display: inline-block
+    vertical-align: middle
+
+    width: 35px
+    height: 35px
+
+
+  .pink-app__icon
+    width: 28px
+    height: 28px
+
+    &--contrast
+      width: 18px
+      height: 18px
+
+    & path
+      fill: #d22856
+
+
+  .pink-app__main-range
+    display: none
+
+
+  .pink-app__submit
+    box-sizing: border-box
+    padding: 0px 15px
+
+    width: 290px
+
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+
+    align-self: flex-end
+
+    & > *:not(:last-child)
+      margin-bottom: 24px
+
+
+@media (min-width: $desktop-max-width)
+
+  .pink-app
+    padding-bottom: 50px
+
+
+  .pink-app__content-wrap
+    max-width: $desktop-content-max-width
+
+
+  .pink-app__header
+    padding: 5px 20px
+
+    min-height: 120px
+
+
+  .pink-app__form
+    margin: 0px 10px
+    padding: 47px 60px 54px
+
+
+  .pink-app__preview
+    margin: 10px 20px 0px
+    width: 300px
+
+
+  .pink-app__controls
+    width: 415px
+    min-height: 410px
+
+
+  .pink-app__edit
+    padding: 0px
+
+    & > *:first-child
+      padding-bottom: 7px
+      height: 60px
+
+      line-height: 60px
+
+    & .range-input
+      padding: 10px 0px 10px 40px
+      width: 288px
+
+
+  .pink-app__btn
+    width: 56px
+    height: 56px
+
+
+  .pink-app__icon
+    width: 48px
+    height: 48px
+
+    &--contrast
+      width: 32px
+      height: 32px
+
+
+  .pink-app__submit
+    padding: 0px 0px 0px 5px
+    width: 100%
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    & > *
+      margin: 0px
+      width: 183px
+
+      flex-grow: 0
+      flex-shrink: 1
+      flex-basis: auto
+
+    & > *:not(:last-child)
+      margin: 0px

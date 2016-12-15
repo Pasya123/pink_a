@@ -1,13 +1,13 @@
 
 .reviews
-  padding: 20px 0px
+  padding: 22px 0px 25px
 
   background-color: #ffffff
   text-align: center
 
 
 .reviews__item
-  padding: 10px 20px
+  padding: 20px
 
   text-align: center
 
@@ -16,6 +16,8 @@
 
 
 .reviews__author-name
+  font-size: 18px
+  line-height: 30px
   font-weight: $font-w-bold
   color: #000000
 
@@ -25,13 +27,151 @@
 
 
 .reviews__comment
-  & p
-    line-height: 30px
+  padding: 13px 0px 10px
+
+  font-size: 14px
+  line-height: 30px
+  font-weight: $font-w-regular
 
 
 .reviews__toggles
   display: inline-block
+  vertical-align: top
+
+  height: 15px
+  line-height: 15px
+
+  font-size: 0px
+  text-align: center
+
+
+.reviews__toggle
+  display: inline-block
+  vertical-align: middle
+  position: relative
+
+  box-sizing: border-box
+  margin: 0px 7px
+
+  width: 12px
+  height: 12px
+
+  border-radius: 50%
+  cursor: pointer
+
+  &::after
+    content: ""
+    position: absolute
+
+    top: 50%
+    left: 50%
+
+    width: 6px
+    height: 6px
+
+    background-color: #bec2c7
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+
+  &--active
+    background-color: #fff
+    border: 3px solid #283645
+
+    &::after
+      display: none
 
 
 .reviews__control
   display: none
+
+
+@media (min-width: $tablet-max-width)
+
+  .reviews
+    padding-top: 32px
+    padding-bottom: 0px
+
+
+  .reviews__items
+    padding-bottom: 28px
+
+
+  .reviews__item
+    position: relative
+    padding-top: 20px
+    padding-bottom: 88px
+
+
+  .reviews__author
+    position: absolute
+    bottom: 0px
+    left: 50%
+
+    transform: translateX(-50%)
+
+
+  .reviews__author-name
+    font-size: 20px
+    line-height: 30px
+    font-weight: $font-w-bold
+
+
+  .reviews__author-id
+    display: block
+    font-size: 14px
+    line-height: 35px
+    font-weight: $font-w-regular
+
+
+  .reviews__comment
+    font-size: 18px
+    line-height: 30px
+
+
+@media (min-width: $desktop-max-width)
+
+  .reviews
+    padding-top: 155px
+    padding-bottom: 40px
+
+
+  .reviews__content-wrap
+    position: relative
+    margin: 0 auto
+    max-width: $desktop-content-max-width
+
+
+  .reviews__items
+    padding: 0px 95px 0px
+
+
+  .reviews__author-name
+    font-size: 24px
+    line-height: 36px
+
+
+  .reviews__author-id
+    font-size: 18px
+    line-height: 30px
+
+  .reviews__toggles
+    display: none
+
+
+  .reviews__control
+    display: block
+    position: absolute
+
+    top: 25%
+
+    width: 50px
+    height: 50px
+
+    font-size: 0px
+    cursor: pointer
+
+    &--prev
+      left: 0px
+
+    &--next
+      right: 0px

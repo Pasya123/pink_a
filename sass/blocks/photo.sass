@@ -1,0 +1,216 @@
+
+.photo
+  margin: 0px 0px 20px
+  padding: 0px 20px
+
+  color: #283645
+  background-color: #fff
+
+  &--panorama
+    padding: 0px
+
+  &--panorama .photo__caption
+    margin: 0px 20px
+
+  &--panorama .photo__img-wrap::before
+    content: "Панорама дня"
+    position: absolute
+
+    top: 0px
+    right: 20px
+
+    padding: 6px 20px
+
+    font-size: 12px
+    line-height: 24px
+    font-weight: $font-w-bold
+    color: #ffffff
+
+    text-transform: uppercase
+    background-color: #d22856
+
+
+.photo__img-wrap
+  position: relative
+
+  & img
+    display: block
+    margin: 0 auto
+
+    max-width: 100%
+    height: auto
+
+
+.photo__caption
+  margin: 0px
+  padding: 18px 17px 13px
+
+  font-size: 0px
+
+  background-color: #f2f2f2
+
+
+.photo__id
+  height: 24px
+
+.photo__author
+  vertical-align: top
+
+  font-size: 14px
+  line-height: 24px
+  font-weight: $font-w-bold
+
+
+.photo__date
+  vertical-align: top
+
+  padding: 0px 5px
+
+  font-size: 12px
+  line-height: 24px
+  font-weight: $font-w-light
+  text-transform: uppercase
+
+
+.photo__comment
+  margin: 0px 0px 10px
+
+  min-height: 27px
+
+  font-size: 14px
+  line-height: 24px
+  font-weight: $font-w-regular
+
+
+.photo__likes
+  display: inline-block
+  vertical-align: top
+
+  padding: 0px 11px
+
+  font-size: 12px
+  line-height: 20px
+  color: #d22856
+  text-transform: uppercase
+
+
+.photo__like-btn
+  position: relative
+
+  display: inline-block
+  vertical-align: top
+
+  padding: 0px
+
+  width: 20px
+  height: 20px
+
+  font-size: 0px
+
+  border: none
+  background-color: transparent
+  cursor: pointer
+
+
+.photo__like-icon
+  position: absolute
+
+  top: 50%
+  left: 0px
+
+  transform: translateY(-50%)
+
+
+@media (min-width: $tablet-max-width)
+
+  .photo
+    box-sizing: border-box
+
+    padding: 0px
+    width: 46.875%
+
+    &--panorama
+      box-sizing: border-box
+      margin: 0px 0px 50px
+      padding: 0px
+      width: 100%
+
+    &--panorama .photo__img-wrap
+      min-height: 509px
+
+    &--panorama .photo__caption
+      margin: 0px 40px
+
+    &--panorama .photo__img-wrap::before
+      top: 57px
+      right: 40px
+
+    &--panorama  .photo__comment
+      margin: 0px 0px 10px
+
+    &--panorama .photo__like-btn
+      position: absolute
+
+      top: 25px
+      right: 23px
+
+    &--panorama .photo__likes
+      position: absolute
+
+      top: 25px
+      right: 60px
+
+
+  .photo__img-wrap
+    min-height: 300px
+
+
+  .photo__caption
+    position: relative
+
+    padding: 25px 27px 14px
+    min-height: 79px
+
+
+  .photo__comment
+    margin: 0px 0px 14px
+    min-height: 48px
+
+  .photo__like-btn
+    float: right
+
+
+  .photo__likes
+    padding: 0px
+
+
+@media (min-width: $desktop-max-width)
+
+  .photo
+    margin: 0px 0px 54px
+
+    width: 31.9148936%
+
+    &--panorama
+      margin: 0px 0px 50px
+      width: 100%
+
+    &--panorama .photo__img-wrap
+      min-height: 506px
+
+    &--panorama .photo__img-wrap::before
+      top: 54px
+      right: 130px
+
+    &--panorama .photo__caption
+      box-sizing: border-box
+      margin: 0px auto
+
+      width: $desktop-content-max-width - 20px
+
+    &--panorama  .photo__comment
+      min-height: 0px
+
+
+  .photo__img-wrap
+    min-height: 400px

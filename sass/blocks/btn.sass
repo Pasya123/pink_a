@@ -1,13 +1,19 @@
 
 .btn
   display: inline-block
+  box-sizing: border-box
+
   vertical-align: top
 
-  padding: 15.5px 30px
+  padding: 30px
+  padding-top: 14px
+  padding-bottom: 17px
+
+  width: 100%
   min-width: 174px
 
   font-family: $font-family-base
-  font-size: 21px
+  font-size: 18px
   font-weight: $font-w-bold
   line-height: 18px
   color: $text-color
@@ -36,9 +42,6 @@
     background-color: #283645
     color: rgba(#fff, 0.3)
 
-.btn--adptive
-  padding: 14.5px 30px
-  font-size: 18px
 
 .btn--inverse
   color: #ffffff
@@ -54,6 +57,9 @@
 
 
 .btn--pink
+  padding-top: 13px
+  padding-bottom: 16px
+
   font-size: 18px
   color: #d22856
   border-color: #d22856
@@ -107,3 +113,13 @@
   &:disabled
     background-color: #e5e5e5
 
+
+@media (min-width: $desktop-max-width)
+
+  .btn
+    padding-left: 25px
+    padding-right: 25px
+    font-size: 18px
+
+  .btn--flat
+    font-size: 18px

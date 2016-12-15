@@ -1,68 +1,166 @@
 
 .page-header
-  //width: 100%
+  +adaptive-container()
 
 
-.page-header__intro
-  color: #ffffff
+.page-header__logo
+  position: relative
+  box-sizing: border-box
+
+  padding-top: 67px
+  min-height: 462px
 
   background-image: url("../img/bg-back-mobile@1x.jpg")
   background-repeat: no-repeat
   background-position: center top
 
 
-.page-header__intro-header
-  padding: 20px 10px
+.page-header__img-wrap
+  position: absolute
 
-  min-height: 130px;
+  bottom: 0px
+  left: 0px
 
-  text-align: center
-  overflow: hidden
-
-  &--hide
-    display: none
-
-
-.page-header__intro-img
-  position: relative
-  height: 395px
+  width: 258px
 
   & img
     display: block
-    position: absolute
-    bottom: 0
-    left: 50%
-
-    transform: translateX(-50%)
+    width: 100%
+    height: auto
 
 
-.page-header__intro-info
-  padding: 28px 0px
+.page-header__intro
+  box-sizing: border-box
+
+  padding: 28px 20px 29px
+
+  text-align: center
+
+  color: #ffffff
   background-color: #1d2631
 
-.page-header__intro-content
-  text-align: center
+  & h2
+    display: none
+
+  &--inner
+    padding: 75px 20px 32px
+
+    min-height: 237px
+
+    background-image: url("../img/bg-back-mobile@1x.jpg")
+    background-repeat: no-repeat
+    background-position: center top
+
+  &--inner h2
+    display: block
+    line-height: 30px
 
 
-.page-header__app-items
-  margin: 25px auto
-  width: 195px
+@media (min-width: $tablet-max-width)
 
-  font-size: 0px
+  .page-header__content-wrap
+    position: relative
 
+    padding: 161px 40px 60px
 
-.page-header__app-item
-  display: inline-block
-  vertical-align: top
-
-  width: 65px
-  height: 65px
-
-  font-size: 0px
-  line-height: 65px
-  text-align: center
+    background-image: url("../img/bg-back-mobile@1x.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center top
 
 
-.page-header__app-logo
-  display: inline-block
-  vertical-align: middle
+  .page-header__logo
+    position: absolute
+    padding: 0px
+
+    right: 0px
+    bottom: 0px
+
+    width: 510px
+    height: 545px
+
+    background: none
+    z-index: 10
+
+
+  .page-header__img-wrap
+    display: block
+
+    top: auto
+    bottom: 0
+
+
+  .page-header__intro
+    position: relative
+    padding: 20px 0px 50px
+    width: 300px
+
+    background-color: transparent
+    z-index: 50
+
+    & h2
+      display: block
+
+      margin: 20px auto 33px
+      width: 245px
+
+      font-size: 40px
+
+    &--inner
+      padding: 0px
+
+      width: auto
+      min-height: 198px
+
+      background: none
+
+    &--inner h2
+      width: auto
+      font-size: 50px
+      line-height: 58px
+
+
+@media (min-width: $desktop-max-width)
+
+  .page-header
+    background-color: #1d2631
+
+    background-image: url("../img/bg-back-mobile@1x.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center top
+
+
+  .page-header__content-wrap
+    margin: 0 auto
+
+    max-width: $desktop-content-max-width
+
+    background: none
+
+
+  .page-header__intro
+    padding: 35px 10px 60px
+
+    width: 320px
+
+    & h2
+      margin: 20px 0px 55px
+      width: auto
+
+      font-size: 50px
+
+    &--inner
+      margin: 0 auto
+      padding: 0px
+
+      width: auto
+      min-height: 159px
+
+      background: none
+
+    &--inner h2
+      margin: 14px 0px 25px
+
+    &--fixed
+      width: 500px

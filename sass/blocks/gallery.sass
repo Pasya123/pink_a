@@ -1,0 +1,73 @@
+
+.gallery
+  color: #283645
+  background-color: #ffffff
+
+
+.gallery__content-wrap
+  +adaptive-container()
+
+
+.gallery__header
+  padding: 30px 35px 34px
+
+  text-align: center
+
+  & h2
+    margin: 15px 0px
+    font-size: 14px
+    line-height: 30px
+    font-weight: $font-w-regular
+
+
+.gallery__items
+  display: flex
+  flex-direction: column
+  aling-content: flex-start
+  align-items: stretch
+  flex-wrap: wrap
+
+  & > *
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+
+
+@media (min-width: $tablet-max-width)
+
+  .gallery__header
+    padding: 71px 70px 57px
+
+    & h2
+      margin: 20px 0px
+      font-size: 18px
+      line-height: 30px
+      font-weight: $font-w-regular
+
+
+  .gallery__items
+    flex-direction: row
+    justify-content: space-around
+
+    padding: 0px 30px
+
+
+@media (min-width: $desktop-max-width)
+
+  .gallery__content-wrap
+    margin: 0 auto
+    max-width: $desktop-content-max-width
+
+
+  .gallery__header
+    padding: 71px 70px 69px
+
+    & h2
+      margin: 20px auto
+      width: 600px
+
+  .gallery__items
+    flex-direction: row
+    justify-content: space-between
+
+    padding: 0px 10px

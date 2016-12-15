@@ -1,18 +1,76 @@
 
 .main-nav
-  position: relative
+  +adaptive-container()
+
+  margin-bottom: -67px
+
+  &--closed
+    margin-bottom: -70px
+
+  &--closed .main-nav__items
+    display: none
+
+  &--closed .main-nav__panel
+    background-color: rgba(#000000, 0.3)
+    box-shadow: none
+
+  &--closed .main-nav__btn--close
+    display: none
+
+  &--closed .main-nav__btn--open
+    display: inline-block
 
 
 .main-nav__logo
-  padding: 19px 20px
+  display: none
+
+
+.main-nav__panel
+  position: relative
+
+  min-height: 70px
+
+  font-size: 0px;
+  text-align: right
+
   background-color: #283645
   box-shadow: inset 0px -3px 0px -2px #000101
 
+  z-index: 500
+
+
+.main-nav__mobile-logo
+  display: block
+
+  float: left
+
+  margin: 20px
+
+  &:hover svg path
+    fill: #d22856
+
+  &:active svg path
+    fill: rgba(#fff, 0.3)
+
+
+.main-nav__tablet-logo
+  display: none
+
+  &:hover svg path
+    fill: #d22856
+
+  &:active svg path
+    fill: rgba(#fff, 0.3)
+
 
 .main-nav__items
+  position: relative
+
   margin: 0px
   padding: 0px
   list-style-type: none
+
+  z-index: 500
 
 
 .main-nav__a
@@ -31,33 +89,42 @@
   background-color: #283645
   box-shadow: inset 0px -3px 0px -2px #000101, inset 0px 3px 0px -2px #485461
 
+  &:not(&--active):hover
+    color: #d22856
 
-.main-nav__btns
-  position: absolute
-
-  top: 0
-  right: 0
-
-  width: 100%
-
-  text-align: right
+  &:not(&--active):active
+    color: rgba(#d22856, 0.3)
 
 
 .main-nav__btn
   position: relative
-  padding: 0px;
+  vertical-align: top
 
-  width: 66px
-  height: 66px
+  padding: 0px
+
+  width: 65px
+  height: 65px
 
   font-size: 0px
 
   border: none
   background: transparent
+  outline: none
   cursor: pointer
 
   &--open
     display: none
+    margin: 0px 10px
+
+  &:hover .main-nav__btn-ico svg path
+    fill: #d22856
+
+  &:active .main-nav__btn-ico svg path
+    fill: rgba(#d22856, 0.3)
+
+
+.nojs .main-nav__btn
+  display: none
 
 
 .main-nav__btn-ico
@@ -67,3 +134,122 @@
   left: 50%
 
   transform: translate(-50%, -50%);
+
+
+@media (min-width: $tablet-max-width)
+
+  .main-nav
+    margin-bottom: -110px
+
+
+  .main-nav__panel
+    min-height: 110px
+
+
+  .main-nav__mobile-logo
+    display: none
+
+
+  .main-nav__tablet-logo
+    display: block
+
+    float: left
+
+    margin: 26px 40px
+
+    & svg path
+      fill: #fff
+
+
+  .main-nav__btn
+
+    &--close
+      margin: 23px 19px 22px
+
+    &--open
+      margin: 23px 33px 22px
+
+
+@media (min-width: $desktop-max-width)
+
+  .main-nav
+
+    +clearfix()
+
+    position: relative
+
+    background-color: rgba(#000000, 0.3)
+
+    z-index: 500
+
+    &--closed  .main-nav__panel
+      display: none
+
+    & .main-nav__logo
+      display: block
+      position: relative
+
+      float: left
+
+      padding: 0px
+      margin: 0px 10px
+      width: 150px
+
+      background-color: transparent
+      box-shadow: none
+      z-index: 150
+
+    & .main-nav__items
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      flex-wrap: wrap
+
+      float: right
+
+      margin: 0px 10px
+      width: 621px
+
+      z-index: 150
+
+
+  .main-nav__wrap
+    +clearfix()
+    padding: 26px
+    margin: 0 auto
+
+    max-width: $desktop-content-max-width
+
+
+  .main-nav__panel
+    display: none
+
+
+  .main-nav__item
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+
+
+  .main-nav__a
+    padding: 19px 0px
+
+    font-size: 18px
+    line-height: 18px
+    font-weight: $font-w-regular
+
+    text-transform: none
+    background-color: transparent
+    box-shadow: none
+
+    &:hover
+      color: #d22856
+
+    &:active
+      color: rgba(#fff, 0.3)
+
+    &--active
+      border-bottom: 2px solid #fff
+
+    &--active:hover
+      border-bottom: 2px solid #d22856
