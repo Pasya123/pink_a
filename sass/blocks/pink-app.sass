@@ -35,7 +35,7 @@
 
 .pink-app__img
   display: block
-  width: 100%
+  max-width: 100%
   height: auto
 
 
@@ -60,6 +60,11 @@
 
   margin: 0px 10px
 
+  & > *
+    flex-grow: 0
+    flex-shrink: 1
+    flex-basis: auto
+
   &--main
     display: block
 
@@ -73,6 +78,7 @@
   &--submit
     margin: 0px -40px
     border-top: 1px solid #dddfe0
+
 
 .pink-app__submit
   margin: 0px
@@ -97,7 +103,7 @@
   border: none
   cursor: pointer
 
-  &--active .pink-app__icon path:last-child
+  &--active .pink-app__icon path
     fill: #d22856
 
 
@@ -265,7 +271,7 @@
     align-items: center
 
     margin: 0px
-    height: 70px
+    min-height: 70px
 
     border-bottom: 1px solid #dddfe0
 
@@ -279,7 +285,7 @@
       border: none
 
     &:first-child
-      height: 39px
+      min-height: 39px
       padding-bottom: 15px
 
 
@@ -300,7 +306,7 @@
       width: 18px
       height: 18px
 
-    & path:last-child
+    & path
       fill: #d22856
 
 
