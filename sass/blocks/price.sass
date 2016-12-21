@@ -44,12 +44,8 @@
 
 
 .price__content-wrap
-  +adaptive-container()
-
   position: relative
-
   text-align: center
-  background-color: #f2f2f2
 
 
 .price__table-wrap
@@ -62,7 +58,7 @@
   display: inline-block
   vertical-align: top
 
-  padding: 42px
+  padding: 38px 15px 45px
 
   height: 15px
   line-height: 15px
@@ -104,7 +100,7 @@
 
   .price
 
-    padding-top: 91px
+    padding-top: 93px
 
     & #toggle-1:checked ~ .price__table-wrap > *
       right: 0px
@@ -120,12 +116,11 @@
 
 
   .price__content-wrap
-    padding-top: 4px
-    padding-bottom: 69px
+    padding: 0px 0px 69px
 
 
   .price__table-wrap
-    padding: 0px 40px
+    padding: 0px 20px
 
 
   .price__toggles
@@ -135,7 +130,7 @@
 @media (min-width: $desktop-max-width)
 
   .price
-    padding-top: 143px
+    padding-top: 147px
 
 
   .price__separator
@@ -144,8 +139,6 @@
 
   .price__content-wrap
     padding-bottom: 97px
-    margin: 0 auto
-    max-width: $desktop-content-max-width
 
 
   .price__table-wrap

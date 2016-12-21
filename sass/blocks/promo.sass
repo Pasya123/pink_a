@@ -1,7 +1,7 @@
 
 .promo
   color: #283645
-  background-color: #f2f2f2
+  background-color: #ffffff
 
 
 .promo__header
@@ -14,9 +14,11 @@
     margin: 30px 20px 22px
 
 
-.promo__items
+.promo__content-wrap
   position: relative
-  padding: 65px 20px 0px
+  padding: 65px 0px 0px
+
+  background-color: #f2f2f2
 
 
 .promo__separator
@@ -33,6 +35,9 @@
   & path
     fill: #fff
 
+
+.promo__items
+  padding: 0px 20px
 
 .promo__item
   position: relative
@@ -86,8 +91,8 @@
     height: 50px
 
 
-  .promo__items
-    padding: 50px 40px 0px
+  .promo__content-wrap
+    padding: 50px 0px 0px
 
     background-color: #f2f2f2
 
@@ -136,11 +141,10 @@
 
 @media (min-width: $desktop-max-width)
 
-  .promo__content-wrap
-    margin: 0 auto
+  .promo__items
+    margin: 0px
     margin-top: -50px
 
-    max-width: $desktop-content-max-width
     font-size: 0px
 
 
@@ -157,6 +161,7 @@
 
 
   .promo__items
+    padding: 0px
 
 
   .promo__item
