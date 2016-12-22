@@ -2,20 +2,14 @@
 .page-footer
   color: #283645
   background-color: #ffffff
-
-
-.page-footer__content-wrap
-  +adaptive-container()
-
-  box-sizing: border-box
-  padding-bottom: 20px
+  padding: 0px 0px 40px
 
 
 .page-footer__logo
   width: 146px
   height: 55px
   margin: 0 auto
-  padding: 30px 20px 25px
+  padding: 30px 20px 37px
 
   &:hover svg path
     fill: #d22856
@@ -28,10 +22,10 @@
 
 
 .page-footer__copy
-  margin: 35px auto 20px
+  margin: 35px auto 0px
 
   min-height: 40px
-  min-width: 140px
+  width: 140px
 
   line-height: 40px
   text-align: center
@@ -50,11 +44,12 @@
   display: inline-block
   vertical-align: middle
 
-  padding: 4px 8px 8px
+  padding: 4px 10px 8px
   padding-left: 0px
 
   font-size: 14px
   line-height: 18px
+  font-weight: $font-w-regular
   color: #283645
   text-decoration: none
 
@@ -66,13 +61,18 @@
 
 @media (min-width: $tablet-max-width)
 
+  .page-footer
+    color: #283645
+    background-color: #ffffff
+    padding: 0px 0px 20px
+
   .page-footer__content-wrap
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
 
-    padding: 15px 20px 20px
+    padding: 20px 0px 20px
 
     & > *
       flex-grow: 0;
@@ -82,32 +82,34 @@
 
   .page-footer__logo
     margin: 0px
-    padding: 10px 20px 25px
+    padding: 5px 20px 10px
+    padding-right: 5px
 
 
   .page-footer__copy
     margin: 0px
-    padding-top: 10px
-    padding-right: 15px
-    padding-left: 35px
+    padding: 5px 15px
 
 
 @media (min-width: $desktop-max-width)
 
   .page-footer__content-wrap
-    padding: 34px 10px 70px
+    padding: 15px 5px 50px
     margin: 0 auto
     max-width: $desktop-content-max-width
 
 
   .page-footer__logo
-    padding: 0px 50px 0px 0px
+    padding: 0px 5px 15px
+    padding-right: 45px
 
 
   .page-footer__copy
     padding-right: 0px
+    width: 170px
 
 
   .page-footer__copy-link
+    padding: 4px 5px 8px
     font-size: 18px
     line-height: 18px

@@ -51,7 +51,7 @@
 /* ID section */
 .contest-form .contest-form__section-id
   margin: 0px
-  padding: 0px 0px 40px
+  padding: 0px 0px 45px
 
 
 .contest-form__id-items
@@ -63,7 +63,7 @@
   display: block
   vertical-align: top
 
-  padding: 20px 20px 10px
+  padding: 20px 22px 10px
 
   font-size: 14px
   line-height: 21px
@@ -75,13 +75,15 @@
 /* Efforts section */
 .contest-form .contest-form__section-efforts
   margin: 0px
-  padding: 115px 0px 0px
+  padding: 110px 0px 0px
 
   background-color: #f2f2f2
+
 
 .contest-form__section-efforts .contest-form__title
   padding: 20px 10px
 
+  width: 250px
   max-height: 76px
 
   background-color: #f2f2f2
@@ -99,7 +101,7 @@
 /* Contacts section */
 .contest-form .contest-form__section-contacts
   margin: 0px
-  padding: 15px 0px 42px
+  padding: 17px 0px 43px
 
 .contest-form__section-contacts .contest-form__title
   display: none
@@ -113,7 +115,7 @@
 .contest-form__contacts-label
   display: block
 
-  padding: 20px 20px 10px
+  padding: 20px 22px 10px
 
   font-size: 14px
   line-height: 21px
@@ -125,13 +127,15 @@
 /* App section */
 .contest-form .contest-form__section-app
   margin: 0px
-  padding: 110px 0px 0px
+  padding: 108px 0px 22px
 
   background-color: #f2f2f2
+
 
 .contest-form__section-app .contest-form__title
   padding: 20px 10px
 
+  width: 250px
   max-height: 76px
 
   background-color: #f2f2f2
@@ -146,7 +150,7 @@
   padding: 0px 0px 35px
 
   &:last-child
-    padding: 0px 0px 40px
+    padding: 0px 0px 20px
 
 
 /* Message section */
@@ -154,13 +158,15 @@
   position: relative
 
   margin: 0px
-  padding:  75px 20px
+  padding:  72px 20px
   padding-bottom: 45px
 
 .contest-form__section-message .contest-form__title
-  padding: 25px 10px 20px
+  padding: 25px 10px 15px
 
   max-height: 76px
+
+  background-color: transparent
 
   +text-overflow()
 
@@ -176,7 +182,7 @@
 .contest-form__section-submit
 
   & .contest-form__label
-    margin: 23px 0px 0px
+    margin: 22px 0px 0px
 
 
 .contest-form__label
@@ -202,7 +208,7 @@
 
 
   .contest-form__id-items
-    padding: 0px 40px
+    padding: 0px 20px
 
 
   .contest-form__id-item
@@ -223,12 +229,12 @@
 
 
   .contest-form__id-label
-    padding: 0px 20px 0px 0px
+    padding: 0px 17px 0px 0px
 
 
   /* Efforts section */
   .contest-form .contest-form__section-efforts
-    margin: 20px 40px 45px
+    margin: 20px 20px 45px
     padding: 20px 0px 0px
 
     border: 2px solid #e5e5e5
@@ -239,6 +245,8 @@
   .contest-form__section-efforts .contest-form__title
     display: block
     padding: 0px 30px
+
+    width: auto
 
     background-color: #ffffff
 
@@ -254,9 +262,10 @@
     &:last-child
       padding: 0px 0px 35px
 
+
   /* Contacts section */
   .contest-form .contest-form__section-contacts
-    margin: 20px 40px 45px
+    margin: 20px 20px 45px
     padding: 20px 0px 0px
 
     border: 2px solid #e5e5e5
@@ -274,12 +283,12 @@
 
 
   .contest-form__contacts-items
-    padding: 26px 58px 12px
+    padding: 26px 58px 14px
 
 
   .contest-form__contacts-item
     position: relative
-    padding: 63px 0px 20px
+    padding: 63px 0px 18px
 
     &:last-child
       padding: 63px 0px 0px
@@ -298,8 +307,8 @@
 
   /* App section */
   .contest-form .contest-form__section-app
-    margin: 20px 40px 45px
-    padding: 20px 0px 0px
+    margin: 20px 20px 45px
+    padding: 20px 0px 20px
 
     border: 2px solid #e5e5e5
     background-color: #ffffff
@@ -308,6 +317,8 @@
 
   .contest-form__section-app .contest-form__title
     padding: 0px 30px
+
+    width: auto
 
     background-color: #ffffff
 
@@ -320,7 +331,7 @@
 
   /* Message section */
   .contest-form .contest-form__section-message
-    margin: 20px 40px 65px
+    margin: 20px 20px 65px
     padding: 45px 58px 49px
 
     border: 2px solid #e5e5e5
@@ -330,17 +341,19 @@
   .contest-form__section-message .contest-form__title
     padding: 0px 30px
 
+    background-color: #fff
+
     +text-overflow()
 
   .contest-form__message-wrap
 
     & textarea
-      min-height: 195px
+      min-height: 193px
 
   /* Bottom */
   .contest-form .contest-form__section-submit
     margin: 0px 0px 49px
-    padding: 0px 40px
+    padding: 0px 20px
     order: 6
 
 
@@ -387,25 +400,47 @@
 
 
   .contest-form__efforts-items
-    padding: 33px 22px 12px
-    padding-left: 57px
-    padding-right: 0px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
 
-    column-count: 3
-    column-gap: 40px
+    padding: 33px 0px 15px
+    padding-left: 58px
+    padding-right: 8px
+
 
   .contest-form__efforts-item
     box-sizing: border-box
 
-    padding: 0px 0px 42px
-
-    //padding-rigt: 10px
+    padding: 0px
+    padding-right: 0px
+    padding-bottom: 42px
 
     &:last-child
-      padding: 0px 0px 42px
+      padding: 0px
+      padding-bottom: 42px
 
-      //padding-left: 10px
+    &:nth-child(n+3) .checkbox-input
+      min-width: 250px
 
+    &:nth-child(1)
+      order: 1
+
+    &:nth-child(2)
+      order: 4
+
+    &:nth-child(3)
+      order: 2
+
+    &:nth-child(4)
+      order: 5
+
+    &:nth-child(5)
+      order: 3
+
+    &:nth-child(6)
+      order: 6
 
   /* Contacts section */
   .contest-form .contest-form__section-contacts
@@ -447,17 +482,23 @@
   /* Message section */
   .contest-form .contest-form__section-message
     margin: 25px 0px 65px
-    padding: 45px 58px 40px
+    padding: 40px 58px 40px
     width: 100%
 
 
   .contest-form__message-wrap
     & textarea
-      min-height: 126px
+      min-height: 129px
 
 
   /* Bottom */
   .contest-form .contest-form__section-submit
-    margin: 0px 0px 12px
+    margin: 0px 0px 40px
     padding: 0px
     width: 100%
+
+
+  .contest-form__section-submit
+
+    & .contest-form__label
+      padding: 18px 0px 15px

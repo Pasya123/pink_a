@@ -1,6 +1,5 @@
 
 .main-nav
-  +adaptive-container()
 
   margin-bottom: -67px
 
@@ -191,8 +190,6 @@
 
       float: left
 
-      padding: 0px
-      margin: 0px 10px
       width: 150px
 
       background-color: transparent
@@ -207,18 +204,22 @@
 
       float: right
 
-      margin: 0px 10px
-      width: 621px
+      width: 66%
 
       z-index: 150
 
 
   .main-nav__wrap
     +clearfix()
-    padding: 26px
-    margin: 0 auto
 
-    max-width: $desktop-content-max-width
+    box-sizing: border-box
+
+    margin-left: auto
+    margin-right: auto
+
+    width: $desktop-max-width
+
+    padding: 26px 10px
 
 
   .main-nav__panel
