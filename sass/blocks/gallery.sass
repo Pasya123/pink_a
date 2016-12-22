@@ -4,17 +4,13 @@
   background-color: #ffffff
 
 
-.gallery__content-wrap
-  +adaptive-container()
-
-
 .gallery__header
-  padding: 30px 35px 34px
+  padding: 25px 35px 29px
 
   text-align: center
 
   & h2
-    margin: 15px 0px
+    margin: 20px 0px
     font-size: 14px
     line-height: 30px
     font-weight: $font-w-regular
@@ -36,10 +32,11 @@
 @media (min-width: $tablet-max-width)
 
   .gallery__header
-    padding: 71px 70px 57px
+    padding: 71px 15px 57px
 
     & h2
-      margin: 20px 0px
+      width: 520px
+      margin: 20px auto
       font-size: 18px
       line-height: 30px
       font-weight: $font-w-regular
@@ -47,27 +44,19 @@
 
   .gallery__items
     flex-direction: row
-    justify-content: space-around
+    justify-content: space-between
 
-    padding: 0px 30px
+    padding: 0px 20px
 
 
 @media (min-width: $desktop-max-width)
-
-  .gallery__content-wrap
-    margin: 0 auto
-    max-width: $desktop-content-max-width
-
 
   .gallery__header
     padding: 71px 70px 69px
 
     & h2
-      margin: 20px auto
       width: 600px
 
-  .gallery__items
-    flex-direction: row
-    justify-content: space-between
 
+  .gallery__items
     padding: 0px 10px

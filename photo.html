@@ -147,14 +147,16 @@
       </div>
     </nav>
     <div class="page-header__content-wrap">
-      <div class="page-header__intro  page-header__intro--inner  page-header__intro--fixed">
-        <h2>Фотографии пользователей</h2>
+      <div class="page-container">
+        <div class="page-header__intro  page-header__intro--inner  page-header__intro--fixed">
+          <h2>Фотографии пользователей</h2>
+        </div>
       </div>
     </div>
   </header>
   <main class="page-content">
     <section class="gallery">
-      <div class="gallery__content-wrap">
+      <div class="page-container">
         <div class="gallery__header">
           <h2>
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
@@ -165,24 +167,26 @@
         <picture class="photo__img-wrap">
           <img src="img/panorama-mobile@1x.jpg" alt="Фото прислал/прислала Анна">
         </picture>
-        <figcaption class="photo__caption">
-          <div class="photo__id">
-            <span class="photo__author">Анна</span>
-            <span class="photo__date">(5 минут назад)</span>
-          </div>
-          <div class="photo__comment">
-            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-          </div>
-          <button class="photo__like-btn">
-            Нравится
-            <svg class="photo__like-icon" width="12.545" height="11.99">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
-            </svg>
-          </button>
-          <span class="photo__likes">Нравится: 215</span>
-        </figcaption>
+        <div class="page-container">
+          <figcaption class="photo__caption">
+            <div class="photo__id">
+              <span class="photo__author">Анна</span>
+              <span class="photo__date">(5 минут назад)</span>
+            </div>
+            <div class="photo__comment">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </div>
+            <button class="photo__like-btn">
+              Нравится
+              <svg class="photo__like-icon" width="12.545" height="11.99">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
+              </svg>
+            </button>
+            <span class="photo__likes">Нравится: 215</span>
+          </figcaption>
+        </div>
       </figure>
-      <div class="gallery__content-wrap">
+      <div class="page-container">
         <div class="gallery__items">
           <figure class="photo">
             <picture class="photo__img-wrap">
@@ -314,97 +318,103 @@
       </div>
     </section>
     <section class="pink-app">
-      <div class="pink-app__content-wrap">
+      <div class="page-container">
         <div class="pink-app__header">
           <h2>Затмите их всех!</h2>
           <h2>Выкладывайте все, что накопилось в телефоне!</h2>
         </div>
-        <form class="pink-app__form" action="/" method="post">
-          <div class="pink-app__preview">
-            <img class="pink-app__img" src="img/photo-7-mobile@1x.jpg" alt="Ваше фото">
-          </div>
-          <input name="file-name" type="file">
-          <div class="pink-app__controls">
-            <div class="pink-app__edit">
-              <div class="pink-app__edit-crop">
-                <button class="pink-app__btn  pink-app__btn--active">
-                  Обрезать
-                  <svg class="pink-app__icon  pink-app__icon--crop" width="48" height="48">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
-                  </svg>
-                </button>
-                <input class="range-input" name="crop" type="range" min="0" max="100" step="1" value="80">
-              </div>
-              <div class="pink-app__edit-fill">
-                <button class="pink-app__btn">
-                  Заливка
-                  <svg class="pink-app__icon  pink-app__icon--fill" width="48" height="48">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use>
-                  </svg>
-                </button>
-                <input class="range-input" name="fill" type="range" min="0" max="100" step="1" value="15">
-              </div>
-              <div class="pink-app__edit-contrast">
-                <button class="pink-app__btn">
-                  Контраст
-                  <svg class="pink-app__icon  pink-app__icon--contrast" width="32" height="32">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
-                  </svg>
-                </button>
-                <input class="range-input" name="contrast" type="range" min="0" max="100" step="1" value="50">
-              </div>
-            </div>
-            <div class="pink-app__main-range">
-              <input class="range-input" name="common" type="range" min="0" max="100" step="1" value="85">
-            </div>
-            <div class="pink-app__submit">
-              <button class="btn btn--pink" type="submit">Запостить</button>
-              <button class="btn btn--grey" type="reset">Отмена</button>
-            </div>
-          </div>
-        </form>
       </div>
+      <form class="pink-app__form" action="/" method="post">
+        <div class="page-container">
+          <div class="pink-app__form-wrap">
+            <div class="pink-app__preview">
+              <img class="pink-app__img" src="img/photo-7-mobile@1x.jpg" alt="Ваше фото">
+            </div>
+            <input name="file-name" type="file">
+            <div class="pink-app__controls">
+              <div class="pink-app__edit">
+                <div class="pink-app__edit-crop">
+                  <button class="pink-app__btn  pink-app__btn--active">
+                    Обрезать
+                    <svg class="pink-app__icon  pink-app__icon--crop" width="48" height="48">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
+                    </svg>
+                  </button>
+                  <input class="range-input" name="crop" type="range" min="0" max="100" step="1" value="80">
+                </div>
+                <div class="pink-app__edit-fill">
+                  <button class="pink-app__btn">
+                    Заливка
+                    <svg class="pink-app__icon  pink-app__icon--fill" width="48" height="48">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use>
+                    </svg>
+                  </button>
+                  <input class="range-input" name="fill" type="range" min="0" max="100" step="1" value="15">
+                </div>
+                <div class="pink-app__edit-contrast">
+                  <button class="pink-app__btn">
+                    Контраст
+                    <svg class="pink-app__icon  pink-app__icon--contrast" width="32" height="32">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
+                    </svg>
+                  </button>
+                  <input class="range-input" name="contrast" type="range" min="0" max="100" step="1" value="50">
+                </div>
+              </div>
+              <div class="pink-app__main-range">
+                <input class="range-input" name="common" type="range" min="0" max="100" step="1" value="85">
+              </div>
+              <div class="pink-app__submit">
+                <button class="btn btn--pink" type="submit">Запостить</button>
+                <button class="btn btn--grey" type="reset">Отмена</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__content-wrap">
-      <div class="page-footer__logo">
-        <a href="index.html">
-          <svg width="146" height="65">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
-          </svg>
-        </a>
-      </div>
-      <section class="social">
-        <h2 class="visually-hidden">Мы в социальных сетях:</h2>
-        <div class="social__links">
-          <a class="social__link" target="blank" href="http://twitter.com">
+    <div class="page-container">
+      <div class="page-footer__content-wrap">
+        <div class="page-footer__logo">
+          <a href="index.html">
+            <svg width="146" height="65">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
+            </svg>
+          </a>
+        </div>
+        <section class="social">
+          <h2 class="visually-hidden">Мы в социальных сетях:</h2>
+          <div class="social__links">
+            <a class="social__link" target="blank" href="http://twitter.com">
             Твиттер
             <svg class="social__icon" width="17.5" height="14.663">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
             </svg>
           </a>
-          <a class="social__link" target="blank" href="http://facebook.com">
+            <a class="social__link" target="blank" href="http://facebook.com">
             Фейсбук
             <svg class="social__icon" width="8.673" height="18.944">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
             </svg>
           </a>
-          <a class="social__link" target="blank" href="http://youtube.com">
+            <a class="social__link" target="blank" href="http://youtube.com">
             Ютуб
             <svg class="social__icon" width="14.64" height="13.96">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
             </svg>
           </a>
+          </div>
+        </section>
+        <div class="page-footer__copy">
+          <a href="https://htmlacademy.ru" target="blank">
+            <span class="page-footer__copy-link">Разработано</span>
+            <svg class="page-footer__copy-logo" width="30" height="35">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
-      </section>
-      <div class="page-footer__copy">
-        <a href="https://htmlacademy.ru" target="blank">
-          <span class="page-footer__copy-link">Разработано</span>
-          <svg class="page-footer__copy-logo" width="30" height="35">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
-          </svg>
-        </a>
       </div>
     </div>
   </footer>
