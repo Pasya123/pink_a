@@ -6,6 +6,10 @@
   text-align: center
 
 
+.reviews__quote-icon
+  display: none
+
+
 .reviews__item
   padding: 20px 15px
 
@@ -130,12 +134,13 @@
 @media (min-width: $desktop-max-width)
 
   .reviews
-    padding-top: 144px
+    padding-top: 72px
     padding-bottom: 40px
 
 
-  .reviews__content-wrap
-    position: relative
+  .reviews__quote-icon
+    display: inline-block
+    vertical-align: top
 
 
   .reviews__items
@@ -160,12 +165,18 @@
     display: block
     position: absolute
 
+    padding: 0px
+
     top: 29%
 
-    width: 50px
-    height: 50px
+    width: 48px
+    height: 48px
 
     font-size: 0px
+
+    background-color: transparent
+    border: none
+    outline: none
     cursor: pointer
 
     &--prev
@@ -173,3 +184,14 @@
 
     &--next
       right: 0px
+
+  .reviews__control-icon
+    position: absolute
+
+    width: 21.70px
+    height: 41.72px
+
+    top: 50%
+    left: 50%
+
+    transform: translate(-50%, -50%)

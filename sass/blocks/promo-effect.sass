@@ -1,77 +1,96 @@
 
 .promo-effect
   display: none
-  padding: 40px 0px 20px
-  background-color: #fff
+
+  & h3
+    margin: 30px 15px 10px 0px
+    font-size: 30px
+    line-height: 36px
+    font-weight: $font-w-bold
+    color: #000000
+
+  & p
+    margin: 10px 0px
+    font-size: 14px
+    line-height: 24px
+    font-weight: $font-w-regular
+    color: #283645
+
+  & a
+    font-size: 14px
+    line-height: 24px
+    font-weight: $font-w-regular
+    color: #d22856
 
 
 @media (min-width: $tablet-max-width)
 
   .promo-effect
     display: block
+    padding: 40px 0px 34px
+
+    background-color: #fff
 
 
-  .promo-effect__content-wrap
-    +clearfix()
-
-    padding: 0px 20px
-
-
-  .promo-effect__img-wrap
+  .promo-effect__column-left
     box-sizing: border-box
+    padding: 20px
+
     float: left
     width: 50%
-    min-height: 330px
 
 
-  .promo-effect__content
+  .promo-effect__column-right
     box-sizing: border-box
-    padding: 25px 0px
+    padding: 25px 20px 25px 0px
 
     float: right
     width: 50%
 
-    & h3
-      margin: 30px 15px 10px 0px
-      font-size: 30px
-      line-height: 36px
+
+  .promo-effect__timer-img
+    position: relative
+
+    width: 240px
+    height: 276px
+
+    &::before
+      content: "24"
+      position: absolute
+      box-sizing: border-box
+      padding: 20px
+
+      top: 56%
+      left: 50%
+
+      width: 202px
+      height: 202px
+
+      font-size: 96px
       font-weight: $font-w-bold
-      color: #000000
+      line-height: 120px
+      color: #d22856
+      text-align: center
 
-    & p
-      margin: 10px 0px
-      font-size: 14px
-      line-height: 24px
-      font-weight: $font-w-regular
-      color: #283645
+      transform: translate(-50%, -50%)
+      border: 14px solid #d22856
+      background-color: #fff
+      border-radius: 50%
+      overflow: hidden
 
-    & a
-      font-size: 14px
-      line-height: 24px
-      font-weight: $font-w-regular
+
+  .promo-effect__timer-icon
+    width: 240px
+    height: 276px
 
 
 @media (min-width: $desktop-max-width)
 
   .promo-effect
-    background-color: #f2f2f2
     padding-top: 20px
     padding-bottom: 20px
 
-
-  .promo-effect__content-wrap
-    padding: 0px
-
-
-  .promo-effect__img-wrap
-    width: 37.5%
-    min-height: 350px
-
-
-  .promo-effect__content
-    padding: 60px 15px
-
-    width: 62.5%
+    background-color: #f2f2f2
 
     & h3
       margin-top: 35px
@@ -87,3 +106,34 @@
     & a
       font-size: 18px
       line-height: 30px
+
+
+  .promo-effect__column-left
+    padding: 0px 10px
+    width: 37.5%
+
+
+  .promo-effect__column-right
+    padding: 60px 15px
+    width: 62.5%
+
+
+  .promo-effect__timer-img
+    position: relative
+    width: 299px
+    height: 346px
+
+    &::before
+      padding: 43px
+
+      top: 57%
+
+      width: 250px
+      height: 250px
+
+      font-size: 120px
+
+
+  .promo-effect__timer-icon
+    width: 300px
+    height: 347px

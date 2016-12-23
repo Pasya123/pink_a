@@ -10,6 +10,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg")
   background-repeat: no-repeat
   background-position: center top
+  background-size: 700px auto
 
 
 .page-header__logo
@@ -27,10 +28,11 @@
   left: 0px
 
   width: 258px
+  height: 286px
 
   & img
     display: block
-    width: 100%
+    max-width: 100%
     height: auto
 
 
@@ -49,16 +51,18 @@
 
   &--inner
     padding: 75px 20px 32px
-
     min-height: 237px
-
-    background-image: url("../img/bg-back-mobile@1x.jpg")
-    background-repeat: no-repeat
-    background-position: center top
 
   &--inner h2
     display: block
     line-height: 30px
+
+
+@media (min-width: $mobile-max-width) and (min-resolution: 144dpi), (min-width: $mobile-max-width) and (min-resolution: 1.5dppx)
+
+  .page-header__content-wrap
+    background-image: url("../img/bg-back-mobile@2x.jpg")
+    background-size: 700px auto
 
 
 @media (min-width: $tablet-max-width)
@@ -68,8 +72,8 @@
 
     padding: 161px 0px 60px
 
-    //background-image: url("../img/bg-back-mobile@1x.jpg")
-    background-size: cover
+    background-image: url("../img/bg-back-tablet@1x.jpg")
+    background-size: 1200px auto
 
 
   .page-header__logo
@@ -79,7 +83,7 @@
     right: 0px
     bottom: 0px
 
-    width: 510px
+    width: 700px
     height: 545px
 
     background: none
@@ -91,6 +95,9 @@
 
     top: auto
     bottom: 0
+
+    width: 700px
+    height: 545px
 
 
   .page-header__intro
@@ -124,15 +131,31 @@
       line-height: 58px
 
 
+@media (min-width: $tablet-max-width) and (min-resolution: 144dpi), (min-width: $tablet-max-width) and (min-resolution: 1.5dppx)
+
+  .page-header__content-wrap
+    background-image: url("../img/bg-back-tablet@2x.jpg")
+    background-size: 1200px auto
+
+
 @media (min-width: $desktop-max-width)
 
   .page-header
     background-color: #1d2631
 
-    background-image: url("../img/bg-back-mobile@1x.jpg")
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center top
+
+  .page-header__content-wrap
+    background-image: url("../img/bg-back-desktop@1x.jpg")
+    background-size: 2560px auto
+
+  .page-header__logo
+    width: 1050px
+    height: 645px
+
+
+  .page-header__img-wrap
+    width: 1050px
+    height: 645px
 
 
   .page-header__intro
@@ -161,3 +184,10 @@
 
     &--fixed h2
       width: 500px
+
+
+@media (min-width: $desktop-max-width) and (min-resolution: 144dpi), (min-width: $desktop-max-width) and (min-resolution: 1.5dppx)
+
+  .page-header__content-wrap
+    background-image: url("../img/bg-back-desktop@2x.jpg")
+    background-size: 2560px auto
