@@ -35,36 +35,32 @@
 
 
 .contacts__separator
-  position: relative
+  position: absolute
+
+  top: 0px
+  left: 0px
 
   width: 100%
   height: 33px
 
   z-index: 50
 
-  & path
-    fill: #ffffff
-
-
 .contacts__map-wrap
   position: relative
 
-  margin-top: -40px
-
   height: 200px
-
   overflow: hidden
 
   & img
-    width: 100%
+    max-width: 100%
     height: auto
 
 
 .contacts__map-marker
   position: absolute
 
-  top: 46%
-  left: 44%
+  top: 48%
+  left: 44.5%
 
 
 @media (min-width: $tablet-max-width)
@@ -131,15 +127,19 @@
 
 
   .contacts__map-wrap
-    margin-top: -80px
+    height: 380px
 
-    height: 378px
+  .contacts__map-marker
+    position: absolute
 
+    top: 53%
+    left: 47.5%
 
 @media (min-width: $desktop-max-width)
 
   .contacts
     padding: 45px 0px 40px
+
 
   .contacts__content
     padding: 0px
@@ -204,6 +204,11 @@
 
 
   .contacts__map-wrap
-    margin-top: -111px
-
     height: 501px
+
+
+  .contacts__map-marker
+    position: absolute
+
+    top: 52%
+    left: 48.5%
