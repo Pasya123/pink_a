@@ -520,7 +520,10 @@
     <div class="page-container">
       <div class="page-footer__content-wrap">
         <div class="page-footer__logo">
-          <svg width="146" height="65">
+          <svg class="page-footer__mobile-logo" width="146" height="65">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
+          </svg>
+          <svg class="page-footer__desktop-logo" width="146" height="65">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
         </div>
@@ -548,10 +551,12 @@
           </div>
         </section>
         <div class="page-footer__copy">
-          <span class="page-footer__copy-link">Разработано</span>
-          <svg class="page-footer__copy-logo" width="30" height="35">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
-          </svg>
+          <a href="https://htmlacademy.ru" target="blank">
+            <span class="page-footer__copy-link">Разработано</span>
+            <svg class="page-footer__copy-logo" width="30" height="35">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

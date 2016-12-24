@@ -84,6 +84,12 @@
     &::after
       display: none
 
+  &:not(&--active):hover::after
+    background-color: #7e868f
+
+  &:not(&--active):active::after
+    background-color: #e9ebec
+
 
 .reviews__control
   display: none
@@ -184,6 +190,13 @@
 
     &--next
       right: 0px
+
+    &:hover .reviews__control-icon path
+      fill: #7e868f
+
+    &:active .reviews__control-icon path
+      fill: #e9ebec
+
 
   .reviews__control-icon
     position: absolute

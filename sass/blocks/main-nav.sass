@@ -90,9 +90,11 @@
 
   &:not(&--active):hover
     color: #d22856
+    text-decoration: none
 
   &:not(&--active):active
     color: rgba(#d22856, 0.3)
+    text-decoration: none
 
 
 .main-nav__btn
@@ -239,14 +241,16 @@
     background-color: transparent
     box-shadow: none
 
-    &:hover
+    &:not(&--active):hover
       color: #d22856
 
-    &:active
+    &:not(&--active):active
       color: rgba(#fff, 0.3)
 
     &--active
       border-bottom: 2px solid #fff
 
     &--active:hover
+      color: #d22856
       border-bottom: 2px solid #d22856
+      text-decoration: none
