@@ -19,15 +19,23 @@
     display: none
 
 
+.reviews__author
+  max-width: 100%
+
+
 .reviews__author-name
   font-size: 18px
   line-height: 30px
   font-weight: $font-w-bold
   color: #000000
 
+  +text-overflow()
+
 
 .reviews__author-id
   display: none
+
+  +text-overflow()
 
 
 .reviews__comment
