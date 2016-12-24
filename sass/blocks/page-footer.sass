@@ -14,13 +14,15 @@
 
 .page-footer__mobile-logo
 
-  &:hover path
+  fill: #283645
+
+  &:hover
     fill: #d22856
 
   &:active
     opacity: 0.3
 
-  &:active path:first-child
+  &:active
     fill: #283645
 
 
@@ -40,11 +42,15 @@
   & a
     text-decoration: none
 
-  &:hover .page-footer__copy-logo path
+  &:hover .page-footer__copy-logo
     fill: #283645
 
-  &:active .page-footer__copy-logo path
+  &:active .page-footer__copy-logo
     fill: #bec2c7
+
+
+.page-footer__copy-logo
+  fill: #d4315d
 
 
 .page-footer__copy-link
@@ -118,3 +124,11 @@
     padding: 4px 5px 8px
     font-size: 18px
     line-height: 18px
+
+
+  .page-footer__mobile-logo
+    display: none
+
+
+  .page-footer__desktop-logo
+    display: block
