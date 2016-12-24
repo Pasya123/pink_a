@@ -74,15 +74,17 @@
   cursor: pointer
   outline: none
 
-  &--active .pink-app__icon path
-    fill: #d22856
-
-  &:not(&--active):hover .pink-app__icon path
+  &:not(&--active):hover .pink-app__icon
     fill: #8d949b
+
+  &--active .pink-app__icon
+    fill: #d22856
 
 
 .pink-app__icon
   position: absolute
+
+  fill: #b5b9be
 
   top: 50%
   left: 50%
@@ -197,17 +199,19 @@
     width: 40px
     height: 40px
 
+    &:hover .pink-app__icon
+      fill: #8d949b
+
 
   .pink-app__icon
     width: 28px
     height: 28px
 
+    fill: #d22856
+
     &--contrast
       width: 18px
       height: 18px
-
-    & path
-      fill: #d22856
 
 
   .pink-app__main-range
