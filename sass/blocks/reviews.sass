@@ -19,15 +19,23 @@
     display: none
 
 
+.reviews__author
+  max-width: 100%
+
+
 .reviews__author-name
   font-size: 18px
   line-height: 30px
   font-weight: $font-w-bold
   color: #000000
 
+  +text-overflow()
+
 
 .reviews__author-id
   display: none
+
+  +text-overflow()
 
 
 .reviews__comment
@@ -83,6 +91,12 @@
 
     &::after
       display: none
+
+  &:not(&--active):hover::after
+    background-color: #7e868f
+
+  &:not(&--active):active::after
+    background-color: #e9ebec
 
 
 .reviews__control
@@ -184,6 +198,13 @@
 
     &--next
       right: 0px
+
+    &:hover .reviews__control-icon path
+      fill: #7e868f
+
+    &:active .reviews__control-icon path
+      fill: #e9ebec
+
 
   .reviews__control-icon
     position: absolute
