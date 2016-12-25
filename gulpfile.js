@@ -44,10 +44,19 @@ gulp.task("style", function() {
 
 gulp.task("style-build", function() {
 
-  return gulp.src(["css/**/*.css", "!css/**/*.min.css"])
-    .pipe(concatCSS("style.min.css"))
-    .pipe(postcss([ mqpacker({ sort: true }) ]))
+  return gulp.src("sass/style.sass")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer({browsers: [
+        "last 2 versions"
+      ]}),
+      mqpacker({
+        sort : true
+      })
+    ]))
     .pipe(cssnano())
+    .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("build/css"));
 });
 
