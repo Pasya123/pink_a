@@ -36,6 +36,7 @@ gulp.task("style", function() {
         "last 2 versions"
       ]})
     ]))
+    .pipe(gulp.dest("css"))
     .pipe(cssnano())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest("css"))
