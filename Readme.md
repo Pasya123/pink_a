@@ -1,61 +1,64 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Проект «Пинк»
 
-* Студент: [Николай К](https://up.htmlacademy.ru/adaptive/9/user/202794).
-* Наставник: `Сергей Зубов`.
+* Вёрстка: [Николай Карастелев](https://github.com/bini1988).
+* Макет: [HTML Academy](https://htmlacademy.ru).
+* Спецификация: [Specification.md](https://github.com/bini1988/pink/blob/master/Specification.md).
 
----
+## Описание
+Проект «Пинк» был выполнен в рамках пройденного онлайн‑курса «Продвинутый HTML и CSS» от HTML Academy.
 
-**Обратите внимание на файлы:**
+* Используемые технологии: _HTML, CSS, БЭМ, JS, Адаптивный дизайн_.
+* Автоматизация: _Gulp_.
+* Фреймворки: _нет_
+* Препроцессоры: _SASS_
+* JS модули: _[всплывающие окна](https://github.com/bini1988/pink/blob/master/js/app.js)_.
 
-- [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+## Ссылки
 
---
+<table>
+  <tr>
+    <th><a href="http://bini1988.github.io/pink/index.html">Главная страница</a></th>
+    <th><a href="http://bini1988.github.io/pink/photo.html">Страница Фото</a></th>
+    <th><a href="http://bini1988.github.io/pink/form.html">Страница Форма</a></th>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340050/7fd9f810-fc40-11e6-9937-4cc5a66c145e.jpg" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23340050/7fd9f810-fc40-11e6-9937-4cc5a66c145e.jpg" width="250" alt="Главная страница">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340055/9009f708-fc40-11e6-9adf-2a33557b5e38.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23340055/9009f708-fc40-11e6-9adf-2a33557b5e38.jpg" width="250" alt="Страница Фото"></a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340059/99f6b170-fc40-11e6-80d0-69a4c3d6ef54.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23340059/99f6b170-fc40-11e6-80d0-69a4c3d6ef54.jpg" width="250" alt="Страница Форма"></a>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340048/7aee96b2-fc40-11e6-815f-d74b8df86dea.jpg" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23340048/7aee96b2-fc40-11e6-815f-d74b8df86dea.jpg" width="250" alt="Главная страница">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340054/8be2b2d2-fc40-11e6-8b50-5576c28144cf.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23340054/8be2b2d2-fc40-11e6-8b50-5576c28144cf.jpg" width="250" alt="Страница Фото"></a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340058/97cdedd2-fc40-11e6-820a-44e8d0c20dfe.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23340058/97cdedd2-fc40-11e6-820a-44e8d0c20dfe.jpg" width="250" alt="Страница Форма"></a>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340047/762a7ca4-fc40-11e6-99bc-be2e848520ee.jpg" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23340047/762a7ca4-fc40-11e6-99bc-be2e848520ee.jpg" width="250" alt="Главная страница">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340052/88356e36-fc40-11e6-9511-6628a7d645ac.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23340052/88356e36-fc40-11e6-9511-6628a7d645ac.jpg" width="250" alt="Страница Фото"></a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23340057/95640504-fc40-11e6-89d1-5fcbf6440fd5.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23340057/95640504-fc40-11e6-89d1-5fcbf6440fd5.jpg" width="250" alt="Страница Форма"></a>
+    </td>
+  </tr>
+</table>
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
-
----
-
-### Памятка
-
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455696/52f9152e-206d-11e6-9e2d-5c6a68f29419.png">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455697/531c27c6-206d-11e6-80d5-365e13dd691d.png">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455698/531d7e96-206d-11e6-9a36-ae5ea9c1f18c.png">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
-
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/202794-pink.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/202794-pink
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/202794-pink/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/202794-pink?type=dev
